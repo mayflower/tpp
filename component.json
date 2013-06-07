@@ -7,6 +7,7 @@
     "components"
   ],
   "devDependencies": {
-    "angular": "*"
+    "angular": "*",
+    "angular-mocks": "*"
   }
 }

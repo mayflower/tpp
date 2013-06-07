@@ -42,13 +42,17 @@ module.exports = function(grunt) {
             "unit-dev": {
                 options: {
                     files: [
-                        'node_modules/karma/adapter/lib/jasmine.js',
-                        'node_modules/karma/adapter/jasmine.js',
-                        //watch for reload but do not include into html
-                        {pattern: 'components/**/*', included: false},
-                        {pattern: 'src/**/*.html', included: false},
-                        'src/**/*.js',
-                        'test/unit/**/*.js'
+                      'node_modules/karma/adapter/lib/jasmine.js',
+                      'node_modules/karma/adapter/jasmine.js',
+                      //watch for reload but do not include into html
+                      {pattern: 'src/**/*.html', included: false},
+                      'components/angular/angular.js',
+                      'components/angular-mocks/angular-mocks.js',
+                      'src/**/*.js',
+                      'test/unit/**/*.js'
+                    ],
+                    exclude: [
+                      'components/**/*.min.js',
                     ],
                     browsers: ['PhantomJS'],
                     singleRun: false,
