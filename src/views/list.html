@@ -1,1 +1,22 @@
-<div class="list" ng-repeat="item in list">{{item.label}}</div>
+<table class="table table-striped">
+    <tr>
+        <th></th>
+        <th ng-click="sort('ipid')">IPID</th>
+        <th ng-click="sort('approvable')">Approvable</th>
+        <th ng-click="sort('approvedBy')">Approved by</th>
+        <th ng-click="sort('exceededSince')">Exceeded since</th>
+        <th ng-click="sort('provider')">Provider</th>
+        <th ng-click="sort('status')">Status</th>
+        <th ng-click="sort('price')">Price</th>
+    </tr>
+    <tr ng-init="criteria=ipid" class="list" ng-repeat="item in list|orderBy:criteria">
+        <td><input type="checkbox"/></td>
+        <td>{{item.ipid}}</td>
+        <td>{{item.approvable}}</td>
+        <td>{{item.approvedBy}}</td>
+        <td>{{item.exceededSince}}</td>
+        <td>{{item.provider}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.price | currency}}</td>
+    </tr>
+</table>
