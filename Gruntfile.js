@@ -15,8 +15,7 @@ module.exports = function(grunt) {
             options: {
                 basePath: '.',
                 proxies: {
-                    '/src': 'http://localhost:8000/src',
-                    '/components': 'http://localhost:8000/components',
+                    '/': 'http://localhost:8000/',
                     'src': 'http://localhost:8000/src',
                     'components': 'http://localhost:8000/components'
                 },
