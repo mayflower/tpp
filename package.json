@@ -1,0 +1,23 @@
+{
+  "name": "angular-td",
+  "version": "0.0.1",
+  "description": "Start tdd angular app",
+  "scripts": {
+    "postinstall": "node_modules/.bin/grunt setup"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt": "*",
+    "grunt-mkdir": "*",
+    "karma": "*",
+    "grunt-karma": "*",
+    "phantomjs": "*",
+    "bower": "*",
+    "grunt-contrib-connect": "*"
+  },
+  "readmeFilename": "README.md"
+}
