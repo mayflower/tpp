@@ -16,7 +16,9 @@ module.exports = function(grunt) {
                 basePath: '.',
                 proxies: {
                     '/src': 'http://localhost:8000/src',
-                    '/components': 'http://localhost:8000/components'
+                    '/components': 'http://localhost:8000/components',
+                    'src': 'http://localhost:8000/src',
+                    'components': 'http://localhost:8000/components'
                 },
                 singleRun: true,
                 autoWatch: false,
@@ -28,12 +30,12 @@ module.exports = function(grunt) {
                         'node_modules/karma/adapter/lib/angular-scenario.js',
                         'node_modules/karma/adapter/angular-scenario.js',
                         //watch for reload but do not include into html
-                        {pattern: 'components/**/*', included: false},
+                        {pattern: 'components/**/*.js', included: false},
                         {pattern: 'src/**/*.html', included: false},
                         'src/**/*.js',
                         'test/e2e/**/*.js'
                     ],
-                    browsers: ['PhantomJS'],
+                    browsers: ['PhantomJS', 'Chrome'],
                     singleRun: false,
                     autoWatch: true
                 }
