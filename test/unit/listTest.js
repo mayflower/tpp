@@ -13,16 +13,18 @@ describe('the listCtrl', function() {
     expect(scope.criteria).toBe('ipid');
   });
 
-  it('should set criteria', function() {
-    scope.sort('foo');
-    expect(scope.criteria).toBe('foo');
-  });
+  describe('sort', function() {
+    it('should set criteria', function() {
+      scope.sort('foo');
+      expect(scope.criteria).toBe('foo');
+    });
 
-  it('should prefix criteria when called twice with same param', function() {
-    scope.sort('foo');
-    scope.sort('foo');
-    expect(scope.criteria).toBe('-foo');
-    scope.sort('bar');
-    expect(scope.criteria).toBe('bar');
+    it('should prefix criteria when called twice with same param', function() {
+      scope.sort('foo');
+      scope.sort('foo');
+      expect(scope.criteria).toBe('-foo');
+      scope.sort('bar');
+      expect(scope.criteria).toBe('bar');
+    });
   });
 });
