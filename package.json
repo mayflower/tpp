@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Start tdd angular app",
   "scripts": {
-    "postinstall": "node_modules/.bin/grunt setup"
+    "postinstall": "node_modules/.bin/grunt setup || true; node_modules/.bin/bower install"
   },
   "repository": "",
   "author": "",
