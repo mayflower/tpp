@@ -1,6 +1,6 @@
 "use strict";
 
-ddescribe('example directive', function() {
+describe('example directive', function() {
   var rootScope, compile, interpolate, directive;
 
   angular.module('exampleModule', []);
