@@ -7,10 +7,9 @@ TPP - The Team Project Planner
 ### Project Setup
     $ git clone git@github.com:Mayflower/tpp.git && cd tpp && npm install
 
-### Running the app during development
+### Running the app for development
 
-* run `$ grunt server` in your project directory
-* Open the displayed url in your browser
+* run `$ grunt run` in your project directory
 
 
 ## Running unit tests:
