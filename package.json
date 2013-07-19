@@ -16,7 +16,7 @@
     "karma": "*",
     "grunt-karma": "*",
     "phantomjs": "*",
-    "bower": "*",
+    "bower": "*"
   },
   "readmeFilename": "README.md"
 }
