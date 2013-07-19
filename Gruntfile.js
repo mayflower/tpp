@@ -66,9 +66,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('setup', ['mkdir:all']);
 
-
     // Load the plugins provided by npm
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-mkdir');
-    grunt.loadNpmTasks('grunt-contrib-connect');
 };
