@@ -54,6 +54,15 @@ module.exports = function(grunt) {
                 }
             }
         },
+        server: {
+            options: {
+                // Task-specific options go here.
+                host: 'localhost',
+                port: '8888'
+            },
+            your_target: {
+            }
+        },
         mkdir: {
             all: { options: { create: ['src', 'test/e2e', 'test/unit'] } }
         }
@@ -67,6 +76,7 @@ module.exports = function(grunt) {
     grunt.registerTask('setup', ['mkdir:all']);
 
     // Load the plugins provided by npm
+    grunt.loadNpmTasks('grunt-bbb-server');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-mkdir');
 };

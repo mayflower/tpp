@@ -15,6 +15,7 @@
     "grunt-mkdir": "*",
     "karma": "*",
     "grunt-karma": "*",
+    "grunt-bbb-server": "*",
     "phantomjs": "*",
     "bower": "*"
   },
