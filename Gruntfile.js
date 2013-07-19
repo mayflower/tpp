@@ -56,12 +56,10 @@ module.exports = function(grunt) {
         },
         server: {
             options: {
-                // Task-specific options go here.
                 host: 'localhost',
                 port: '8888'
             },
-            your_target: {
-            }
+            your_target: {}
         },
         mkdir: {
             all: { options: { create: ['src', 'test/e2e', 'test/unit'] } }
