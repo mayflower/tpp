@@ -9,8 +9,7 @@ TPP - The Team Project Planner
 
 ### Running the app during development
 
-* Install [simple-server](https://github.com/balupton/simple-server)
-* run `$ simple-server .` in your project directory
+* run `$ grunt server` in your project directory
 * Open the displayed url in your browser
 
 
