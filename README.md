@@ -1,4 +1,12 @@
-    $ npm install
-    $ node_modules/.bin/grunt test:unit-dev
-    $ node_modules/.bin/grunt test:e2e-dev
+tpp
+===
+
+Team Project Planner
+
+
+Project Setup:
+
+$ npm install
+$ node_modules/.bin/grunt test:unit-dev
+$ node_modules/.bin/grunt test:e2e-dev
 
