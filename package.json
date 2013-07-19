@@ -17,7 +17,6 @@
     "grunt-karma": "*",
     "phantomjs": "*",
     "bower": "*",
-    "grunt-contrib-connect": "*"
   },
   "readmeFilename": "README.md"
 }
