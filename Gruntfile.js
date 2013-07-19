@@ -1,3 +1,7 @@
+'use strict';
+var serverHost = 'localhost';
+var serverPort = '8888';
+
 process.env.PHANTOMJS_BIN = __dirname + '/node_modules/phantomjs/lib/phantom/bin/phantomjs';
 
 module.exports = function(grunt) {
@@ -54,12 +58,23 @@ module.exports = function(grunt) {
                 }
             }
         },
-        server: {
-            options: {
-                host: 'localhost',
-                port: '8888'
-            },
-            your_target: {}
+        connect: {
+            all: {
+                options:{
+                    port: serverPort,
+                    hostname: serverHost,
+                    // Prevents Grunt to close just after the task (starting the server) completes
+                    // This will be removed later as `watch` will take care of that
+                    keepalive: true
+                }
+            }
+        },
+        // grunt-open will open your browser at the project's URL
+        open: {
+            all: {
+                // Gets the port from the connect configuration
+                path: 'http://localhost:<%= connect.all.options.port%>'
+            }
         },
         mkdir: {
             all: { options: { create: ['src', 'test/e2e', 'test/unit'] } }
@@ -70,6 +85,7 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('test:unit-dev', ['karma:unit-dev']);
     grunt.registerTask('test:e2e-dev',  ['karma:e2e-dev']);
+    grunt.registerTask('run', ['open', 'connect']);
 
     grunt.registerTask('setup', ['mkdir:all']);
 
@@ -77,4 +93,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-bbb-server');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-mkdir');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-open');
 };

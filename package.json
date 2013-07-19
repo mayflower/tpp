@@ -8,14 +8,14 @@
   "repository": "",
   "author": "",
   "license": "BSD",
-  "dependencies": {},
   "devDependencies": {
     "grunt-cli": "*",
     "grunt": "*",
     "grunt-mkdir": "*",
     "karma": "*",
     "grunt-karma": "*",
-    "grunt-bbb-server": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-open": "*",
     "phantomjs": "*",
     "bower": "*"
   },
