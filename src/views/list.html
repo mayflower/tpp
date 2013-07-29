@@ -1,23 +1,28 @@
+<h1>Team Project Planner</h1>
+
+<p class="lead">Project schedule.</p>
+
+
 <table class="table table-striped">
-    <tr>
-        <th></th>
-        <th ng-click="sort('ipid')">IPID</th>
-        <th ng-click="sort('approvable')">Approvable</th>
-        <th ng-click="sort('approvedBy')">Approved by</th>
-        <th ng-click="sort('exceededSince')">Exceeded since</th>
-        <th ng-click="sort('provider')">Provider</th>
-        <th ng-click="sort('status')">Status</th>
-        <th ng-click="sort('price')">Price</th>
-    </tr>
-    <tr class="list" ng-repeat="item in list|orderBy:criteria">
-        <td><input type="checkbox"/></td>
-        <td>{{item.ipid}}</td>
-        <td>{{item.approvable}}</td>
-        <td>{{item.approvedBy}}</td>
-        <td><exceeded high="0" val="{{item.exceededSince}}">{{item.exceededSince}}</exceeded></td>
-        <td>{{item.provider}}</td>
-        <td>{{item.status}}</td>
-        <td><span class="push-right">{{item.price | currency}}</span></td>
-    </tr>
+  <tr>
+    <th ng-click="sortListBy('name')" class="sortable">Name</th>
+    <th>30</th>
+    <th>31</th>
+    <th>32</th>
+    <th>33</th>
+    <th>34</th>
+    <th>35</th>
+    <th>36</th>
+  </tr>
+  <tr class="list" ng-repeat="item in memberList | orderBy:sortCriteria">
+    <td>{{item.name}}</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 

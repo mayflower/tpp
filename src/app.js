@@ -1,6 +1,6 @@
-angular.module('schnellerApp', [])
+angular.module('tppApp', [])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
-      .when('/', {controller: "listCtrl", templateUrl: "src/views/list.html"})
+      .when('/', {controller: "tppController", templateUrl: "src/views/list.html"})
       .otherwise({redirectTo: '/'});
   }]);

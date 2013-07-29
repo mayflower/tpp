@@ -1,41 +1,52 @@
-angular.module('schnellerApp')
-  .factory('dataProvider', function() {
-        return [
-            {
-                ipid: '123-456-789',
-                approvable: false,
-                approvedBy: "Hans Wurst",
-                exceededSince: 120,
-                provider: "Ajax inc.",
-                status: 'On Hold',
-                price: 123.12
-            },
-            {
-                ipid: '123-456-792',
-                approvable: true,
-                approvedBy: null,
-                exceededSince: 128,
-                provider: "Banana inc.",
-                status: "Accepted",
-                price: 23.10
-            },
-            {
-                ipid: '223-456-780',
-                approvable: false,
-                approvedBy: "Andi Gewehre",
-                exceededSince: 120,
-                provider: "CMax ltd.",
-                status: 'On Hold',
-                price: 1823.12
-            },
-            {
-                ipid: '23-456-789',
-                approvable: true,
-                approvedBy: null,
-                exceededSince: -20,
-                provider: "Ajax inc.",
-                status: 'On Hold',
-                price: 123.12
-            }
-        ]
-  });
+angular.module('tppApp')
+  .factory('dataProvider', function () {
+
+    var memberList = [
+      {
+        name: 'Johannes'
+      },
+      {
+        name: 'Simon'
+      },
+      {
+        name: 'Micha'
+      },
+      {
+        name: 'Sebastian'
+      },
+      {
+        name: 'Marco'
+      },
+      {
+        name: 'Markus'
+      }
+    ];
+
+    var weekList = [
+      {
+        number: 30
+      },
+      {
+        number: 31
+      },
+      {
+        number: 32
+      },
+      {
+        number: 33
+      },
+      {
+        number: 34
+      },
+      {
+        number: 35
+      },
+      {
+        number: 36
+      }
+
+    ];
+
+    return { memberList: memberList, weekList: weekList }
+  })
+;

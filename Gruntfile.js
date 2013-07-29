@@ -4,7 +4,7 @@ var serverPort = '8888';
 
 process.env.PHANTOMJS_BIN = __dirname + '/node_modules/phantomjs/lib/phantom/bin/phantomjs';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                 autoWatch: false,
                 logLevel: 'info',
                 exclude: [
-                  '**/*.min.js'
+                    '**/*.min.js'
                 ]
             },
             "e2e-dev": {
@@ -43,14 +43,14 @@ module.exports = function(grunt) {
             "unit-dev": {
                 options: {
                     files: [
-                      'node_modules/karma/adapter/lib/jasmine.js',
-                      'node_modules/karma/adapter/jasmine.js',
-                      //watch for reload and serve but do NOT include into testing frame with a script tag
-                      {pattern: '**/*.html', included: false},
-                      'components/angular/angular.js',
-                      'components/**/*.js',
-                      'src/**/*.js',
-                      'test/unit/**/*.js'
+                        'node_modules/karma/adapter/lib/jasmine.js',
+                        'node_modules/karma/adapter/jasmine.js',
+                        //watch for reload and serve but do NOT include into testing frame with a script tag
+                        {pattern: '**/*.html', included: false},
+                        'components/angular/angular.js',
+                        'components/**/*.js',
+                        'src/**/*.js',
+                        'test/unit/**/*.js'
                     ],
                     browsers: ['PhantomJS'],
                     singleRun: false,
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         },
         connect: {
             all: {
-                options:{
+                options: {
                     port: serverPort,
                     hostname: serverHost,
                     // Prevents Grunt to close just after the task (starting the server) completes
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('test:unit-dev', ['karma:unit-dev']);
-    grunt.registerTask('test:e2e-dev',  ['karma:e2e-dev']);
+    grunt.registerTask('test:e2e-dev', ['karma:e2e-dev']);
     grunt.registerTask('run', ['open', 'connect']);
 
     grunt.registerTask('setup', ['mkdir:all']);

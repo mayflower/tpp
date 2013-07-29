@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html ng-app="schnellerApp">
+<html ng-app="tppApp">
 <head>
-    <title>Schneller mit Angular</title>
-    <script type="text/javascript" src="components/angular/angular.js"></script>
-    <script type="text/javascript" src="src/app.js"></script>
-    <script type="text/javascript" src="src/controllers/listCtrl.js"></script>
-    <script type="text/javascript" src="src/services/dataProviderService.js"></script>
-    <script type="text/javascript" src="src/directives/exceeded.js"></script>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.4/angular-strap.min.js"></script>
+  <title>tpp - TeamProjectPlanner</title>
+
+  <script type="text/javascript" src="components/angular/angular.js"></script>
+  <script type="text/javascript" src="src/app.js"></script>
+
+  <script type="text/javascript" src="src/controllers/tppController.js"></script>
+
+  <script type="text/javascript" src="src/services/dataProviderService.js"></script>
+  <script type="text/javascript" src="twitter-bootstrap/angular-strap.min.js"></script>
+
+
+  <link href="twitter-bootstrap/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
 <div class="container">
-    <div ng-controller="listCtrl">
-        <div ng-view></div>
-    </div>
+
+  <div ng-controller="tppController">
+    <div ng-view></div>
+  </div>
+
 </div>
+
 </body>
 </html>
