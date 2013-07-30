@@ -1,27 +1,6 @@
 angular.module('tppApp')
   .factory('dataProvider', function () {
 
-    var memberList = [
-      {
-        name: 'Johannes'
-      },
-      {
-        name: 'Simon'
-      },
-      {
-        name: 'Micha'
-      },
-      {
-        name: 'Sebastian'
-      },
-      {
-        name: 'Marco'
-      },
-      {
-        name: 'Markus'
-      }
-    ];
-
     var weekList = [
       {
         number: 30
@@ -44,9 +23,34 @@ angular.module('tppApp')
       {
         number: 36
       }
-
     ];
 
-    return { memberList: memberList, weekList: weekList }
-  })
-;
+    var memberList = [
+      {
+        name: 'Johannes',
+        weekList: weekList
+      },
+      {
+        name: 'Simon',
+        weekList: weekList
+      },
+      {
+        name: 'Micha',
+        weekList: weekList
+      },
+      {
+        name: 'Sebastian',
+        weekList: weekList
+      },
+      {
+        name: 'Marco',
+        weekList: weekList
+      },
+      {
+        name: 'Markus',
+        weekList: weekList
+      }
+    ];
+
+    return { memberList: memberList }
+  });

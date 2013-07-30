@@ -6,14 +6,11 @@
 <table class="table table-striped">
   <tr>
     <th ng-click="sortListBy('name')" class="sortable">Name</th>
-    <th>30</th>
-    <th>31</th>
-    <th>32</th>
-    <th>33</th>
-    <th>34</th>
-    <th>35</th>
-    <th>36</th>
+    <th class="weekNumber" ng-repeat="weekNumber in weekList">
+      {{weekNumber}}
+    </th>
   </tr>
+
   <tr class="list" ng-repeat="item in memberList | orderBy:sortCriteria">
     <td>{{item.name}}</td>
     <td></td>
