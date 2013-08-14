@@ -1,0 +1,132 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}MayflowerTPPBundle:Week:index{% endblock %}
+
+{% block body %}
+
+    {% stylesheets 'bundles/mayflowertpp/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    <div class="header">
+        <div>
+            Heute ist der: {{ 'today' | date('d.m.Y') }}
+        </div>
+        <div>
+            Kalenderwoche: <select name="kw" size="1" onchange="this.form.submit();">
+                {% for i in 1..52 -%}
+                    <option value="{{ (year ~ "W" ~ ("%02d" | format(i))) | date('W') }}"
+                        {%- if i == week %} selected {%- endif %}>
+                        {{ (year ~ "W" ~ ("%02d" | format(i))) | date('d.m. - K\\WW') }}
+                    </option>
+                {% endfor %}
+                {%- if (("last monday of December " ~ year) | date('W')) == 53 %}
+                    <option value="53"
+                        {% if 53 == week %} selected {% endif %}>
+                        {{ ("last monday of December " ~ year) | date('d.m.') }} - KW53
+                {% endif -%}
+            </select>
+        </div>
+        <div>
+            <a href="{{ path('week', { 'year': year, 'week': week }) }}">
+                <img src="/img/pfeil_links.png" width="20" height="20" title="KW zur&uuml;ck">
+            </a>{# FIXME #}
+            <a href="{{ path('week', { 'year': 'today' | date('Y'), 'week': 'today' | date('W')}) }}">
+                0
+            </a>
+            <a href="{{ path('week', { 'year': year, 'week': week }) }}">
+                <img src="/img/pfeil_rechts.png" width="20" height="20" title="KW vor">
+            </a>{# FIXME #}
+        </div>
+        <div>
+            Jahr: <select name="year" size="1">
+                {% for i in -3..3 %}
+                    <option value="{{ i + year }}"
+                        {% if i == 0 %} selected {% endif %}
+                        >{{ i + year }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        {#}
+        <td align="right">
+            <input type="search" id="search" placeholder="Suche...">
+            <input type="submit" id="search-button" value="Suchen" />
+        </td>
+        #}
+    </div>
+    <table class="fullwidth fullheight">
+        <tr class="nopadding">
+            <th>Raum</th>
+            {% for i in 0..6 %}
+                {% set date = selectedDate | date_modify("+" ~ i ~ " weeks") %}
+                <th>{{ date | date('W/Y') }}</th>
+            {% endfor %}
+        </tr>
+        {% for person in persons %}
+            <tr>
+                <th>{{ person.name }}</th>
+            {% for i in 0..6 %}
+                {% set date = selectedDate | date_modify("+" ~ i ~ " weeks") %}
+                <td class="nopadding bordereintrag equalwidth
+                    {%- if date | date('d.m.Y') == 'today' | date('d.m.Y') %} today{% endif %}
+                ">
+                    <div {#data-tag="<?= $days[$i]->getTimestamp() ?>" #}data-person-id="{{ person.id }}" class="eintrag drop">
+                        {% include 'MayflowerTPPBundle:Week:task.html.twig' with {
+
+                        } %}
+                    </div>
+                </td>
+            {% endfor %}
+        {% endfor %}
+        {#<tr>
+            <td>&nbsp;</td>
+            {% for i in 0..6 %}
+                <td valign="top">
+                    BEMERKUNG
+                </td>
+                {#$day = new DateTime($selected_date->format('r'));
+                bemerkung($days[$i]->getTimestamp(), $studios[0]->kategorie_nr); # }
+            {% endfor %}
+        </tr>#}
+    </table>
+    <div id="new-buchung-dialog" hidden>
+        <form method="post" name="buchen" id="buchen">
+            <p><label for="title">Titel: </label> <input id="title" /></p>
+            <p><label for="information">Infos: </label><textarea id="information"></textarea></p>
+        </form>
+    </div>
+    <div id="copy-buchung-dialog" hidden>
+        <p>
+            <label for="copy-buchung-typ">Typ: </label>
+            <select id="copy-buchung-typ" size="1">
+                <option value="copy">Kopieren</option>
+                <option value="move">Verschieben</option>
+            </select>
+        </p>
+        <p>
+            <label for="copy_studio_id">Raum: </label>
+            <select id="copy_studio_id" size="1">
+                {% for person in persons %}
+                    <option value="{{ person.id }}">'{{ person.name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>
+            <label for="copy_tag">Datum: </label>
+            <input type="text" id="copy_tag" class="date" value="{# <?= $next_week->format('d.m.Y') ?> #}" />
+        </p>
+        <p>
+            <label for="goto">Springe zu Datum</label><input type="checkbox" id="goto" checked />
+        </p>
+    </div>
+    {# <div id="search-dialog">
+        <div id="search-content"></div>
+    </div> #}
+
+    <script src="/js/lib/jquery.js"> </script>
+    <script src="/js/lib/jquery-ui.js"> </script>
+    <script src="/js/lib/ffs.dialog.js"> </script>
+    <script src="/js/lib/ffs.kalender.js"> </script>
+    <script src="/js/fnr_autocomplete.js"> </script>
+    <script src="/js/studioplan_wochenplan.js"> </script>
+{% endblock %}

@@ -1,0 +1,10 @@
+week:
+    pattern:  /week/{year}/{week}
+    defaults:
+        _controller: MayflowerTPPBundle:Week:index
+        year: null
+        week: null
+
+MayflowerTPPBundle_person:
+    resource: "@MayflowerTPPBundle/Resources/config/routing/person.yml"
+    prefix:   /person

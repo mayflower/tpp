@@ -1,4 +1,4 @@
 mayflower_wochenplaner:
-    resource: "@MayflowerWochenplanerBundle/Resources/config/routing.yml"
+    resource: "@MayflowerTPPBundle/Resources/config/routing.yml"
     prefix:   /
 

@@ -1,7 +1,0 @@
-parameters:
-#    mayflower_wochenplaner.example.class: Mayflower\WochenplanerBundle\Example
-
-services:
-#    mayflower_wochenplaner.example:
-#        class: %mayflower_wochenplaner.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

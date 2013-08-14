@@ -1,0 +1,163 @@
+/* Grunddesign */
+
+body {
+    margin: 0;
+    padding: 5px;
+}
+
+table, tr, td, div {
+    padding: 0;
+    background-color: inherit;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+
+td {
+    height: 100%;
+}
+
+th {
+    border: 2px #000 solid;
+    font-size: 10pt;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+tbody:nth-child(even) td {
+    background: inherit;
+}
+table:not(.ui-datepicker-calendar) {
+    background-color: inherit;
+    margin: inherit;
+}
+
+a:link, a:visited {
+    color: #26C;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px #dddddd;
+}
+
+input:disabled, textarea:disabled {
+    color: #222;
+    -webkit-text-fill-color: #222;
+    background-color: #FFF;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.search {
+    font-size: 10pt;
+}
+
+/* Designanpassungen */
+
+.fullheight {
+    height: 100%;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.padding {
+    padding: 2px;
+}
+
+.border {
+    border: 1px #222 solid;
+}
+
+.margin {
+    margin: 1px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Objektgröße */
+
+.relative {
+    position: relative;
+}
+
+.personen {
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+}
+
+.bemerkung {
+    width: 95%;
+    height: 80px;
+    font-size: 8pt;
+}
+
+.add-buchung {
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+}
+
+.eintrag {
+    height: 67px;
+    vertical-align: top;
+    width: 100%;
+    display: table;
+}
+.cutter .eintrag {
+    height: 0;
+}
+
+.persInput {
+    width: 43%;
+    font-size: 7pt;
+    font-size: 8pt;
+}
+
+.handle {
+    cursor: move;
+}
+
+.delete-dispo, .edit-dispo, .copy-dispo, .pointer {
+    cursor: pointer;
+}
+
+.info {
+    cursor: help;
+}
+
+.longer {
+    width: 30em;
+}
+
+.abgerechnet {
+    color: #555;
+}
+
+.black {
+    color: #222;
+}
+.eintrag a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#copy-person {
+    width: 15%;
+    vertical-align: text-top;
+    font-size: 8pt;
+}
+#copy-person + label {
+    font-size: 8pt;
+    margin-left: 3px;
+    width: 80%;
+    display: inline-block;
+}
