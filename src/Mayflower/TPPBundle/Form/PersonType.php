@@ -33,6 +33,6 @@ class PersonType extends AbstractType
      */
     public function getName()
     {
-        return 'mayflower_wochenplanerbundle_persontype';
+        return 'mayflower_tppbundle_persontype';
     }
 }

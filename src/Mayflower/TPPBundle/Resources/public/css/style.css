@@ -206,7 +206,7 @@ body {
   font-size: 14px;
   background-color: #fff;
   color: #222;
-  padding: 2em;
+  padding: 1em;
 }
 
 label {
@@ -226,7 +226,7 @@ label:not(.exclude) {
 }
 
 table:not(.ui-datepicker-calendar) {
-  margin: auto;
+  margin: 1em auto;
   border: #ccc 0 none;
   border-spacing: 0;
   width: 100%;
@@ -342,114 +342,6 @@ select:focus {
 .pointer {
   cursor: pointer;
 }
-tr.geaendert {
-    color: #922;
-    cursor: pointer;
-}
-th.sortable {
-    cursor: pointer;
-}
-.down:after {
-    content: "\a0\25BC";
-}
-.up:after {
-    content: "\a0\25B2";
-}
-.grey {
-    background-color: #bbb !important;
-}
-.lightgrey {
-    background-color: #ccc;
-}
-.right {
-    float: right;
-}
-.left {
-    float: left;
-}
-.edit {
-    background-image: url(../img/Stift.png);
-    background-repeat: no-repeat;
-    margin: 0;
-    width: 25px;
-    background-position: 50%;
-}
-.del {
-    background-image: url(../img/delete.png);
-    background-repeat: no-repeat;
-    margin: 0;
-    width: 25px;
-    background-position: 40%;
-}
-.copy {
-    background-image: url(../img/copy.ico);
-    background-repeat: no-repeat;
-    margin: 0;
-    width: 25px;
-    background-position: 40%;
-}
-.delred {
-    background-image: url(../img/delete_red.png);
-    background-repeat: no-repeat;
-    margin: 0;
-    width: 25px;
-    background-position: 40%;
-}
-#loading, .overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left:0;
-    top:0;
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.5);
-    z-index: 70;
-    display:none;
-}
-#loading img {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -16px;
-    margin-top: -16px;
-}
-img.small_loading {
-    background-image: url('../img/loading_small.gif');
-    display: none;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-#top {
-    top: -10000px;
-    position: fixed;
-    min-width: 70%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #999;
-    background-color: #FFF;
-    padding: 10px;
-    padding-top: 30px;
-    z-index: 50;
-    border-radius: 3px;
-}
-#right {
-    right: -10000px;
-    top: 20px;
-    position: fixed;
-    min-height: 70%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #999;
-    background-color: #FFF;
-    padding: 10px;
-    padding-right: 30px;
-    z-index: 60;
-    border-radius: 3px;
-}
-#content {
-    margin: 20px 10px 0 10px;
-}
 #search-dialog {
     left: 15%;
     width: 70%;
@@ -458,8 +350,13 @@ img.small_loading {
     border: 1px solid black;
     padding: 2px;
 }
-
-
+.header div {
+    display: inline-block;
+    padding: 5px 20px;
+}
+.header {
+    width: 100%;
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.

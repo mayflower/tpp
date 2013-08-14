@@ -4,7 +4,7 @@
 
 {% block body %}
 
-    {% stylesheets 'bundles/mayflowertpp/css/*' filter='cssrewrite' %}
+    {% stylesheets '@MayflowerTPPBundle/Resources/public/css/*' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
 
@@ -54,8 +54,8 @@
         </td>
         #}
     </div>
-    <table class="fullwidth fullheight">
-        <tr class="nopadding">
+    <table>
+        <tr>
             <th>Raum</th>
             {% for i in 0..6 %}
                 {% set date = selectedDate | date_modify("+" ~ i ~ " weeks") %}
@@ -67,14 +67,15 @@
                 <th>{{ person.name }}</th>
             {% for i in 0..6 %}
                 {% set date = selectedDate | date_modify("+" ~ i ~ " weeks") %}
-                <td class="nopadding bordereintrag equalwidth
-                    {%- if date | date('d.m.Y') == 'today' | date('d.m.Y') %} today{% endif %}
-                ">
-                    <div {#data-tag="<?= $days[$i]->getTimestamp() ?>" #}data-person-id="{{ person.id }}" class="eintrag drop">
-                        {% include 'MayflowerTPPBundle:Week:task.html.twig' with {
+                <td class="{%- if date | date('d.m.Y') == 'today' | date('d.m.Y') %} today{% endif %}">
+                    {% for task in tasks if task.week == date %}
+                        <div {#data-tag="<?= $days[$i]->getTimestamp() ?>" #}data-person-id="{{ person.id }}" class="eintrag drop">
+                            {% include 'MayflowerTPPBundle:Week:task.html.twig' with {
 
-                        } %}
-                    </div>
+                            } %}
+                        </div>
+                    {% endfor %}
+                    <span class="add-task pointer">+</span>
                 </td>
             {% endfor %}
         {% endfor %}
@@ -89,13 +90,13 @@
             {% endfor %}
         </tr>#}
     </table>
-    <div id="new-buchung-dialog" hidden>
+    <div id="add-task-dialog" hidden>
         <form method="post" name="buchen" id="buchen">
             <p><label for="title">Titel: </label> <input id="title" /></p>
             <p><label for="information">Infos: </label><textarea id="information"></textarea></p>
         </form>
     </div>
-    <div id="copy-buchung-dialog" hidden>
+    <div id="copy-task-dialog" hidden>
         <p>
             <label for="copy-buchung-typ">Typ: </label>
             <select id="copy-buchung-typ" size="1">
@@ -123,10 +124,17 @@
         <div id="search-content"></div>
     </div> #}
 
-    <script src="/js/lib/jquery.js"> </script>
-    <script src="/js/lib/jquery-ui.js"> </script>
-    <script src="/js/lib/ffs.dialog.js"> </script>
+
+    <script src="/js/lib/jquery/jquery.js"> </script>
+    <script src="/js/lib/jquery-ui/ui/jquery-ui.js"> </script>
+    {#
     <script src="/js/lib/ffs.kalender.js"> </script>
     <script src="/js/fnr_autocomplete.js"> </script>
     <script src="/js/studioplan_wochenplan.js"> </script>
+    #}
+
+    {% javascripts '@MayflowerTPPBundle/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"> </script>
+    {% endjavascripts %}
+
 {% endblock %}

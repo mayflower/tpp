@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PersonControllerTest extends WebTestCase
 {
-    /*
     public function testCompleteScenario()
     {
         // Create a new client to browse the application
@@ -19,8 +18,7 @@ class PersonControllerTest extends WebTestCase
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'mayflower_tppbundle_persontype[field_name]'  => 'Test',
-            // ... other fields to fill
+            'mayflower_tppbundle_persontype[name]'  => 'Test',
         ));
 
         $client->submit($form);
@@ -33,8 +31,7 @@ class PersonControllerTest extends WebTestCase
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
         $form = $crawler->selectButton('Edit')->form(array(
-            'mayflower_tppbundle_persontype[field_name]'  => 'Foo',
-            // ... other fields to fill
+            'mayflower_tppbundle_persontype[name]'  => 'Foo',
         ));
 
         $client->submit($form);
@@ -50,6 +47,4 @@ class PersonControllerTest extends WebTestCase
         // Check the entity has been delete on the list
         $this->assertNotRegExp('/Foo/', $client->getResponse()->getContent());
     }
-
-    */
 }

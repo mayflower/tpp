@@ -1,5 +1,5 @@
 week:
-    pattern:  /week/{year}/{week}
+    pattern:  "/week/{week}/{year}"
     defaults:
         _controller: MayflowerTPPBundle:Week:index
         year: null

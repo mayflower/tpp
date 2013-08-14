@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/tpp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_diagonal-maze_40_000000_10x10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_diagonals-small_40_db4865_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_diagonals-small_50_262626_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_diagonals-small_50_ff3853_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_diagonals-small_75_ccd232_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_diagonals-thick_15_444444_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_diagonals-thick_20_e69700_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_diagonals-thick_8_333333_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_10_4f4221_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_20_372806_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_25_675423_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_25_d5ac5d_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_8_261803_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_diamond_8_443113_10x8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_dots-medium_30_0b58a2_4x4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_dots-medium_80_ffff38_4x4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_dots-small_20_333333_2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_dots-small_30_a32d00_2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_dots-small_35_35414f_2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_dots-small_40_00498f_2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_dots-small_65_a6a6a6_2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_15_f7f3de_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_15_ffffff_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_65_654b24_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-bg_fine-grain_68_b83400_60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_flat_0_303030_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_flat_0_333333_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_flat_0_4c4c4c_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_flat_0_e69700_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_flat_0_e6b900_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_flat_40_292929_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_flat_55_994d53_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_flat_55_999999_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_flat_55_c0402a_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_flat_55_eeeeee_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_flat_55_fafafa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_flat_55_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_flat_65_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_flat_65_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_flat_75_ba9217_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_flat_75_ddd4b0_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_glass_100_f5f0e5_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_glass_100_f8f8f8_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_glass_15_5f391b_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_glass_20_555555_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_glass_25_cb842e_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_glass_35_dddddd_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_glass_40_0078a3_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_glass_40_0a0a0a_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_glass_40_111111_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_glass_40_ffc73d_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_glass_45_0078ae_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_glass_55_1c1c1c_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_glass_55_f1fbe5_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_glass_55_f8da4e_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_glass_55_fbf5d0_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_glass_55_fbf8ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_glass_55_fcf0ba_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_glass_60_000000_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_glass_60_eeeeee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_glass_70_ede4d4_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_glass_75_79c9ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_gloss-wave_100_ece8da_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_gloss-wave_16_121212_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-bg_gloss-wave_20_111111_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_gloss-wave_20_1c160d_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_gloss-wave_25_333333_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_gloss-wave_25_453326_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_gloss-wave_30_3d3644_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_gloss-wave_30_44372c_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_gloss-wave_45_817865_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_gloss-wave_55_000000_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_gloss-wave_85_9fda58_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_highlight-hard_15_888888_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_highlight-hard_30_285c00_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_highlight-hard_55_555555_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-hard_95_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-bg_highlight-soft_15_cc0000_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_highlight-soft_20_201913_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_highlight-soft_20_619226_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-soft_25_67b021_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_highlight-soft_33_3a8104_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_highlight-soft_35_adadad_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-bg_highlight-soft_45_5f5964_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_highlight-soft_50_4eb305_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_highlight-soft_60_dddddd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_highlight-soft_95_ffedad_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-bg_inset-hard_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-bg_inset-hard_55_ffeb80_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_inset-hard_75_999999_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-bg_inset-soft_10_201913_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-bg_inset-soft_10_285c00_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-bg_inset-soft_15_121212_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-bg_inset-soft_15_2b2922_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-bg_white-lines_85_f7f7ba_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_000000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-icons_004276_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-icons_00498f_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-icons_0073ea_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_0078ae_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_056b93_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_070603_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-icons_0a82eb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-icons_0b54d5_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_1f1f1f_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_217bc0_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-icons_2694e8_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-icons_3383bb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_3572ac_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_3d3d3d_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-icons_3d80b3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_469bdd_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-icons_4b8e0b_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-icons_4b8e0b_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_4ca300_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-icons_4eb305_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-icons_5fa5e3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-icons_666666_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_666666_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_6da8d5_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-icons_70b2e1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-icons_72a7cf_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-icons_72b42d_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_734d99_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_808080_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_847e71_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_88a206_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_8DC262_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_8c291d_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_8d78a5_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-icons_98d2fb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-icons_999999_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_9bcc60_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-icons_9ccdfc_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_9fda58_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-icons_a83300_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-icons_a83300_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_a8a3ae_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_aaaaaa_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_add978_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_b83400_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_b8ec79_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_bbbbbb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_bbbbbb_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_bd7b00_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_c02669_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_c47a23_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_c98000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_cb672b_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-icons_cc0000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-icons_cccccc_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-icons_cccccc_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_cccccc_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_d19405_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_d8e7f3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_d8e7f3_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_e0fdff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_e1e463_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_e3ddc9_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_e8e2b5_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_e9cd86_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_eb990f_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_ebccce_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_ed9f26_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_ededed_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_eeeeee_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_efec9f_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_f08000_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_f1fd86_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/images/ui-icons_f29a00_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_f2ec64_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_f35f07_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_f5e175_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_f7a50d_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/images/ui-icons_f9bd01_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_f9f2bd_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_fadc7a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/images/ui-icons_fbc856_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_fbdb93_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/images/ui-icons_fcd113_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-icons_fcdd4a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-icons_ff0084_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_ff7519_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/images/ui-icons_ff7519_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_ffcf29_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/images/ui-icons_ffe180_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_ffeb33_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/MANIFEST" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/MIT-LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/PersonTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/TaskTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/jquery-migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/jquery-migrate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery-ui-i18n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery-ui-i18n.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.accordion.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.accordion.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.autocomplete.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.autocomplete.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.button.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.button.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.core.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-af.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ar-DZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ar-DZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-az.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-be.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-bs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-cy-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-cy-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-en-AU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-AU.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-en-GB.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-GB.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-en-NZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-en-NZ.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-eo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fr-CA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr-CA.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fr-CH.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr-CH.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-hy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-hy.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-km.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-mk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ml.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ms.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nb.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-nl-BE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nl-BE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-nn.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pt-BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-rm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-rm.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sr-SR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sr-SR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ta.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-CN.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-HK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-HK.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/i18n/jquery.ui.datepicker-zh-TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-zh-TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.datepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.datepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.dialog.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.dialog.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.draggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.draggable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.droppable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.droppable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-blind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-blind.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-bounce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-bounce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-clip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-clip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-drop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-drop.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-explode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-explode.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-fade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-fade.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-fold.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-fold.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-highlight.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-pulsate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-pulsate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-scale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-scale.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-shake.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-shake.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-slide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-slide.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect-transfer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect-transfer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.effect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.effect.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.menu.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.menu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.mouse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.mouse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.position.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.position.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.progressbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.progressbar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.progressbar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.resizable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.resizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.resizable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.resizable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.selectable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.selectable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.selectable.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.selectable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.slider.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.slider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.sortable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.sortable.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.spinner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.spinner.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.spinner.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.tabs.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.tabs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/black-tie/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/blitzer/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/cupertino/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dark-hive/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/dot-luv/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/eggplant/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/excite-bike/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/flick/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/hot-sneaks/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/humanity/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/le-frog/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/mint-choc/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/overcast/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/pepper-grinder/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/redmond/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/smoothness/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/south-street/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/start/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/sunny/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/swanky-purse/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/trontastic/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-darkness/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/ui-lightness/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/vader/jquery.ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/jquery.ui.tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/themes/base/minified/jquery.ui.tooltip.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.tooltip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/jquery.ui.widget.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/ui/minified/jquery.ui.widget.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/lib/jquery-ui/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/TaskRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/49c9fcb.css" afterPath="$PROJECT_DIR$/web/css/49c9fcb.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/49c9fcb_part_1_style_1.css" afterPath="$PROJECT_DIR$/web/css/49c9fcb_part_1_style_1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/PersonControllerTest.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/PersonControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/PersonType.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/PersonType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/WeekController.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/WeekController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/phpunit.xml.dist" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/style.css" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" />
+    </list>
+    <ignored path="tpp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>$PROJECT_DIR$/../composer.phar</pharPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tpp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="TaskTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/TaskTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="22" selection-start="1269" selection-end="1269" vertical-scroll-proportion="-29.8" vertical-offset="241" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="5" selection-start="1675" selection-end="1675" vertical-scroll-proportion="-14.16" vertical-offset="1465" max-vertical-offset="2363">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="26" selection-start="32" selection-end="32" vertical-scroll-proportion="0.018763797" vertical-offset="0" max-vertical-offset="906">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/PersonTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="16" selection-start="389" selection-end="389" vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/WeekController.php" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/dialog.css" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/dialog.js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/PersonType.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/PersonControllerTest.php" />
+        <option value="$PROJECT_DIR$/app/config/config_test.yml" />
+        <option value="$PROJECT_DIR$/app/phpunit.xml.dist" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/PersonTest.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/TaskTest.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/assetic-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TPPBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/console" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.run">
+    <configuration default="false" name="tpp" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/app/console" scriptParameters="server:run">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="false" name="run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/app/console" scriptParameters="server:run">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.run" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.tpp" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.tpp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="" />
+      <created>1376472532133</created>
+      <updated>1376472532133</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14947966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.500277" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17855169" sideWeight="0.45454547" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17855169" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.499723" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39924315" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="55" selection-start="4114" selection-end="4114" vertical-scroll-proportion="-18.083334" vertical-offset="1166" max-vertical-offset="2336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="5696" selection-end="5696" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/WeekController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-23.8" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/PersonType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="29" selection-start="831" selection-end="831" vertical-scroll-proportion="-22.44" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/PersonControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1269" selection-end="1269" vertical-scroll-proportion="-21.36" vertical-offset="44" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="140" selection-end="140" vertical-scroll-proportion="0.07505519" vertical-offset="0" max-vertical-offset="906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.16887417" vertical-offset="153" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/phpunit.xml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="72" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/PersonTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="389" selection-end="389" vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/TaskTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="22" selection-start="1269" selection-end="1269" vertical-scroll-proportion="-29.8" vertical-offset="241" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="5" selection-start="1675" selection-end="1675" vertical-scroll-proportion="-14.16" vertical-offset="1465" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="32" selection-end="32" vertical-scroll-proportion="0.018763797" vertical-offset="0" max-vertical-offset="906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

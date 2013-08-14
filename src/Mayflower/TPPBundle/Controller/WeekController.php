@@ -30,7 +30,8 @@ class WeekController extends Controller
                 'selectedDate' => $selectedDate,
                 'year' => $year,
                 'week' => $week,
-                'persons' => $persons
+                'persons' => $persons,
+                'tasks' => $tasks
             )
         );
 

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Task
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Mayflower\TPPBundle\Entity\TaskRepository")
+ * @ORM\Entity()
  */
 class Task
 {
@@ -41,6 +41,14 @@ class Task
      * @ORM\Column(name="week", type="date")
      */
     private $week;
+
+    /**
+     * @var Person
+     *
+     * @ORM\ManyToOne(targetEntity="Person")
+     * @ORM\JoinColumn(name="person_id", referencedColumnName="id")
+     */
+    private $person;
 
 
     /**
@@ -105,9 +113,10 @@ class Task
      * @param DateTime $week
      * @return Task
      */
-    public function setWeek($week)
+    public function setWeek(\DateTime $week)
     {
         $this->week = $week;
+        $this->week->modify('monday this week');
 
         return $this;
     }
