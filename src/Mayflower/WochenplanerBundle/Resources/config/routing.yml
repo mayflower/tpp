@@ -1,3 +1,10 @@
-mayflower_wochenplaner_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MayflowerWochenplanerBundle:Default:index }
+week:
+    pattern:  /week/{year}/{week}
+    defaults:
+        _controller: MayflowerWochenplanerBundle:Week:index
+        year: null
+        week: null
+
+MayflowerWochenplanerBundle_person:
+    resource: "@MayflowerWochenplanerBundle/Resources/config/routing/person.yml"
+    prefix:   /person
