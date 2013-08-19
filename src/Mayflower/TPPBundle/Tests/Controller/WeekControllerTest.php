@@ -10,7 +10,8 @@ class WeekControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/index');
+        $crawler = $client->request('GET', '/week');
+        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /week/");
     }
 
 }

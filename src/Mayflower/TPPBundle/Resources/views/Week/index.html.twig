@@ -62,14 +62,14 @@
                 <th>{{ date | date('W/Y') }}</th>
             {% endfor %}
         </tr>
-        {% for person in persons %}
+        {% for resource in resources %}
             <tr>
-                <th>{{ person.name }}</th>
+                <th>{{ resource.name }}</th>
             {% for i in 0..6 %}
                 {% set date = selectedDate | date_modify("+" ~ i ~ " weeks") %}
                 <td class="{%- if date | date('d.m.Y') == 'today' | date('d.m.Y') %} today{% endif %}">
                     {% for task in tasks if task.week == date %}
-                        <div {#data-tag="<?= $days[$i]->getTimestamp() ?>" #}data-person-id="{{ person.id }}" class="eintrag drop">
+                        <div {#data-tag="<?= $days[$i]->getTimestamp() ?>" #}data-resource-id="{{ resource.id }}" class="eintrag drop">
                             {% include 'MayflowerTPPBundle:Week:task.html.twig' with {
 
                             } %}
@@ -107,8 +107,8 @@
         <p>
             <label for="copy_studio_id">Raum: </label>
             <select id="copy_studio_id" size="1">
-                {% for person in persons %}
-                    <option value="{{ person.id }}">'{{ person.name }}</option>
+                {% for resource in resources %}
+                    <option value="{{ resource.id }}">'{{ resource.name }}</option>
                 {% endfor %}
             </select>
         </p>

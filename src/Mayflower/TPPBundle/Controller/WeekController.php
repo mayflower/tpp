@@ -9,16 +9,18 @@ class WeekController extends Controller
     /**
      * shows week overview
      *
-     * @param $year int The year to be shown, default null shows current
-     * @param $week int The week to be shown, default null shows current
+     * @param int $year The year to be shown, default null shows current
+     * @param int $week The week to be shown, default null shows current
+     *
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function indexAction($year, $week)
     {
         $today = new \DateTime('today');
         $year = $year ? $year : $today->format('Y');
         $week = $week ? $week : $today->format('W');
-        $persons = $this->getDoctrine()
-            ->getRepository('MayflowerTPPBundle:Person')
+        $resources = $this->getDoctrine()
+            ->getRepository('MayflowerTPPBundle:Resource')
             ->findAll();
         $selectedDate = new \DateTime($year."W".sprintf('%02d', $week));
         $tasks = $this->getDoctrine()
@@ -30,7 +32,7 @@ class WeekController extends Controller
                 'selectedDate' => $selectedDate,
                 'year' => $year,
                 'week' => $week,
-                'persons' => $persons,
+                'resources' => $resources,
                 'tasks' => $tasks
             )
         );

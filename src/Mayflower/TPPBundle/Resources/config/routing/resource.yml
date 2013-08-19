@@ -1,0 +1,30 @@
+resource:
+    pattern:  /
+    defaults: { _controller: "MayflowerTPPBundle:Resource:index" }
+
+resource_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "MayflowerTPPBundle:Resource:show" }
+
+resource_new:
+    pattern:  /new
+    defaults: { _controller: "MayflowerTPPBundle:Resource:new" }
+
+resource_create:
+    pattern:  /create
+    defaults: { _controller: "MayflowerTPPBundle:Resource:create" }
+    requirements: { _method: post }
+
+resource_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "MayflowerTPPBundle:Resource:edit" }
+
+resource_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "MayflowerTPPBundle:Resource:update" }
+    requirements: { _method: post|put }
+
+resource_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "MayflowerTPPBundle:Resource:delete" }
+    requirements: { _method: post|delete }

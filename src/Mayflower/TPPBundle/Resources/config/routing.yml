@@ -5,6 +5,10 @@ week:
         year: null
         week: null
 
-MayflowerTPPBundle_person:
-    resource: "@MayflowerTPPBundle/Resources/config/routing/person.yml"
-    prefix:   /person
+MayflowerTPPBundle_resource:
+    resource: "@MayflowerTPPBundle/Resources/config/routing/resource.yml"
+    prefix:   /resource
+
+MayflowerTPPBundle_category:
+    resource: "@MayflowerTPPBundle/Resources/config/routing/category.yml"
+    prefix:   /category

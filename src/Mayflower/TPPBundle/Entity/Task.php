@@ -36,19 +36,19 @@ class Task
     private $information;
 
     /**
-     * @var DateTime
+     * @var \DateTime
      *
      * @ORM\Column(name="week", type="date")
      */
     private $week;
 
     /**
-     * @var Person
+     * @var Resource
      *
-     * @ORM\ManyToOne(targetEntity="Person")
-     * @ORM\JoinColumn(name="person_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Resource")
+     * @ORM\JoinColumn(name="resource_id", referencedColumnName="id")
      */
-    private $person;
+    private $resource;
 
 
     /**
@@ -110,7 +110,7 @@ class Task
     /**
      * Set week
      *
-     * @param DateTime $week
+     * @param \DateTime $week
      * @return Task
      */
     public function setWeek(\DateTime $week)
@@ -124,10 +124,33 @@ class Task
     /**
      * Get week
      *
-     * @return DateTime
+     * @return \DateTime
      */
     public function getWeek()
     {
         return $this->week;
+    }
+
+    /**
+     * Set resource
+     *
+     * @param Resource $resource
+     * @return Task
+     */
+    public function setResource(Resource $resource = null)
+    {
+        $this->resource = $resource;
+    
+        return $this;
+    }
+
+    /**
+     * Get resource
+     *
+     * @return Resource
+     */
+    public function getResource()
+    {
+        return $this->resource;
     }
 }

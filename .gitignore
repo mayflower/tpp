@@ -7,3 +7,9 @@
 /vendor/
 /bin/
 /composer.phar
+/src/*/*/Entity/*~
+/app/Resources/public/js/lib
+/doc
+/cache.properties
+/web/css
+/web/js

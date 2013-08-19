@@ -4,7 +4,8 @@ namespace Mayflower\TPPBundle\Tests\Entity;
 
 use Mayflower\TPPBundle\Entity\Task;
 
-class TaskTest extends \PHPUnit_Framework_TestCase {
+class TaskTest extends \PHPUnit_Framework_TestCase
+{
     /**
      * Test if ID after constructor is null
      *
