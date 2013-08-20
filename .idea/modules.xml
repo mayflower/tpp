@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/schneller-mit-angular.iml" filepath="$PROJECT_DIR$/.idea/schneller-mit-angular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tpp.iml" filepath="$PROJECT_DIR$/.idea/tpp.iml" />
     </modules>
   </component>
 </project>

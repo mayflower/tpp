@@ -1,0 +1,13 @@
+<div class="drag">
+    <div class="handle">
+        <img src="/img/copy.png" class="copy-dispo" title="Buchung kopieren/verschieben"
+             data-id="<?= $buchung->id; ?>" data-studio-id="<?= $buchung->studio_id; ?>"
+             data-nacht="<?= $buchung->nacht ?>" data-tag="<?= $tag ?>"
+                />
+        <img src="/img/Kreuzrot.ico" class="delete-dispo" title="Buchung L&ouml;schen">
+        <img src="/img/Stift.ico" class="edit-dispo" title="Buchung Editieren"
+             data-id="<?= $buchung->id?>" data-titel="<?= $buchung->projekt ?>"
+        >
+        <img src="/img/info.ico" alt="info">
+    </div>
+</div>

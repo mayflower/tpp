@@ -1,0 +1,30 @@
+week:
+    pattern:  '/week/{week}/{year}'
+    defaults:
+        _controller: MayflowerTPPBundle:Week:index
+        year: null
+        week: null
+
+resource:
+    pattern:  '/resource'
+    defaults: { _controller: "MayflowerTPPBundle:Resource:index" }
+    requirements: { _method: get }
+
+resource_create:
+    pattern:  '/resource'
+    defaults: { _controller: "MayflowerTPPBundle:Resource:create" }
+    requirements: { _method: post }
+
+resource_update:
+    pattern:  '/resource/{id}'
+    defaults: { _controller: "MayflowerTPPBundle:Resource:update" }
+    requirements: { _method: post|put }
+
+resource_delete:
+    pattern:  '/resource/{id}'
+    defaults: { _controller: "MayflowerTPPBundle:Resource:delete" }
+    requirements: { _method: delete }
+
+MayflowerTPPBundle_category:
+    resource: "@MayflowerTPPBundle/Resources/config/routing/category.yml"
+    prefix:   /category

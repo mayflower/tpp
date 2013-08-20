@@ -1,0 +1,25 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+body {
+    background: #fff;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.btn, td, th {
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -ms-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
