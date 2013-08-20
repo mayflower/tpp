@@ -2,6 +2,7 @@
 
 namespace Mayflower\TPPBundle\Controller;
 
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -23,50 +24,34 @@ class ResourceController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('MayflowerTPPBundle:Resource')->findAll();
+        $resources = $em->getRepository('MayflowerTPPBundle:Resource')->findAll();
 
-        return $this->render('MayflowerTPPBundle:Resource:index.html.twig', array(
-            'entities' => $entities,
-        ));
+        $resource_arr = [];
+        foreach ($resources as $resource) {
+            $resource_arr[] = $resource->toArray();
+        }
+
+        return new JsonResponse($resource_arr);
     }
+
     /**
      * Creates a new Resource entity.
      *
      */
     public function createAction(Request $request)
     {
-        $entity  = new Resource();
-        $form = $this->createForm(new ResourceType(), $entity);
-        $form->submit($request);
+        $resource = new Resource();
 
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
-            $em->flush();
+        $data = json_decode($request->getContent(), true);
+        $resource->setName($data['name']);
 
-            return $this->redirect($this->generateUrl('resource_show', array('id' => $entity->getId())));
-        }
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($resource);
+        $em->flush();
 
-        return $this->render('MayflowerTPPBundle:Resource:new.html.twig', array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        ));
+        return new JsonResponse($resource->toArray());
     }
 
-    /**
-     * Displays a form to create a new Resource entity.
-     *
-     */
-    public function newAction()
-    {
-        $entity = new Resource();
-        $form   = $this->createForm(new ResourceType(), $entity);
-
-        return $this->render('MayflowerTPPBundle:Resource:new.html.twig', array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        ));
-    }
 
     /**
      * Finds and displays a Resource entity.

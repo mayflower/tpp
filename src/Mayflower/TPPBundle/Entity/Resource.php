@@ -77,7 +77,7 @@ class Resource
     public function setCategory(Category $category = null)
     {
         $this->category = $category;
-    
+
         return $this;
     }
 
@@ -89,5 +89,17 @@ class Resource
     public function getCategory()
     {
         return $this->category;
+    }
+
+    /**
+     * Return array for sending as JSON
+     *
+     * @return array This object suitable for passing to JsonResponse
+     */
+    public function toArray() {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getName()
+        ];
     }
 }

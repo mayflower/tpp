@@ -1,0 +1,3 @@
+mayflower_tpp_frontend_homepage:
+    pattern:  /
+    defaults: { _controller: MayflowerTPPFrontendBundle:Default:index }

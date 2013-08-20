@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.jshintrc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/cache/dev/profiler/index.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Resource.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing/resource.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Controller/DefaultController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/resource.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/main.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/bundles/mayflowertppfrontend/app/views/list.html" charset="UTF-8" />
+  </component>
 </project>
 

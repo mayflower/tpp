@@ -125,9 +125,9 @@
     </div> #}
 
 
+    {#
     <script src="/js/lib/jquery/jquery.js"> </script>
     <script src="/js/lib/jquery-ui/ui/jquery-ui.js"> </script>
-    {#
     <script src="/js/lib/ffs.kalender.js"> </script>
     <script src="/js/fnr_autocomplete.js"> </script>
     <script src="/js/studioplan_wochenplan.js"> </script>
@@ -136,5 +136,9 @@
     {% javascripts '@MayflowerTPPBundle/Resources/public/js/*' %}
         <script src="{{ asset_url }}"> </script>
     {% endjavascripts %}
-
+    <!-- livereload script -->
+    <script>document.write('<script src="http://'
+                + (location.host || 'localhost').split(':')[0]
+                + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+    </script>
 {% endblock %}
