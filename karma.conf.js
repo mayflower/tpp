@@ -9,18 +9,30 @@ files = [
   JASMINE_ADAPTER,
   'app/bower_components/angular/angular.js',
   'app/bower_components/angular-mocks/angular-mocks.js',
+  'app/bower_components/angular-resource/angular-resource.js',
+  'app/bower_components/momentjs/moment.js',
+  'app/bower_components/momentjs/min/lang/de.js',
   'app/scripts/*.js',
   'app/scripts/**/*.js',
   'test/mock/**/*.js',
   'test/spec/**/*.js'
 ];
 
+preprocessors = {
+    'app/scripts/**/*.js': 'coverage'
+};
+
 // list of files to exclude
 exclude = [];
 
 // test results reporter to use
 // possible values: dots || progress || growl
-reporters = ['progress'];
+reporters = ['progress', 'coverage'];
+
+coverageReporter = {
+    type : 'html',
+    dir : 'coverage/'
+}
 
 // web server port
 port = 8080;
@@ -33,10 +45,10 @@ colors = true;
 
 // level of logging
 // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-logLevel = LOG_INFO;
+logLevel = LOG_DEBUG;
 
 // enable / disable watching file and executing tests whenever any file changes
-autoWatch = false;
+autoWatch = true;
 
 // Start these browsers, currently available:
 // - Chrome
@@ -46,7 +58,7 @@ autoWatch = false;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Chrome'];
+browsers = ['Firefox'];
 
 // If browser does not capture in given timeout [ms], kill it
 captureTimeout = 5000;

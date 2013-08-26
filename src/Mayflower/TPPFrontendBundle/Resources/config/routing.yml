@@ -1,3 +1,7 @@
 mayflower_tpp_frontend_homepage:
     pattern:  /
     defaults: { _controller: MayflowerTPPFrontendBundle:Default:index }
+
+mayflower_tpp_frontend_e2e_homepage:
+    pattern:  /test
+    defaults: { _controller: MayflowerTPPFrontendBundle:Test:index }

@@ -14,6 +14,21 @@ angular.module(
         resource.$save();
 
         $scope.resourceList.push(resource);
+
+        // reset text input
+        addedResource.name = '';
+    };
+
+    $scope.addTask = function (addedTask) {
+        var task = new Task({
+            title: addedTask.title
+        });
+        resource.$save();
+
+        $scope.resourceList.push(resource);
+
+        // reset text input
+        addedResource.name = '';
     };
 
     // default setting on what the list should be sorted
@@ -36,4 +51,5 @@ angular.module(
             $scope.sortCriteria = sortCriteria;
         }
     };
+
 }]);

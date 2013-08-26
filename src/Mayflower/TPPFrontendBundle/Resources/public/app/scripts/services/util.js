@@ -1,6 +1,5 @@
 'use strict';
 
-// TODO write unit tests!!
 angular.module(
     'tpp.utils', []
 ).factory('weekList', function () {
