@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Task
  *
  * @ORM\Table()
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="Mayflower\TPPBundle\Entity\TaskRepository")
  */
 class Task
 {
@@ -31,7 +31,7 @@ class Task
     /**
      * @var string
      *
-     * @ORM\Column(name="information", type="text")
+     * @ORM\Column(name="information", type="text", nullable=true)
      */
     private $information;
 
@@ -134,7 +134,7 @@ class Task
     /**
      * Set resource
      *
-     * @param Resource $resource
+     * @param Mayflower\TPPBundle\Entity\Resource $resource
      * @return Task
      */
     public function setResource(Resource $resource = null)
@@ -152,5 +152,19 @@ class Task
     public function getResource()
     {
         return $this->resource;
+    }
+
+    /**
+     * Return array for sending as JSON
+     *
+     * @return array This object suitable for passing to JsonResponse
+     */
+    public function toArray() {
+        return [
+            'id' => $this->getId(),
+            'title' => $this->getTitle(),
+            'resourceId' => $this->getResource()->getId(),
+            'week' => $this->getWeek()
+        ];
     }
 }

@@ -1,11 +1,29 @@
 'use strict';
 
 angular.module(
-    'tpp.controllers', ['tpp.services', 'tpp.utils']
-).controller('tppCtrl', ['$scope', 'Resource', 'weekList', function ($scope, Resource, weekList) {
+    'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
+).controller('tppCtrl', ['$scope', 'Resource', 'Task', 'weekList', function ($scope, Resource, Task, weekList) {
 
     // define the list of members
     $scope.resourceList = Resource.query();
+    $scope.taskList = Task.query({
+        week: 35,
+        numWeeks: 7
+    });
+
+    $scope.getTasks = function (resourceId, week) {
+        var tasks = [];
+        for (var i = 0; i < $scope.taskList.length; i++) {
+            var taskWeek = moment($scope.taskList[i].week.date);
+            var timeDiff = taskWeek.diff(week.date);
+
+            // timeDiff < week
+            if ($scope.taskList[i].resourceId === resourceId && timeDiff >= 0 && timeDiff < 1000 * 60 * 60 * 24 * 7) {
+                tasks.push($scope.taskList[i]);
+            }
+        }
+        return tasks;
+    };
 
     $scope.addResource = function (addedResource) {
         var resource = new Resource({
@@ -14,6 +32,30 @@ angular.module(
         resource.$save();
 
         $scope.resourceList.push(resource);
+
+        // reset text input
+        addedResource.name = '';
+    };
+
+    $scope.addTask = function (addedTask) {
+        var task = new Task({
+            title: addedTask.title,
+            resourceId: $scope.newTaskOpts.resourceId,
+            week: $scope.newTaskOpts.week
+        });
+        task.$save();
+
+        $scope.taskList.push(task);
+
+        // reset text input
+        addedTask.title = '';
+    };
+
+    $scope.setNewTaskOpts = function (resourceId, week) {
+        $scope.newTaskOpts = {
+            resourceId: resourceId,
+            week: week.date
+        };
     };
 
     // default setting on what the list should be sorted
@@ -36,4 +78,9 @@ angular.module(
             $scope.sortCriteria = sortCriteria;
         }
     };
+
+    $scope.isCurrent = function (week) {
+        return moment().startOf('week').isSame(week.date);
+    };
+
 }]);

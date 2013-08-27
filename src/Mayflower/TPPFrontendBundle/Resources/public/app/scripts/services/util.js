@@ -1,6 +1,5 @@
 'use strict';
 
-// TODO write unit tests!!
 angular.module(
     'tpp.utils', []
 ).factory('weekList', function () {
@@ -12,7 +11,7 @@ angular.module(
     for (var i = 0; i < 7; i++) {
         weekList.push({
             number: week.week(),
-            date: week
+            date: moment(week)
         });
 
         week.add('w', 1);
