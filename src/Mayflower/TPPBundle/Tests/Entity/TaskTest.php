@@ -2,6 +2,7 @@
 
 namespace Mayflower\TPPBundle\Tests\Entity;
 
+use Mayflower\TPPBundle\Entity\Resource;
 use Mayflower\TPPBundle\Entity\Task;
 
 class TaskTest extends \PHPUnit_Framework_TestCase
@@ -62,6 +63,22 @@ class TaskTest extends \PHPUnit_Framework_TestCase
 
         $week = new \DateTime('monday this week');
         $this->assertEquals($week, $task->getWeek());
+    }
+
+    /**
+     * Test Resource getting/setting
+     *
+     * @return null
+     */
+    public function testSetGetResource()
+    {
+        $task = new Task();
+
+        $this->assertEquals(null, $task->getResource());
+
+        $resource = new Resource();
+        $task->setResource($resource);
+        $this->assertEquals($resource, $task->getResource());
     }
 }
  

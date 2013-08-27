@@ -2,26 +2,29 @@
 
 <p class="lead">Project schedule.</p>
 
-<form class="form-horizontal" role="form">
+<!--<form class="form-horizontal" role="form">
     <div class="form-group">
         <label for="name-filter" class="control-label sr-only">Filter</label>
         <div class="col-lg-2">
             <input type="name" class="form-control" id="name-filter" placeholder="Name Filter" ng-model="search.name">
         </div>
     </div>
-</form>
+</form>-->
 <table class="table table-hover">
     <tr>
         <th ng-click="sortListBy('name')" class="sortable">Name</th>
-        <th class="weekNumber" ng-repeat="week in weekList">
+        <th class="weekNumber" ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
             {{week.number}}
         </th>
     </tr>
 
     <tr class="list" ng-repeat="resource in resourceList | orderBy:sortCriteria | filter:search">
         <td>{{resource.name}}</td>
-        <td ng-repeat="week in weekList">
-            <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">+</button>
+        <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
+            <div ng-repeat="task in getTasks(resource.id, week) | orderBy:'title'">{{ task.title }}</div>
+            <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#addTaskModal" ng-click="setNewTaskOpts(resource.id, week)">
+                +
+            </button>
         </td>
     </tr>
 </table>
@@ -34,7 +37,7 @@
     <button id="add-resource" type="submit" class="btn btn-default">Add Person</button>
 </form>
 
-<div class="modal fade" id="myModal" tabindex="-1">
+<div class="modal fade" id="addTaskModal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -52,8 +55,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" ng-click="addTask(task)">Save changes</button>
+                <button type="button" class="btn btn-default" ng-click="task.title=''" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="addTask(task)" data-dismiss="modal">Save changes</button>
             </div>
         </div>
     </div>

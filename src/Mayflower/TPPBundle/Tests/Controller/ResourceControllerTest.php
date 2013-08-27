@@ -12,9 +12,9 @@ class ResourceControllerTest extends WebTestCase
         $client = static::createClient();
 
         // Get empty entry list from database
-        $client->request('GET', '/resource');
+        $client->request('GET', '/api/resource');
         $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode(), "Unexpected HTTP status code for GET /resource/");
+        $this->assertEquals(200, $response->getStatusCode(), "Unexpected HTTP status code for GET /api/resource/");
 //        $this->assertEquals(json_decode($response->getContent()), [], "Unexpected JSON Response");
 
 //        // Add entry to database

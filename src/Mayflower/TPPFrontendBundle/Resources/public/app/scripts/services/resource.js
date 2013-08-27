@@ -1,7 +1,12 @@
 'use strict';
 
 angular.module(
-    'tpp.services', ['ngResource']
+    'tpp.resource', ['ngResource']
 ).factory('Resource', function ($resource) {
-    return $resource('/resource/:resourceId', {resourceId:'@id'});
+    return $resource(
+        '/api/resource/:resourceId',
+        {
+            resourceId:'@id'
+        }
+    );
 });

@@ -52,7 +52,6 @@ class ResourceController extends Controller
         return new JsonResponse($resource->toArray());
     }
 
-
     /**
      * Finds and displays a Resource entity.
      *

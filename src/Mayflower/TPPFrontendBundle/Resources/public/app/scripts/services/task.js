@@ -1,7 +1,12 @@
 'use strict';
 
 angular.module(
-    'tpp.services', ['ngResource']
-).factory('Resource', function ($resource) {
-    return $resource('/resource/:resourceId/task/:taskId', {taskId:'@id'});
+    'tpp.task', ['ngResource']
+).factory('Task', function ($resource) {
+    return $resource(
+        '/api/task/:taskId',
+        {
+            taskId: '@id'
+        }
+    );
 });

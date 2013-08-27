@@ -1,19 +1,29 @@
 'use strict';
 
 describe('the tppController', function () {
-    var scope, controller, resources;
+    var scope, controller, resources, tasks;
     beforeEach(module('tpp.controllers'));
 
 
     beforeEach(inject(function ($rootScope, $controller, $httpBackend) {
-        resources = [{"id":1,"name":"Robin"},{"id":2,"name":"Marco"}];
-        $httpBackend.whenGET('/resource').respond(resources);
-        $httpBackend.whenPOST('/resource').respond(function(method, url, data) {
+        resources = [];
+        $httpBackend.whenGET('/api/resource').respond(resources);
+        $httpBackend.whenPOST('/api/resource').respond(function(method, url, data) {
             resources.push(angular.fromJson(data));
+        });
+
+        tasks = [];
+        $httpBackend.whenGET(/\/api\/task.+/).respond(tasks);
+        $httpBackend.whenPOST('/api/task').respond(function(method, url, data) {
+            tasks.push(angular.fromJson(data));
         });
 
         scope = $rootScope.$new();
         controller = $controller('tppCtrl', {$scope: scope});
+
+//        this.addMatchers({
+//
+//        })
     }));
 
     it('should have list and criteria properties', function () {
@@ -45,7 +55,7 @@ describe('the tppController', function () {
        it('should add resource to resourceList and resources', function () {
            var newResource = {name: "Johannes"};
            scope.addResource(newResource);
-           expect(scope.resourceList).toContain({name: "Johannes"});
+           expect(scope.resourceList[0].name).toBe("Johannes");
            expect(resources).toContain({name: "Johannes"});
            expect(newResource.name).toBe('');
        });

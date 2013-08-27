@@ -23,3 +23,12 @@ h1 {
     -o-transition: background-color 0.1s linear;
     transition: background-color 0.1s linear;
 }
+
+.current {
+    background-color: #ffffdd;
+}
+
+.table-hover > tbody > tr:hover > td.current,
+.table-hover > tbody > tr:hover > th.current {
+    background-color: #ffffcc;
+}

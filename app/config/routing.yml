@@ -2,7 +2,7 @@ mayflower_tpp_frontend:
     resource: "@MayflowerTPPFrontendBundle/Resources/config/routing.yml"
     prefix:   /
 
-mayflower_wochenplaner:
+mayflower_tpp:
     resource: "@MayflowerTPPBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /api
 
