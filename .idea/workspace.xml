@@ -6,131 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/images/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/images/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/.buildignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AppCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/CategoryController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/CategoryControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/CategoryType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/DependencyInjection/Configuration.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/DependencyInjection/Configuration.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Controller/DefaultController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/MayflowerTPPBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/DependencyInjection/MayflowerTPPExtension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/MayflowerTPPFrontendBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/DependencyInjection/MayflowerTPPFrontendExtension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Node_js_Dependencies_for_tpp.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/PHP.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Resource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/ResourceTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Form/ResourceType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/TaskTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/WeekController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/WeekControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing/category.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/check.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/console" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/views/Default/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/doc/index.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/doc/index.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma-e2e.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/spec/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/translations/messages.fr.xlf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/translations/messages.fr.xlf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/runner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/services.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/config/services.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/tpp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controllers/tppController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/services/dataProviderService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/services/utilService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/e2e/tppAppTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/tppControllerTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter-bootstrap/angular-strap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter-bootstrap/bootstrap-combined.no-icons.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/CategoryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" afterPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tpp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,15 +39,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Resource.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Resource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="5" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,10 +48,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.3488372" vertical-offset="0" max-vertical-offset="903">
+            <state line="21" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/CategoryTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultControllerTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="420" selection-end="420" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryControllerTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/CategoryControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceControllerTest.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.19320843" vertical-offset="0" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -222,15 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="2640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -250,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/resource.js" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing/resource.yml" />
@@ -266,6 +161,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/CategoryTest.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" />
       </list>
     </option>
   </component>
@@ -390,6 +288,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schneller-mit-angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mayflower" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -420,8 +336,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services" />
       <recent name="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity" />
+      <recent name="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.Unnamed">
@@ -528,7 +444,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-4" width="1867" height="1085" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14947966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -536,8 +452,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25619835" sideWeight="0.7016043" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.6709539" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26831955" sideWeight="0.6709539" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2231405" sideWeight="0.6709539" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26831955" sideWeight="0.6709539" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17855169" sideWeight="0.45454547" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28983957" sideWeight="0.5002681" order="7" side_tool="true" content_ui="tabs" />
@@ -569,32 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="2640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/config/routing/category.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878" />
@@ -609,12 +499,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1080" />
+        <state line="33" column="20" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1080">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
+        <state line="3" column="16" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Resource.php">
@@ -668,7 +562,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.3488372" vertical-offset="0" max-vertical-offset="903">
+        <state line="21" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Entity/CategoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="420" selection-end="420" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/CategoryControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.19320843" vertical-offset="0" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
