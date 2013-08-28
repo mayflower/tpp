@@ -12,6 +12,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Task
 {
+    const YELLOW = 'yellow';
+    const BLUE = 'blue';
+    const GREEN = 'green';
+    const RED = 'red';
+    const PURPLE = 'purple';
+
+
     /**
      * @var integer
      *
@@ -27,6 +34,13 @@ class Task
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="color", type="string", length=20)
+     */
+    private $color = self::YELLOW;
 
     /**
      * @var string
@@ -82,6 +96,29 @@ class Task
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Set color
+     *
+     * @param string $title
+     * @return Task
+     */
+    public function setColor($color)
+    {
+        $this->color = $color;
+
+        return $this;
+    }
+
+    /**
+     * Get color
+     *
+     * @return string
+     */
+    public function getColor()
+    {
+        return $this->color;
     }
 
     /**
@@ -164,7 +201,8 @@ class Task
             'id' => $this->getId(),
             'title' => $this->getTitle(),
             'resourceId' => $this->getResource()->getId(),
-            'week' => $this->getWeek()
+            'week' => $this->getWeek(),
+            'color' => $this->getColor()
         ];
     }
 }

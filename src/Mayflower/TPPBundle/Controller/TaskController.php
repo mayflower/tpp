@@ -48,6 +48,8 @@ class TaskController extends Controller
 
         $data = json_decode($request->getContent(), true);
         $task->setTitle($data['title']);
+        $task->setColor($data['color']);
+
         $week = new \DateTime($data['week']);
         $task->setWeek($week);
 

@@ -6,7 +6,7 @@
     <div class="form-group">
         <label for="name-filter" class="control-label sr-only">Filter</label>
         <div class="col-lg-2">
-            <input type="name" class="form-control" id="name-filter" placeholder="Name Filter" ng-model="search.name">
+            <input type="name" class="form-control" id="name-filter" placeholder="Name Filter" ng-model="task.color" name="task-color"="search.name">
         </div>
     </div>
 </form>-->
@@ -23,7 +23,7 @@
         <td><button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeResource(resource)"></button></td>
         <td>{{resource.name}}</td>
         <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
-            <div ng-repeat="task in getTasks(resource.id, week) | orderBy:'title'">{{ task.title }}</div>
+            <div ng-repeat="task in getTasks(resource.id, week) | orderBy:'title'" class="task {{ task.color }}">{{ task.title }}</div>
             <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#addTaskModal" ng-click="setNewTaskOpts(resource.id, week)">
                 +
             </button>
@@ -49,9 +49,46 @@
             <div class="modal-body">
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
-                        <label for="task-title" class="col-lg-3 control-label">Task Title</label>
+                        <label for="task-title" class="col-lg-3 control-label">Task Titel</label>
                         <div class="col-lg-9">
                             <input class="form-control" id="task-title" ng-model="task.title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Farbe</label>
+                        <div class="col-lg-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" ng-model="task.color" name="task-color" value="yellow">
+                                    Gelb
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" ng-model="task.color" name="task-color" value="green">
+                                    Grün
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" ng-model="task.color" name="task-color" value="red">
+                                    Rot
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" ng-model="task.color" name="task-color" value="blue">
+                                    Blau
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" ng-model="task.color" name="task-color" value="purple">
+                                    Lila
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </form>
