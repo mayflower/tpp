@@ -46,7 +46,7 @@ class Task
      * @var Resource
      *
      * @ORM\ManyToOne(targetEntity="Resource")
-     * @ORM\JoinColumn(name="resource_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="resource_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $resource;
 
@@ -140,7 +140,7 @@ class Task
     public function setResource(Resource $resource = null)
     {
         $this->resource = $resource;
-    
+
         return $this;
     }
 

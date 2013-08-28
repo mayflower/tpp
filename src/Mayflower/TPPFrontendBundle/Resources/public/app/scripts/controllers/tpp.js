@@ -37,6 +37,15 @@ angular.module(
         addedResource.name = '';
     };
 
+    $scope.removeResource = function (resource) {
+        resource.$delete();
+
+        var resources = Resource.query(function () {
+            $scope.resourceList = resources;
+        });
+
+    };
+
     $scope.addTask = function (addedTask) {
         var task = new Task({
             title: addedTask.title,
@@ -59,7 +68,7 @@ angular.module(
     };
 
     // default setting on what the list should be sorted
-    $scope.sortCriteria = 'name';
+    $scope.sortCriteria = 'nam';
 
     // calculate weeklist from the first member
     $scope.weekList = weekList;
