@@ -7,6 +7,11 @@ angular.module(
         '/api/task/:taskId',
         {
             taskId: '@id'
+        },
+        {
+            'update': {
+                method: 'PUT'
+            }
         }
     );
 });

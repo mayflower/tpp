@@ -9,7 +9,7 @@ angular.module(
 
     $routeProvider.when('/', {
         templateUrl: '/bundles/mayflowertppfrontend/app/views/list.html',
-        controller: 'tppCtrl'
+        controller: 'tppDisplayCtrl'
     });
     $routeProvider.otherwise({redirectTo: '/'});
 }]);
