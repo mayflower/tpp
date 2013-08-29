@@ -3,7 +3,7 @@ doctrine:
     driver: %database_driver%
     host: %database_host%
     port: %database_port%
-    dbname: mayflower_ttp_tests
+    dbname: mayflower_tpp_tests
     user: %database_user%
     password: %database_password%
     charset: UTF8
