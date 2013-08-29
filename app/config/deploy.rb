@@ -1,5 +1,5 @@
 set :application, "tpp"
-set :domain,      "lcweb"
+set :domain,      "lcweb.lc.local"
 set :deploy_to,   "/www/tpp"
 set :deploy_via, :remote_cache
 set :app_path,    "app"
