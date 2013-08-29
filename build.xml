@@ -43,7 +43,6 @@
   <mkdir dir="${basedir}/build/logs"/>
   <mkdir dir="${basedir}/build/pdepend"/>
   <antcall target="symfony.prepare" />
-  <antcall target="js.prepare" />
  </target>
  <target name="symfony.prepare">
   <mkdir dir="${basedir}/app/cache" />
