@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Capfile" afterPath="$PROJECT_DIR$/Capfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/deploy.rb" afterPath="$PROJECT_DIR$/app/config/deploy.rb" />
     </list>
     <ignored path="tpp.iws" />
@@ -69,7 +68,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.53176934" vertical-offset="0" max-vertical-offset="1023">
+            <state line="30" column="2" selection-start="997" selection-end="997" vertical-scroll-proportion="0.49853373" vertical-offset="0" max-vertical-offset="1023">
               <folding />
             </state>
           </provider>
@@ -413,7 +412,7 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.smartKeys" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tpp_requests" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -764,7 +763,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.53176934" vertical-offset="0" max-vertical-offset="1023">
+        <state line="30" column="2" selection-start="997" selection-end="997" vertical-scroll-proportion="0.49853373" vertical-offset="0" max-vertical-offset="1023">
           <folding />
         </state>
       </provider>

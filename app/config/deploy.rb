@@ -28,5 +28,13 @@ set :use_composer, true
 set :update_vendors, true
 
 before 'deploy:finalize_update', 'grunt'
+before 'grunt', 'bower:install'
 
 set :grunt_tasks, ['build']
+
+namespace :bower do
+  desc "Install JS/CSS assets using bower"
+  task :install do
+    run "cd #{release_path} && bower install --production"
+  end
+end
