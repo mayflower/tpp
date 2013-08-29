@@ -6,27 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tpp.iws" />
@@ -68,7 +48,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="114" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.80250484" vertical-offset="102" max-vertical-offset="3842">
+            <state line="47" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.57321775" vertical-offset="204" max-vertical-offset="3757">
               <folding />
             </state>
           </provider>
@@ -77,7 +57,7 @@
       <file leaf-file-name="scenarios.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="43" selection-start="2086" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+            <state line="53" column="43" selection-start="2086" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -86,7 +66,7 @@
       <file leaf-file-name="appTest.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+            <state line="11" column="31" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -95,7 +75,7 @@
       <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="13" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -104,7 +84,7 @@
       <file leaf-file-name="index_e2e.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="-17.4" vertical-offset="245" max-vertical-offset="1258">
+            <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -113,7 +93,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="-22.84" vertical-offset="75" max-vertical-offset="1190">
+            <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -122,7 +102,7 @@
       <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="1836">
+            <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -296,14 +276,14 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.smartKeys" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tpp_requests" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.32893157" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -541,44 +521,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/bower_components/angular-ui-bootstrap/src/position/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="528" selection-end="528" vertical-scroll-proportion="0.04343534" vertical-offset="296" max-vertical-offset="2278">
-          <folding />
-        </state>
+        <state line="20" column="9" selection-start="528" selection-end="528" vertical-scroll-proportion="0.04343534" vertical-offset="296" max-vertical-offset="2278" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="36" selection-start="1318" selection-end="1318" vertical-scroll-proportion="-27.44" vertical-offset="96" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="50" column="36" selection-start="1318" selection-end="1318" vertical-scroll-proportion="-27.44" vertical-offset="96" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="57" selection-start="719" selection-end="719" vertical-scroll-proportion="-6.8" vertical-offset="510" max-vertical-offset="3638">
-          <folding />
-        </state>
+        <state line="40" column="57" selection-start="719" selection-end="719" vertical-scroll-proportion="-6.8" vertical-offset="510" max-vertical-offset="3638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/runner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1027">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1027" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
+        <state line="11" column="31" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/main.scss">
@@ -590,28 +558,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="15" selection-end="63" vertical-scroll-proportion="0.06470028" vertical-offset="0" max-vertical-offset="1051">
-          <folding />
-        </state>
+        <state line="4" column="1" selection-start="15" selection-end="63" vertical-scroll-proportion="0.06470028" vertical-offset="0" max-vertical-offset="1051" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="-17.4" vertical-offset="245" max-vertical-offset="1258">
+        <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="-22.84" vertical-offset="75" max-vertical-offset="1190">
+        <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="1836">
+        <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1836">
           <folding />
         </state>
       </provider>
@@ -646,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="114" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.80250484" vertical-offset="102" max-vertical-offset="3842">
+        <state line="47" column="0" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.57321775" vertical-offset="204" max-vertical-offset="3757">
           <folding />
         </state>
       </provider>

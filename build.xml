@@ -45,11 +45,6 @@
   <antcall target="symfony.prepare" />
   <antcall target="js.prepare" />
  </target>
- <target name="js.prepare">
-  <exec executable="bower">
-   <arg value="install" />
-  </exec>
- </target>
  <target name="symfony.prepare">
   <mkdir dir="${basedir}/app/cache" />
   <mkdir dir="${basedir}/web/uploads" />
