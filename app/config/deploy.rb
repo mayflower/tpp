@@ -1,6 +1,6 @@
 set :application, "tpp"
-set :domain,      "#{application}.loc-com.de"
-set :deploy_to,   "/var/www/tpp"
+set :domain,      "lcweb"
+set :deploy_to,   "/www/tpp"
 set :deploy_via, :remote_cache
 set :app_path,    "app"
 

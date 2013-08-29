@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/deploy.rb" afterPath="$PROJECT_DIR$/app/config/deploy.rb" />
     </list>
     <ignored path="tpp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +68,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.33235583" vertical-offset="0" max-vertical-offset="1023">
+            <state line="2" column="20" selection-start="70" selection-end="70" vertical-scroll-proportion="0.033235583" vertical-offset="0" max-vertical-offset="1023">
               <folding />
             </state>
           </provider>
@@ -671,7 +671,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.33235583" vertical-offset="0" max-vertical-offset="1023">
+        <state line="2" column="20" selection-start="70" selection-end="70" vertical-scroll-proportion="0.033235583" vertical-offset="0" max-vertical-offset="1023">
           <folding />
         </state>
       </provider>
