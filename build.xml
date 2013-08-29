@@ -53,7 +53,7 @@
  <target name="symfony.prepare">
   <mkdir dir="${basedir}/app/cache" />
   <mkdir dir="${basedir}/web/uploads" />
-  <copy file="${basedir}/app/config/parameters.yml.dist" tofile="${basedir}/app/config/parameters.yml" />
+  <!-- <copy file="${basedir}/app/config/parameters.yml.dist" tofile="${basedir}/app/config/parameters.yml" /> -->
   <exec executable="bash">
    <arg value="-c" />
    <arg value="curl -s http://getcomposer.org/installer | php" />

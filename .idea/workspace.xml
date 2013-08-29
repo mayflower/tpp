@@ -6,15 +6,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6d89e0-3b98-494d-be3d-6cc392bd8269" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/public/js/week.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Category/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/edit.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/new.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Resource/show.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources/views/Week/task.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/task.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/task.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" afterPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tpp.iws" />
@@ -47,16 +59,70 @@
       <file leaf-file-name="tpp.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1023" max-vertical-offset="2278">
+            <state line="73" column="35" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="114" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.80250484" vertical-offset="102" max-vertical-offset="3842">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scenarios.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="43" selection-start="2086" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appTest.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_e2e.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="-17.4" vertical-offset="245" max-vertical-offset="1258">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="-22.84" vertical-offset="75" max-vertical-offset="1190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="72" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.26413256" vertical-offset="460" max-vertical-offset="1836">
+            <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
@@ -81,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests/Controller/DefaultControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Tests/Controller/ResourceControllerTest.php" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/TaskController.php" />
@@ -90,13 +154,15 @@
         <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle/Entity/Task.php" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/task.js" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/taskList..js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html" />
         <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/taskList..js" />
+        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -222,288 +288,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TPPFrontendBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mayflower" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -513,13 +297,13 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.SCSS" />
+    <property name="options.lastSelected" value="editor.preferences.smartKeys" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tpp_requests" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.details.proportions" value="0.32893157" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -713,7 +497,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14947966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -721,7 +505,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25619835" sideWeight="0.7016043" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2231405" sideWeight="0.6709539" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27061996" sideWeight="0.7111111" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27061996" sideWeight="0.7111111" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17855169" sideWeight="0.45454547" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2888889" sideWeight="0.5002681" order="7" side_tool="true" content_ui="tabs" />
@@ -755,32 +539,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="24" selection-start="4167" selection-end="4167" vertical-scroll-proportion="-33.28" vertical-offset="1582" max-vertical-offset="2584">
-          <folding>
-            <marker date="1377673558903" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/bower_components/angular-ui-bootstrap/src/position/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="9" selection-start="528" selection-end="528" vertical-scroll-proportion="0.04343534" vertical-offset="296" max-vertical-offset="2278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="1361" selection-end="1361" vertical-scroll-proportion="-7.88" vertical-offset="211" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
@@ -827,20 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/task.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="1" selection-start="15" selection-end="63" vertical-scroll-proportion="0.06470028" vertical-offset="0" max-vertical-offset="1051">
@@ -848,16 +595,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js">
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index_e2e.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1023" max-vertical-offset="2278">
+        <state line="40" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="-17.4" vertical-offset="245" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="88" selection-start="2113" selection-end="2227" vertical-scroll-proportion="-22.84" vertical-offset="75" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/views/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="72" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.26413256" vertical-offset="460" max-vertical-offset="1836">
+        <state line="17" column="81" selection-start="795" selection-end="795" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/services/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/appTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/test/e2e/scenarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="43" selection-start="2086" selection-end="2110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources/public/app/scripts/controllers/tpp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="35" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="114" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.80250484" vertical-offset="102" max-vertical-offset="3842">
           <folding />
         </state>
       </provider>

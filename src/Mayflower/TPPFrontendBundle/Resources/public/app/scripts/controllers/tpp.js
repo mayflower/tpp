@@ -4,25 +4,43 @@ angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'weekList', function ($scope, Resource, Task, weekList) {
 
-    // define the list of members
-    $scope.resourceList = Resource.query();
+    $scope.tasks = {};
+
+    var ready = false;
     $scope.taskList = Task.query({
         week: 35,
         numWeeks: 7
+    }, function () {
+        if (!ready) {
+            ready = true;
+        } else {
+            $scope.setTasks();
+        }
     });
 
-    $scope.getTasks = function (resourceId, week) {
-        var tasks = [];
-        for (var i = 0; i < $scope.taskList.length; i++) {
-            var taskWeek = moment($scope.taskList[i].week.date);
-            var timeDiff = taskWeek.diff(week.date);
+    // define the list of members
+    $scope.resourceList = Resource.query(function () {
+        angular.forEach(weekList, function (week) {
+            var resources = {};
 
-            // timeDiff < week
-            if ($scope.taskList[i].resourceId === resourceId && timeDiff >= 0 && timeDiff < 1000 * 60 * 60 * 24 * 7) {
-                tasks.push($scope.taskList[i]);
-            }
+            angular.forEach($scope.resourceList, function (resource) {
+                resources[resource.id] = []
+            });
+            $scope.tasks[week.date.week() + '-' + week.date.year()] = angular.copy(resources);
+        });
+        if (!ready) {
+            ready = true;
+        } else {
+            $scope.setTasks();
         }
-        return tasks;
+    });
+
+
+    $scope.setTasks = function () {
+        angular.forEach($scope.taskList, function (task) {
+            var date = moment(task.week.date);
+            $scope.tasks[date.week() + '-' + date.year()][task.resourceId].push(task);
+        });
     };
 
     $scope.addResource = function (addedResource) {
@@ -51,6 +69,12 @@ angular.module(
     $scope.addTask = function (resourceId, week) {
         $scope.$broadcast('addTask', resourceId, week);
     };
+
+    $scope.$on('taskAdded', function (event, task) {
+        var date = moment(task.week);
+        console.log(date.week() + '-' + date.year(), task.resourceId);
+        $scope.tasks[date.week() + '-' + date.year()][task.resourceId].push(task);
+    });
 
     // default setting on what the list should be sorted
     $scope.sortCriteria = 'name';
@@ -88,41 +112,43 @@ angular.module(
 
     $scope.$on('addTask', function (event, resourceId, week) {
         $scope.isEdit = false;
+        $scope.task.resourceId = resourceId;
+        $scope.task.week = week.date;
         $('#task-modal').modal({
             'show': true
         });
-
     });
 
     $scope.submit = function () {
-        $scope.task.$save();
+        var newTask = angular.copy($scope.task);
+        newTask.$save();
         $scope.$emit('taskAdded', newTask);
         // reset text input
         $scope.task.title = '';
         $scope.task.color = 'yellow';
-    }
-
-    $scope.setEditTaskOpts = function (task, resourceId, week) {
-        $scope.editTaskOpts = {
-            resourceId: resourceId,
-            week: week.date
-        };
-
-        $scope.editTask = task;
     };
-    $scope.editTask = function () {
-        var task = new Task({
-            title: addedTask.title,
-            resourceId: $scope.newTaskOpts.resourceId,
-            week: $scope.newTaskOpts.week,
-            color: addedTask.color
-        });
-        task.$save();
-        $scope.taskList.push(task);
-        // reset text input
-        addedTask.title = '';
-
-        addedTask.color = 'yellow';
-    };
+//
+//    $scope.setEditTaskOpts = function (task, resourceId, week) {
+//        $scope.editTaskOpts = {
+//            resourceId: resourceId,
+//            week: week.date
+//        };
+//
+//        $scope.editTask = task;
+//    };
+//    $scope.editTask = function () {
+//        var task = new Task({
+//            title: addedTask.title,
+//            resourceId: $scope.newTaskOpts.resourceId,
+//            week: $scope.newTaskOpts.week,
+//            color: addedTask.color
+//        });
+//        task.$save();
+//        $scope.taskList.push(task);
+//        // reset text input
+//        addedTask.title = '';
+//
+//        addedTask.color = 'yellow';
+//    };
 
 }]);
