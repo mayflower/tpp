@@ -26,3 +26,7 @@ set :shared_files, ["app/config/parameters.yml"]
 set :shared_children, [app_path + "/logs", web_path + "/uploads", "vendor"]
 set :use_composer, true
 set :update_vendors, true
+
+before 'deploy:finalize_update', 'grunt'
+
+set :grunt_tasks, ['build']
