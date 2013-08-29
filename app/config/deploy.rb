@@ -29,12 +29,20 @@ set :update_vendors, true
 
 before 'deploy:finalize_update', 'grunt'
 before 'grunt', 'bower:install'
+before 'bower:install', 'npm:install'
 
 set :grunt_tasks, ['build']
 
 namespace :bower do
-  desc "Install JS/CSS assets using bower"
+  desc "Install bower components"
   task :install do
     run "cd #{release_path} && bower install --production"
+  end
+end
+
+namespace :npm do
+  desc "Install npm components"
+  task :install do
+    run "cd #{release_path} && npm install"
   end
 end
