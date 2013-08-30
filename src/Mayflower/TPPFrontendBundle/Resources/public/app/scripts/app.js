@@ -8,7 +8,7 @@ angular.module(
 //    $locationProvider.html5Mode(true);
 
     $routeProvider.when('/', {
-        templateUrl: '/bundles/mayflowertppfrontend/app/views/list.html',
+        templateUrl: '/views/list.html',
         controller: 'tppDisplayCtrl'
     });
     $routeProvider.otherwise({redirectTo: '/'});
