@@ -101,7 +101,7 @@ class Task
     /**
      * Set color
      *
-     * @param string $title
+     * @param string $color
      * @return Task
      */
     public function setColor($color)
@@ -171,7 +171,7 @@ class Task
     /**
      * Set resource
      *
-     * @param Mayflower\TPPBundle\Entity\Resource $resource
+     * @param \Mayflower\TPPBundle\Entity\Resource|Resource $resource
      * @return Task
      */
     public function setResource(Resource $resource = null)

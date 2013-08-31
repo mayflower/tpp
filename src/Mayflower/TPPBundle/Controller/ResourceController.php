@@ -133,7 +133,7 @@ class ResourceController extends Controller
      * Deletes a Resource entity.
      *
      */
-    public function deleteAction(Request $request, $id)
+    public function deleteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('MayflowerTPPBundle:Resource')->find($id);

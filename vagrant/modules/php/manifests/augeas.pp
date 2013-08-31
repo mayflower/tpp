@@ -1,76 +1,49 @@
-# = Define: php::augeas
+# == Class: php::augeas
 #
-# Manage php.ini through augeas
+# php augeas class
 #
-# Here's an example how to find the augeas path to a variable:
+# Ensure that the php augeas lense is loaded
 #
-#     # augtool --noload
-#     augtool> rm /augeas/load
-#     rm : /augeas/load 781
-#     augtool> set /augeas/load/myfile/lens @PHP
-#     augtool> set /augeas/load/myfile/incl /usr/local/etc/php5/cgi/php.ini
-#     augtool> load
-#     augtool> print
-#     ...
-#     /files/usr/local/etc/php5/cgi/php.ini/soap/soap.wsdl_cache_limit = "5"
-#     /files/usr/local/etc/php5/cgi/php.ini/ldap/ldap.max_links = "-1"
-#     ...
-#     augtool> exit
-#     #
+# This lense supports php fpm format
 #
-# The part after 'php.ini/' is what you need to use as 'entry'.
+# === Parameters
 #
-# == Parameters
+# No parameters
 #
-# [*entry*]
-#   Augeas path to entry to be modified.
+# === Variables
 #
-# [*ensure*]
-#   Standard puppet ensure variable
+# No variables
 #
-# [*target*]
-#   Which php.ini to manipulate. Default is $php::config_file
+# === Examples
 #
-# [*value*]
-#   Value to set
+#  include php::augeas
 #
-# == Examples
+# === Authors
 #
-# php::augeas {
-#   'php-memorylimit':
-#     entry  => 'PHP/memory_limit',
-#     value  => '128M';
-#   'php-error_log':
-#     entry  => 'PHP/error_log',
-#     ensure => absent;
-#   'php-sendmail_path':
-#     entry  => 'mail function/sendmail_path',
-#     value  => '/usr/sbin/sendmail -t -i -f info@example.com';
-#   'php-date_timezone':
-#     entry  => 'Date/date.timezone',
-#     value  => 'Europe/Amsterdam';
-# }
+# Christian "Jippi" Winther <jippignu@gmail.com>
 #
-define php::augeas (
-  $entry,
-  $ensure = present,
-  $target = $php::config_file,
-  $value  = '',
-  ) {
-  
-  include php
-   
-  $service = $php::service
+# === Copyright
+#
+# Copyright 2012-2013 Christian "Jippi" Winther, unless otherwise noted.
+#
+class php::augeas {
 
-  $changes = $ensure ? {
-    present => [ "set '${entry}' '${value}'" ],
-    absent  => [ "rm '${entry}'" ],
+  if !defined(File['/usr/share/augeas/lenses/contrib']) {
+    file { "/usr/share/augeas/lenses/contrib":
+      ensure  => directory,
+      recurse => true,
+      purge   => true,
+      force   => true,
+      mode    => '0644',
+      owner   => "root",
+      group   => "root"
+    }
   }
 
-  augeas { "php_ini-${name}":
-    incl    => $target,
-    lens    => 'Php.lns',
-    changes => $changes,
+  file { '/usr/share/augeas/lenses/contrib/php.aug':
+    ensure  => present,
+    source  => 'puppet:///modules/php/php.aug',
+    require => File['/usr/share/augeas/lenses/contrib']
   }
 
 }

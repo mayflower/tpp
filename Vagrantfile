@@ -1,15 +1,17 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "wheezy64"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210.box"
+  config.cache.auto_detect = true
 
   config.vm.network :private_network, ip: "192.168.56.101"
-    config.vm.network :forwarded_port, guest: 80, host: 8002
+    config.vm.network :forwarded_port, guest: 80, host: 8000
+    config.vm.network :forwarded_port, guest: 9000, host: 9001
     config.ssh.forward_agent = true
 
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
-    v.customize ["modifyvm", :id, "--name", "my-first-box"]
+    v.customize ["modifyvm", :id, "--name", "tpp-dev-box"]
   end
 
 
@@ -19,11 +21,11 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.provision :shell, :inline => 'echo -e "mysql_root_password=tppdev
-controluser_password=awesome" > /etc/phpmyadmin.facts;'
+  controluser_password=awesome" > /etc/phpmyadmin.facts;'
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "vagrant/manifests"
     puppet.module_path = "vagrant/modules"
-    puppet.options = ['--verbose']
+    puppet.options = ['--verbose', '--debug']
   end
 end

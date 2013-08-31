@@ -5,7 +5,7 @@ class xdebug (
   package { 'xdebug':
     name    => 'php5-xdebug',
     ensure  => installed,
-    require => Package['php'],
+    require => Class['php::fpm'],
     notify  => Service[$service],
   }
 

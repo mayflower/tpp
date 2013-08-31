@@ -50,3 +50,11 @@ alias mv='mv -iv'
 alias grep='grep --color=auto -in'
 alias v='vim'
 alias ..='cd ..'
+
+export NODENV_ROOT=/usr/local/share/nodenv
+
+export PATH=$NODENV_ROOT/bin:$PATH
+
+eval "$(nodenv init -)"
+
+export PATH=node_modules/.bin:$PATH

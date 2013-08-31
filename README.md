@@ -1,6 +1,12 @@
 TPP - The Team Project Planner
 ===
 
+Install Vagrant (vagrantup.com)
+
+vagrant up
+
+
+/*
 Install php dependencies
     php composer.phar install
 
@@ -16,3 +22,4 @@ Run Server
 
 Run Livereload/Compass
     grunt server
+*/

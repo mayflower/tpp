@@ -1,139 +1,225 @@
-# Puppet module: php
+puppet-php
+==========
 
-This is a Puppet module for php based on the second generation layout ("NextGen") of Example42 Puppet Modules.
+Puppet module to manage PHP on debian (optionally with dotdeb) & ubuntu
 
-Made by ALessandro Franceschi / Lab42
+Puppet forge URL: http://forge.puppetlabs.com/nodes/php
 
-Official site: http://www.example42.com
+### Installation
 
-Official git repository: http://github.com/lermit/puppet-php
+```
+puppet module install nodes/php
+```
 
-Released under the terms of Apache 2 License.
+or simply clone the repository in your `module_path` (the folder must be named **php**)
 
-This module requires functions provided by the Example42 Puppi module (you need it even if you don't use and install Puppi)
+### Setup
 
-For detailed info about the logic and usage patterns of Example42 modules check the DOCS directory on Example42 main modules set.
+There is little to no class dependency between all classes
 
-## USAGE - Basic management
+To ensure that things happen in a predictable order please use the example below to ensure that extensions are installed before they are configured
 
-* Install php with default settings
+```
+# Install extensions; Configure extensions; Reload apache if changed
+Php::Extension <| |> -> Php::Config <| |> ~> Service["apache2"]
+```
 
-        class { 'php': }
+If you rely on `dotdeb` you also want to make sure that the `php::apt` class is loaded and `apt` has been updated (`apt-get update`) before packages are installed
 
-* Install a specific version of php package
+```
+# Install sources; Update sources; Install packages
+Apt::Source <| |> ~> Exec['apt_update'] -> Package <| |>
+```
 
-        class { 'php':
-          version => '1.0.1',
-        }
+Using the Pecl package provider requires the `php5-dev` and `build-essential` package to be installed beforehand
 
-* Remove php package
+### Example configuration of the module.
 
-        class { 'php':
-          absent => true
-        }
+It will install CLI, mod_php for apache, dev packages, pear and APC
 
-* Enable auditing without without making changes on existing php configuration files
+```
+$php_version = '5.4.11-1~dotdeb.0'
 
-        class { 'php':
-          audit_only => true
-        }
+include php
+include php::apt
 
-* Install php in an nginx environment
+class {
+  'php::cli':
+    ensure => $php_version;
+  'php::apache':
+    ensure => $php_version;
+  'php::dev':
+    ensure => $php_version;
+  'php::pear':
+    ensure => $php_version;
+  'php::extension::apc':
+    ensure => $php_version;
+}
+```
 
-        class { 'php':
-          service => 'nginx'
-        }
+### Package providers
 
-## USAGE - Module installation
+The module provides a `pear` and `pecl` provider
 
-* Install a new module
+#### Pear package example
 
-        php::module { "imagick": }
+```
+package { 'pear.phpunit.de/PHPUnit':
+	ensure 	 => installed,
+	provider => pear;
+}
+```
 
-* Install a specific version of a module:
+#### Pecl package example
 
-        php::module { "imagick":
-          version => '1.0.1';
-        }
+```
+package { 'igbinary':
+	ensure   => installed,
+	provider => pecl;
+}
+```
 
-* Remove php module
+#### deb package example
 
-        php::module { "imagick":
-            absent => true,
-        }
+```
+  package { "libgearman":
+    ensure    =>  "latest",
+    provider  =>  "dpkg",
+    source    =>  "/path/to/libgearman8_1.1.7-1_amd64.deb",
+  }
+```
 
-* By default module package name is php-$title for RedHat and php5-$title . You can override this prefix.
+### Installing packages
 
-        php::module { "apc":
-          module_prefix => "php-"
-        }
+It's quite simple to install packages not included in the package, simply use `php::extension`
 
+```
+php::extension { 'platform-independent-name':
+  ensure   => $ensure,		# Same as Package { ensure }
+  package  => $package,		# Package name as defined in the package provider
+  provider => $provider;	# Provider used to install (pecl, pear, (default)undef)
+}
 
-## USAGE - Pear Management
+# same as
 
-* Install a pear package
+package { $package:			# Package name as defined in the package provider
+	ensure   => $ensure,	# Same as Package { ensure }
+	provider => $provider;	# Provider used to install (pecl, pear, (default)undef)
+}
+```
 
-        php::pear::module { "XML_Util": }
+The advantage of using `php::extension` over `package` is the anchor of dependency mentioned in **Setup**
 
-* Install a pear package from a remote repository
+Packages from a custom `pear` channel is also supported nicely
 
-        php::pear::module { 'PHPUnit':
-          repository  => 'pear.phpunit.de',
-          use_package => 'no',
-        }
+```
+package { 'pear.phpunit.de/PHPUnit':
+	ensure   => '3.7.12', # Same as Package { ensure }
+	provider => pear,
+	require  => Exec['php::pear::auto_discover'];
+}
+```
 
-* Set a config option
+If you want to auto-discover channels, make sure to `require` `Exec['php::pear::auto_discover']`
 
-        php::pear::config { http_proxy: value => "myproxy:8080" }
+### Configure packages
 
+Modifying php configuration is also baked right now
 
-## USAGE - Pecl Management
+Simply use `php::config` to modify your ini files
 
-* Install a pecl package
+```
+php::config { '$unique-name':
+ 	inifile  => '$full_path_to_ini_file'
+	settings => {
+		set => {
+			'.anon/apc.enabled' => 1
+		}
+	}
+}
 
-        php::pecl::module { "XML_Util": }
+# same as
 
-* Install a pecl package from source specifying the preferred state (note that you must have the package 'make' installed on your system)
+augeas { "php-${uniqie-name}-config":
+	context => "/files${full_path_to_ini_file}",
+	changes => {
+		"set '.anon/apc.enabled' '1'"
+	}
+}
 
-        php::pecl::module { "xhprof":
-          use_package     => 'false',
-          preferred_state => 'beta',
-        }
+# or to modify php.ini
+# note that keys outside of the sections in php.ini file
+# should be referenced by PHP and not .anon
 
-* Set a config option
+php::config { '$unique-name':
+  inifile  => '$full_path_to_php.ini_file',
+  settings => {
+    set => {
+    'Date/date.timezone' => "UTC",
+    'PHP/short_open_tag' => "Off",
+    }
+  }
+}
 
-        php::pecl::config { http_proxy: value => "myproxy:8080" }
+# same as
 
+augeas { "php-${uniqie-name}-config":
+	context => "/files${full_path_to_php.ini_file}",
+	changes => {
+		"set 'Date/date.timezone' 'UTC'",
+		"set 'PHP/short_open_tag' 'Off'"
+	}
+}
 
-## USAGE - Overrides and Customizations
-* Use custom sources for main config file
+```
 
-        class { 'php':
-          source => [ "puppet:///modules/lab42/php/php.conf-${hostname}" , "puppet:///modules/lab42/php/php.conf" ],
-        }
+`settings` is a key / value `augeas` hash
 
+Currently `settings` only support the type `set` in augeas
 
-* Use custom source directory for the whole configuration dir
+To remove a config key you might use
+```
+augeas { "remove-disable_functions":
+  context => "/files/etc/php5/fpm/php.ini/PHP",
+  changes => [
+    "rm disable_functions"
+  ];
+}
+```
 
-        class { 'php':
-          source_dir       => 'puppet:///modules/lab42/php/conf/',
-          source_dir_purge => false, # Set to true to purge any existing file not present in $source_dir
-        }
+The advantage of using `php::config` over `augeas` is the anchor of dependency mentioned in **Setup**
 
-* Use custom template for main config file. Note that template and source arguments are alternative.
+### PHP SAPIs
 
-        class { 'php':
-          template => 'example42/php/php.conf.erb',
-        }
+By default the module comes with support for mod_php (`php::apache`), cli `php::cli` and fpm `php::fpm`
 
-* Automatically include a custom subclass
+### PHP modules
 
-        class { 'php':
-          my_class => 'php::example42',
-        }
+The following modules are implemented by default:
 
+* apc (php::extension::apc)
+* curl (php::extension::curl)
+* gd (php::extension::gd)
+* gearman (php::extension::gearman)
+* http (php::extension::http)
+* igbinary (php::extension::igbinary)
+* imagick (php::extension::imagick)
+* mcrypt (php::extension::mcrypt)
+* mysql (php::extension::mysql)
+* redis (php::extension::redis)
+* ssh2 (php::extension::ssh2)
+* uploadprogress (php::extension::uploadprogress)
+* xdebug (php::extension::xdebug)
 
+each of them are located in the `php::extension` namespace
 
+### Packages
 
+The following PHP related packages come build in too
 
-[![Build Status](https://travis-ci.org/example42/puppet-php.png?branch=master)](https://travis-ci.org/example42/puppet-php)
+* Composer (php::composer)
+* phpunit (php::phpunit)
+
+# Dev links
+
+http://docs.puppetlabs.com/puppet/2.7/reference/modules_publishing.html

@@ -11,28 +11,7 @@ Class['::apt::update'] -> Package <|
 and title != 'software-properties-common'
 |>
 
-apt::source { 'packages.dotdeb.org':
-  location          => 'http://packages.dotdeb.org',
-  release           => $lsbdistcodename,
-  repos             => 'all',
-  required_packages => 'debian-keyring debian-archive-keyring',
-  key               => '89DF5277',
-  key_server        => 'keys.gnupg.net',
-  include_src       => true
-}
-
-if $lsbdistcodename == 'wheezy' {
-  apt::source { 'packages.dotdeb.org-php55':
-    location          => 'http://packages.dotdeb.org',
-    release           => 'wheezy-php55',
-    repos             => 'all',
-    required_packages => 'debian-keyring debian-archive-keyring',
-    key               => '89DF5277',
-    key_server        => 'keys.gnupg.net',
-    include_src       => true
-  }
-}
-
+Package["libaugeas-ruby"] -> Augeas <| |>
 
 class { 'puphpet::dotfiles': }
 
@@ -40,9 +19,11 @@ package { [
     'build-essential',
     'vim',
     'curl',
-    'git-core'
+    'git-core',
+    'libaugeas-ruby',
   ]:
   ensure  => 'installed',
+  before  => Class['php::augeas']
 }
 
 class { 'nginx': }
@@ -93,53 +74,66 @@ nginx::resource::location { 'tpp.dev-php':
     'fastcgi_param  '         => $script_filename,
     'fastcgi_pass'            => 'unix:/var/run/php5-fpm.sock',
     'fastcgi_index'           => 'app_dev.php',
+    'fastcgi_busy_buffers_size' => '512k',
+    'fastcgi_buffer_size'       => '512k',
+    'fastcgi_buffers'           => '16 512k',
     'include'                 => 'fastcgi_params'
   },
   notify              => Class['nginx::service'],
 }
 
-class { 'php':
-  package             => 'php5-fpm',
-  service             => 'php5-fpm',
-  service_autorestart => false,
-  config_file         => '/etc/php5/fpm/php.ini',
-  module_prefix       => ''
+
+include php
+include php::apt
+
+class {
+  'php::cli':
+    ensure => present;
+  'php::dev':
+    ensure => present;
+  'php::pear':
+    ensure => present;
+  'php::extension::mysql':
+    ensure => present;
+  'php::extension::curl':
+    ensure => present;
+  'php::extension::mcrypt':
+    ensure => present;
+  'php::extension::intl':
+    ensure => present;
+  'php::fpm':
+    ensure   => installed,
+    settings => {
+      set => {
+        'Date/date.timezone' => 'Europe/Berlin',
+      }
+    };
 }
 
-php::module {
-  [
-    'php5-mysql',
-    'php5-cli',
-    'php5-curl',
-    'php5-intl',
-    'php5-mcrypt',
-  ]:
-  service => 'php5-fpm',
+php::fpm::conf {'www':
+  listen => '/var/run/php5-fpm.sock',
+  user => 'vagrant';
 }
-
-service { 'php5-fpm':
-  ensure     => running,
-  enable     => true,
-  hasrestart => true,
-  hasstatus  => true,
-  require    => Package['php5-fpm'],
+php::config {'xdebug_conf':
+  inifile  => '/etc/php5/fpm/conf.d/20-xdebug.ini',
+  settings => {
+    set => {
+      '.anon/xdebug.default_enable' => 1,
+      '.anon/xdebug.remote_autostart' => 0,
+      '.anon/xdebug.remote_connect_back' => 1,
+      '.anon/xdebug.remote_enable' => 1,
+      '.anon/xdebug.remote_handler' => "dbgp",
+      '.anon/xdebug.remote_port' => 9000
+    }
+  };
 }
-
-class { 'php::devel':
-  require => Class['php'],
-}
-
-class { 'php::pear':
-  require => Class['php'],
-}
-
-
 
 $xhprofPath = '/var/www/xhprof'
 
-php::pecl::module { 'xhprof':
-  use_package     => false,
-  preferred_state => 'beta',
+php::extension { 'xhprof':
+  package  => 'xhprof',
+  ensure   => '0.9.3',
+  provider => 'pecl';
 }
 
 if !defined(Package['git-core']) {
@@ -177,11 +171,10 @@ nginx::resource::vhost { 'xhprof':
   www_root    => "${xhprofPath}/xhprof_html",
   try_files   => ['$uri', '$uri/', '/index.php?$args'],
   require     => [
-    Php::Pecl::Module['xhprof'],
+    Php::Extension['xhprof'],
     File["${xhprofPath}/xhprof_html"]
   ]
 }
-
 
 class { 'xdebug':
   service => 'nginx',
@@ -190,40 +183,6 @@ class { 'xdebug':
 class { 'composer':
   require => Package['php5-fpm', 'curl'],
 }
-
-puphpet::ini { 'xdebug':
-  value   => [
-    'xdebug.default_enable = 1',
-    'xdebug.remote_autostart = 0',
-    'xdebug.remote_connect_back = 1',
-    'xdebug.remote_enable = 1',
-    'xdebug.remote_handler = "dbgp"',
-    'xdebug.remote_port = 9000'
-  ],
-  ini     => '/etc/php5/fpm/conf.d/zzz_xdebug.ini',
-  notify  => Service['php5-fpm'],
-  require => Class['php'],
-}
-
-puphpet::ini { 'php':
-  value   => [
-    'date.timezone = "Europe/Berlin"'
-  ],
-  ini     => '/etc/php5/fpm/conf.d/zzz_php.ini',
-  notify  => Service['php5-fpm'],
-  require => Class['php'],
-}
-
-puphpet::ini { 'custom':
-  value   => [
-    'display_errors = On',
-    'error_reporting = -1'
-  ],
-  ini     => '/etc/php5/fpm/conf.d/zzz_custom.ini',
-  notify  => Service['php5-fpm'],
-  require => Class['php'],
-}
-
 
 class { 'mysql::server':
   config_hash   => { 'root_password' => 'tppdev' }
@@ -241,7 +200,7 @@ mysql::db { 'mayflower_tpp':
 }
 
 class { 'phpmyadmin':
-  require => [Class['mysql::server'], Class['mysql::config'], Class['php']],
+  require => [Class['mysql::server'], Class['mysql::config'], Class['php::fpm']],
 }
 
 nginx::resource::vhost { 'phpmyadmin':
@@ -262,14 +221,71 @@ nginx::resource::location { "phpmyadmin-php":
   try_files           => ['$uri', '$uri/', '/index.php?$args'],
   www_root            => '/usr/share/phpmyadmin',
   location_cfg_append => {
-    'fastcgi_split_path_info' => '^(.+\.php)(/.+)$',
-    'fastcgi_param'           => 'PATH_INFO $fastcgi_path_info',
-    'fastcgi_param '          => 'PATH_TRANSLATED $document_root$fastcgi_path_info',
-    'fastcgi_param  '         => 'SCRIPT_FILENAME $document_root$fastcgi_script_name',
-    'fastcgi_pass'            => 'unix:/var/run/php5-fpm.sock',
-    'fastcgi_index'           => 'index.php',
+    'fastcgi_split_path_info'   => '^(.+\.php)(/.+)$',
+    'fastcgi_param'             => 'PATH_INFO $fastcgi_path_info',
+    'fastcgi_param '            => 'PATH_TRANSLATED $document_root$fastcgi_path_info',
+    'fastcgi_param  '           => 'SCRIPT_FILENAME $document_root$fastcgi_script_name',
+    'fastcgi_pass'              => 'unix:/var/run/php5-fpm.sock',
+    'fastcgi_index'             => 'index.php',
     'include'                 => 'fastcgi_params'
   },
   notify              => Class['nginx::service'],
   require             => Nginx::Resource::Vhost['phpmyadmin'],
+}
+
+include nodejs::v0_10
+nodejs::module { "bower":
+  node_version => 'v0.10'
+}
+exec { 'node_version':
+  command => '/usr/local/share/nodenv/bin/nodenv global v0.10',
+  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
+  cwd     => '/www/tpp',
+  require => Class['nodejs::v0_10']
+}
+exec { 'install_node_modules':
+  command => '/usr/local/share/nodenv/bin/nodenv exec npm install',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
+  require => Exec['node_version']
+}
+exec { 'install_bower_modules':
+  command => '/usr/local/share/nodenv/bin/nodenv exec bower install',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
+  require => Nodejs::Module['bower']
+}
+composer::run { 'composer_install':
+  path    => '/www/tpp',
+  require => [
+    Class['composer'],
+    Class['php::extension::intl']
+  ]
+}
+exec { 'db_schema_create':
+  command => '/www/tpp/app/console doctrine:schema:create',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  require => [
+    Composer::Run['composer_install'],
+    Mysql::Db['mayflower_tpp']
+  ]
+}
+exec { 'assets_install':
+  command => '/www/tpp/app/console assets:install --relative --symlink',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  require => [
+    Exec['db_schema_create']
+  ]
+}
+exec { 'cache_clear':
+  command => '/www/tpp/app/console cache:clear',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  require => [
+    Exec['assets_install']
+  ]
 }

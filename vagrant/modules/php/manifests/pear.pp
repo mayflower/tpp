@@ -1,34 +1,52 @@
-# Class: php::pear
+# == Class: php::pear
 #
-# Installs Pear for PHP module
+# Install PEAR package manager
 #
-# Usage:
-# include php::pear
+# === Parameters
 #
-# == Parameters
-#
-# Standard class parameters
-# Define the general class behaviour and customizations
+# [*ensure*]
+#   The PHP ensure of PHP pear to install
 #
 # [*package*]
-#   Name of the package to install. Defaults to 'php-pear'
+#   The package name for PHP pear
+#   For debian it's php5-pear
 #
-# [*install_package*]
-#   Boolean. Determines if any package should be installed to support the PEAR functionality.
-#   Can be false if PEAR was already provided by another package or module.
-#   Default: true
+# [*provider*]
+#   The provider used to install php5-pear
+#   Could be "pecl", "apt" or any other OS package provider
 #
-class php::pear (
-  $package         = $php::package_pear,
-  $install_package = true,
-  $path            = '/usr/bin:/usr/sbin:/bin:/sbin'
-  ) inherits php {
+# === Variables
+#
+# No variables
+#
+# === Examples
+#
+#  include php::pear
+#
+# === Authors
+#
+# Christian "Jippi" Winther <jippignu@gmail.com>
+#
+# === Copyright
+#
+# Copyright 2012-2013 Christian "Jippi" Winther, unless otherwise noted.
+#
+class php::pear(
+  $ensure   = $php::pear::params::ensure,
+  $package  = $php::pear::params::package,
+  $provider = $php::pear::params::provider
+) inherits php::pear::params {
 
-  if ( $install_package ) {
-    package { 'php-pear':
-      name   => $package,
-      ensure => present,
-    }
+	package { $package:
+    ensure	 => $ensure,
+    provider => $provider;
+  }
+
+  exec { 'php::pear::auto_discover':
+    command => 'pear config-set auto_discover 1 system',
+    unless  => 'pear config-get auto_discover system | grep -q 1',
+    path    => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/' ],
+    require => Package[$package];
   }
 
 }

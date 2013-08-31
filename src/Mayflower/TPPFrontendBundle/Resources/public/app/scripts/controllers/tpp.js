@@ -47,14 +47,22 @@ angular.module(
         var resource = new Resource({
             name: addedResource.name
         });
-        resource.$save();
+        resource.$save(function () {
+            var resources = {};
+            angular.forEach($scope.resourceList, function (resource) {
+                resources[resource.id] = []
+            });
+
+            angular.forEach($scope.tasks, function (value, key) {
+                $scope.tasks[key].push(angular.copy(resources));
+            });
+        });
 
         $scope.resourceList.push(resource);
 
         // reset text input
         addedResource.name = '';
     };
-
 
     $scope.removeResource = function (resource) {
         if (confirm("Wirklich löschen?")) {
