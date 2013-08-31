@@ -237,6 +237,9 @@ include nodejs::v0_10
 nodejs::module { "bower":
   node_version => 'v0.10'
 }
+nodejs::module { "grunt-cli":
+  node_version => 'v0.10'
+}
 exec { 'node_version':
   command => '/usr/local/share/nodenv/bin/nodenv global v0.10',
   environment => 'NODENV_ROOT=/usr/local/share/nodenv',
@@ -281,11 +284,6 @@ exec { 'assets_install':
     Exec['db_schema_create']
   ]
 }
-exec { 'cache_clear':
-  command => '/www/tpp/app/console cache:clear',
-  cwd     => '/www/tpp',
-  user    => 'vagrant',
-  require => [
-    Exec['assets_install']
-  ]
+exec { 'compass_install':
+  command => 'gem install compass'
 }

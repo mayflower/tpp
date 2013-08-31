@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/app/config/parameters.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/console" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/composer.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/files/dot/.bash_aliases" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Controller/ResourceController.php" charset="UTF-8" />
@@ -34,8 +35,6 @@
     <file url="file://$PROJECT_DIR$/vagrant/modules/php/manifests/extension/intl/params.pp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vagrant/modules/xdebug/manifests/init.pp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web/app_dev.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/bundles/mayflowertppfrontend/app/index.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/bundles/mayflowertppfrontend/app/views/list.html" charset="UTF-8" />
   </component>
 </project>
 

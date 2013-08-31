@@ -3,23 +3,22 @@ TPP - The Team Project Planner
 
 Install Vagrant (vagrantup.com)
 
-vagrant up
+    vagrant up
+    vagrant ssh
+    cd /www/tpp
+    NODENV_ROOT=/usr/local/share/nodenv /usr/local/share/nodenv/bin/nodenv exec grunt server
 
 
-/*
-Install php dependencies
-    php composer.phar install
+add following to local /etc/hosts:
+    
+    192.168.56.101 tpp.dev phpmyadmin xhprof
 
-Install js dependencies
-    bower install
+access tpp on:
+http://tpp.dev
 
-Generate DB
-    php app/console doctrine:database:create
-    php app/console doctrine:schema:create
+phpmyadmin on (user root, pw tppdev):
+http://phpmyadmin
 
-Run Server
-    php app/console server:run
 
-Run Livereload/Compass
-    grunt server
-*/
+Livereload and remote debugging broken
+Composer sometimes fails, try reloading vagrant or executing by hand
