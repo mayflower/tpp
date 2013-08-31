@@ -243,6 +243,13 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        htmlbuild: {
+            dist: {
+                src: '<%= yeoman.dist %>/index.html',
+                dest: '<%= yeoman.dist %>'
+            }
+        },
+
         // Put files not handled in other tasks here
         copy: {
             dist: {
@@ -282,7 +289,8 @@ module.exports = function (grunt) {
                 'compass:dist',
                 'imagemin',
                 'svgmin',
-                'htmlmin'
+                'htmlmin',
+                'htmlbuild'
             ]
         },
         karma: {
