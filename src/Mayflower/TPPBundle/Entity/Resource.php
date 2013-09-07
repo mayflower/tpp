@@ -28,14 +28,6 @@ class Resource
      */
     private $name;
     /**
-     * @var Category
-     *
-     * @ORM\ManyToOne(targetEntity="Category")
-     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
-     */
-    private $category;
-
-    /**
      * Get id
      *
      * @return integer
@@ -66,29 +58,6 @@ class Resource
     public function getName()
     {
         return $this->name;
-    }
-
-    /**
-     * Set category
-     *
-     * @param Category $category
-     * @return Resource
-     */
-    public function setCategory(Category $category = null)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category
-     *
-     * @return Category
-     */
-    public function getCategory()
-    {
-        return $this->category;
     }
 
     /**

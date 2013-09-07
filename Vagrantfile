@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "wheezy64"
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210.box"
-  config.cache.auto_detect = true
+#  config.cache.auto_detect = true
 
   config.vm.network :private_network, ip: "192.168.56.101"
     config.vm.network :forwarded_port, guest: 80, host: 8000

@@ -18,7 +18,6 @@ class Task
     const RED = 'red';
     const PURPLE = 'purple';
 
-
     /**
      * @var integer
      *
@@ -200,8 +199,11 @@ class Task
         return [
             'id' => $this->getId(),
             'title' => $this->getTitle(),
-            'resourceId' => $this->getResource()->getId(),
+            'resourceId' => $this->getResource() != null ?
+                $this->getResource()->getId() :
+                null,
             'week' => $this->getWeek(),
+            'information' => $this->getInformation(),
             'color' => $this->getColor()
         ];
     }

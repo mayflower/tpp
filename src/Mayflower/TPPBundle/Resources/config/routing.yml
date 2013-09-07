@@ -37,7 +37,3 @@ resource_delete:
     pattern:  '/resource/{id}'
     defaults: { _controller: "MayflowerTPPBundle:Resource:delete" }
     requirements: { _method: delete }
-
-MayflowerTPPBundle_category:
-    resource: "@MayflowerTPPBundle/Resources/config/routing/category.yml"
-    prefix:   /category

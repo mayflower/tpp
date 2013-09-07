@@ -31,5 +31,18 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
         $resource->setName("Awesome Teammember");
         $this->assertEquals("Awesome Teammember", $resource->getName());
     }
+
+    /**
+     * Test transform to array
+     *
+     * @return null
+     */
+    public function testToArray()
+    {
+        $resource = new Resource();
+
+        $this->assertArrayHasKey('id', $resource->toArray());
+        $this->assertArrayHasKey('name', $resource->toArray());
+    }
 }
  
