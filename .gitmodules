@@ -1,0 +1,9 @@
+[submodule "nodejs"]
+      path = vagrant/modules/nodejs
+      url = git@github.com:globin/puppet-nodejs
+
+[submodule "repository"]
+      path = vagrant/modules/repository
+      url = git@github.com:boxen/puppet-repository
+
+

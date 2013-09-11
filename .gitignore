@@ -18,3 +18,5 @@ src/Mayflower/TPPFrontendBundle/Resources/public/dist
 .sass-cache
 src/Mayflower/TPPFrontendBundle/Resources/public/app/bower_components
 src/Mayflower/TPPFrontendBundle/Resources/public/app/styles/*.css
+.idea/workspace.xml
+.idea/tasks.xml
