@@ -4,59 +4,29 @@ angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'weekList', function ($scope, Resource, Task, weekList) {
 
-    $scope.tasks = {};
-
-    var ready = false;
+    // fetch tasks from server
     $scope.taskList = Task.query({
         week: 35,
         numWeeks: 7
-    }, function () {
-        if (!ready) {
-            ready = true;
-        } else {
-            $scope.setTasks();
-        }
     });
 
-    // define the list of members
-    $scope.resourceList = Resource.query(function () {
-        angular.forEach(weekList, function (week) {
-            var resources = {};
+    // fetch resources from server
+    $scope.resourceList = Resource.query();
 
-            angular.forEach($scope.resourceList, function (resource) {
-                resources[resource.id] = []
-            });
-            $scope.tasks[week.date.week() + '-' + week.date.year()] = angular.copy(resources);
-        });
-        if (!ready) {
-            ready = true;
-        } else {
-            $scope.setTasks();
-        }
-    });
-
-
-    $scope.setTasks = function () {
-        angular.forEach($scope.taskList, function (task) {
-            var date = moment(task.week.date);
-            $scope.tasks[date.week() + '-' + date.year()][task.resourceId].push(task);
-        });
+    // find Tasks from taskList by resource and week
+    $scope.getTasks = function (resource, week) {
+          return $scope.taskList.filter(function (task) {
+              return task.week.diff(week.date) === 0 && task.resourceId === resource.id;
+          });
     };
 
     $scope.addResource = function (addedResource) {
+
+        // Don't use copy here, ID will not be set otherwise
         var resource = new Resource({
             name: addedResource.name
         });
-        resource.$save(function () {
-            var resources = {};
-            angular.forEach($scope.resourceList, function (resource) {
-                resources[resource.id] = []
-            });
-
-            angular.forEach($scope.tasks, function (value, key) {
-                $scope.tasks[key].push(angular.copy(resources));
-            });
-        });
+        resource.$save();
 
         $scope.resourceList.push(resource);
 
@@ -67,10 +37,9 @@ angular.module(
     $scope.removeResource = function (resource) {
         if (confirm("Wirklich löschen?")) {
             resource.$delete();
-            var resources = Resource.query(function () {
-                $scope.resourceList = resources;
+            $scope.resourceList = $scope.resourceList.filter(function (r) {
+                return r.id !== resource.id;
             });
-
         }
     };
 
@@ -78,10 +47,12 @@ angular.module(
         $scope.$broadcast('addTask', resourceId, week);
     };
 
+    $scope.editTask = function (task) {
+        $scope.$broadcast('editTask', task);
+    };
+
     $scope.$on('taskAdded', function (event, task) {
-        var date = moment(task.week);
-        console.log(date.week() + '-' + date.year(), task.resourceId);
-        $scope.tasks[date.week() + '-' + date.year()][task.resourceId].push(task);
+        $scope.taskList.push(task);
     });
 
     // default setting on what the list should be sorted
@@ -111,12 +82,14 @@ angular.module(
 
 }]).controller('taskCtrl', ['$scope', 'Task', function ($scope, Task) {
 
-    $scope.task = new Task({
-        title: '',
-        color: 'yellow'
-    });
-
     $scope.isEdit = false;
+
+    ($scope.resetTask = function () {
+        $scope.task = new Task({
+            title: '',
+            color: 'yellow'
+        });
+    })();
 
     $scope.$on('addTask', function (event, resourceId, week) {
         $scope.isEdit = false;
@@ -127,36 +100,27 @@ angular.module(
         });
     });
 
+    $scope.$on('editTask', function (event, task) {
+        $scope.isEdit = true;
+        $scope.task = task;
+        $scope.backup = angular.copy(task);
+        $('#task-modal').modal({
+            'show': true
+        });
+    });
+
     $scope.submit = function () {
-        var newTask = angular.copy($scope.task);
-        newTask.$save();
-        $scope.$emit('taskAdded', newTask);
-        // reset text input
-        $scope.task.title = '';
-        $scope.task.color = 'yellow';
+        if ($scope.isEdit) {
+            $scope.task.$update();
+        } else {
+            $scope.task.$save();
+            $scope.$emit('taskAdded', $scope.task);
+        }
+        $scope.resetTask();
     };
-//
-//    $scope.setEditTaskOpts = function (task, resourceId, week) {
-//        $scope.editTaskOpts = {
-//            resourceId: resourceId,
-//            week: week.date
-//        };
-//
-//        $scope.editTask = task;
-//    };
-//    $scope.editTask = function () {
-//        var task = new Task({
-//            title: addedTask.title,
-//            resourceId: $scope.newTaskOpts.resourceId,
-//            week: $scope.newTaskOpts.week,
-//            color: addedTask.color
-//        });
-//        task.$save();
-//        $scope.taskList.push(task);
-//        // reset text input
-//        addedTask.title = '';
-//
-//        addedTask.color = 'yellow';
-//    };
+
+    $scope.cancel = function () {
+        $scope.resetTask();
+    };
 
 }]);

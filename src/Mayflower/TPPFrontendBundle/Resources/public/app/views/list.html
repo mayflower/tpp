@@ -15,11 +15,11 @@
         <td><button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeResource(resource)"></button></td>
         <td>{{resource.name}}</td>
         <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}" class="tasks">
-            <div ng-repeat="task in tasks[week.date.week() + '-' + week.date.year()][resource.id] | orderBy:'title'" class="task {{ task.color }}">
+            <div ng-repeat="task in getTasks(resource, week) | orderBy:'title'" class="task {{ task.color }}">
                 <div class="task-title">{{ task.title }}</div>
                 <div>
                     <button class="btn btn-default glyphicon glyphicon-pencil btn-sm"
-                            ng-click="setEditTaskOpts(task, resource.id, week)" data-toggle="modal"
+                            ng-click="editTask(task)" data-toggle="modal"
                             data-target="#editTaskModal"></button>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" ng-click="task.title=''" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" ng-click="cancel()" data-dismiss="modal">Close</button>
                     <button type="submit" id="task-submit" ng-click="submit()" class="btn btn-primary" data-dismiss="modal">Save changes</button>
                 </div>
             </form>

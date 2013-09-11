@@ -53,14 +53,33 @@ class TaskController extends Controller
         $week = new \DateTime($data['week']);
         $task->setWeek($week);
 
-        $resource = $em->getRepository('MayflowerTPPBundle:Resource')->find($data['resourceId']);
+        $resource = $em->find('MayflowerTPPBundle:Resource', $data['resourceId']);
         if (!$resource) {
             throw $this->createNotFoundException('Unable to find Resource.');
         }
 
         $task->setResource($resource);
 
+        $em->persist($task);
+        $em->flush();
+
+        return new JsonResponse($task->toArray());
+    }
+
+    /**
+     * Creates a new Resource entity.
+     *
+     */
+    public function updateAction($id, Request $request)
+    {
         $em = $this->getDoctrine()->getManager();
+
+        $task = $em->find('MayflowerTPPBundle:Task', $id);
+
+        $data = json_decode($request->getContent(), true);
+        $task->setTitle($data['title']);
+        $task->setColor($data['color']);
+
         $em->persist($task);
         $em->flush();
 
