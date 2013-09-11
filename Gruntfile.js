@@ -1,7 +1,6 @@
 // Generated on 2013-08-19 using generator-angular 0.3.1
 'use strict';
 var LIVERELOAD_PORT = 35729;
-// var lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT });
 var mountFolder = function (connect, dir) {
     return connect.static(require('path').resolve(dir));
 };
@@ -29,14 +28,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
-//      coffee: {
-//        files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
-//        tasks: ['coffee:dist']
-//      },
-//      coffeeTest: {
-//        files: ['test/spec/{,*/}*.coffee'],
-//        tasks: ['coffee:test']
-//      },
             compass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server']
@@ -59,17 +50,6 @@ module.exports = function (grunt) {
                 // Change this to '0.0.0.0' to access the server from outside.
                 hostname: 'localhost'
             },
-            /* livereload: {
-             options: {
-             middleware: function (connect) {
-             return [
-             lrSnippet,
-             mountFolder(connect, '.tmp'),
-             mountFolder(connect, yeomanConfig.app)
-             ];
-             }
-             }
-             }, */
             test: {
                 options: {
                     port: 8002,
@@ -118,26 +98,6 @@ module.exports = function (grunt) {
                 '<%= yeoman.app %>/scripts/{,*/}*.js'
             ]
         },
-//    coffee: {
-//      dist: {
-//        files: [{
-//          expand: true,
-//          cwd: '<%= yeoman.app %>/scripts',
-//          src: '{,*/}*.coffee',
-//          dest: '.tmp/scripts',
-//          ext: '.js'
-//        }]
-//      },
-//      test: {
-//        files: [{
-//          expand: true,
-//          cwd: 'test/spec',
-//          src: '{,*/}*.coffee',
-//          dest: '.tmp/spec',
-//          ext: '.js'
-//        }]
-//      }
-//    },
         compass: {
             options: {
                 sassDir: '<%= yeoman.app %>/styles',
@@ -159,11 +119,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        // not used since Uglify task does concat,
-        // but still available if needed
-        /*concat: {
-         dist: {}
-         },*/
         rev: {
             dist: {
                 files: {
@@ -208,19 +163,6 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }
-        },
-        cssmin: {
-            // By default, your `index.html` <!-- Usemin Block --> will take care of
-            // minification. This option is pre-configured if you do not wish to use
-            // Usemin blocks.
-            // dist: {
-            //   files: {
-            //     '<%= yeoman.dist %>/styles/main.css': [
-            //       '.tmp/styles/{,*/}*.css',
-            //       '<%= yeoman.app %>/styles/{,*/}*.css'
-            //     ]
-            //   }
-            // }
         },
         htmlmin: {
             dist: {
@@ -277,27 +219,23 @@ module.exports = function (grunt) {
         },
         concurrent: {
             server: [
-//        'coffee:dist',
                 'compass:server'
             ],
             test: [
-//        'coffee',
                 'compass'
             ],
             dist: [
-//        'coffee',
                 'compass:dist',
                 'imagemin',
                 'svgmin',
-                'htmlmin',
-                'htmlbuild'
+                'htmlmin'
             ]
         },
         karma: {
             unit: {
                 configFile: 'karma.conf.js',
                 singleRun: true
-            },
+            }
 //            e2e: {
 //                configFile: 'karma-e2e.conf.js',
 //                singleRun: true
@@ -337,7 +275,6 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
-            // 'connect:livereload',
             'open',
             'watch'
         ]);
@@ -361,7 +298,8 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'rev',
-        'usemin'
+        'usemin',
+        'htmlbuild'
     ]);
 
     grunt.registerTask('default', [

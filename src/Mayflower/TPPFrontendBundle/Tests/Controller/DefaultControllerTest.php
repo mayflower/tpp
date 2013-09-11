@@ -12,7 +12,7 @@ class DefaultControllerTest extends WebTestCase
 
         $client->request('GET', '/');
 
-        $this->assertTrue(
+        $this->assertEquals(
             200,
             $client->getResponse()->getStatusCode(),
             "Wrong status code for /"

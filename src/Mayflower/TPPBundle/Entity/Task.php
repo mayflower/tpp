@@ -78,7 +78,7 @@ class Task
      * Set title
      *
      * @param string $title
-     * 
+     *
      * @return Task
      */
     public function setTitle($title)
