@@ -11,7 +11,7 @@ class DefaultController extends Controller
     {
         $kernel = $this->get('kernel');
 
-        if ($kernel->getEnvironment() == "dev") {
+        if ($kernel->getEnvironment() == "dev" || $kernel->getEnvironment() == "test") {
             $path = $kernel->locateResource('@MayflowerTPPFrontendBundle/Resources/public/app/index.html');
         } else {
             $path = $kernel->locateResource('@MayflowerTPPFrontendBundle/Resources/public/dist/index.html');
