@@ -11,7 +11,8 @@ class ResourceControllerTest extends WebTestCase
     private $resource;
     private $em;
 
-    protected function setUp() {
+    protected function setUp()
+    {
         parent::setUp();
 
         static::$kernel = static::createKernel();
@@ -33,8 +34,11 @@ class ResourceControllerTest extends WebTestCase
 
         $client->request('GET', '/api/resource');
         $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode(),
-            "Unexpected HTTP status code for GET /api/resource");
+        $this->assertEquals(
+            200,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for GET /api/resource"
+        );
 
         $resource_arr = [$this->resource->toArray()];
         $this->assertEquals(json_encode($resource_arr), $response->getContent());
@@ -48,8 +52,11 @@ class ResourceControllerTest extends WebTestCase
 
         $client->request('POST', '/api/resource', array(), array(), array(), $content);
         $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task");
+        $this->assertEquals(
+            200,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for POST /api/task"
+        );
     }
 
     public function testDelete()
@@ -58,8 +65,11 @@ class ResourceControllerTest extends WebTestCase
 
         $client->request('DELETE', '/api/resource/'.$this->resource->getId());
         $response = $client->getResponse();
-        $this->assertEquals(204, $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task");
+        $this->assertEquals(
+            204,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for POST /api/task"
+        );
     }
 
     public function testDeleteWithNonExistentResource()
@@ -68,8 +78,11 @@ class ResourceControllerTest extends WebTestCase
 
         $client->request('DELETE', '/api/resource/'.($this->resource->getId()-1));
         $response = $client->getResponse();
-        $this->assertEquals(404, $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task");
+        $this->assertEquals(
+            404,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for POST /api/task with non-existent resource"
+        );
     }
 
     protected function tearDown()

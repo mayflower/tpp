@@ -8,10 +8,14 @@ class DefaultControllerTest extends WebTestCase
 {
     public function testIndex()
     {
-//        $client = static::createClient();
-//
-//        $crawler = $client->request('GET', '/hello/Fabien');
-//
-//        $this->assertTrue($crawler->filter('html:contains("Hello Fabien")')->count() > 0);
+        $client = static::createClient();
+
+        $client->request('GET', '/');
+
+        $this->assertTrue(
+            200,
+            $client->getResponse()->getStatusCode(),
+            "Wrong status code for /"
+        );
     }
 }

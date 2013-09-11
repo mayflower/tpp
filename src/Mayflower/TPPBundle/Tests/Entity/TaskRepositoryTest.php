@@ -12,7 +12,8 @@ use Doctrine\ORM\EntityManager;
 use Mayflower\TPPBundle\Entity\Task;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class TaskRepositoryTest extends WebTestCase{
+class TaskRepositoryTest extends WebTestCase
+{
 
     /**
      * @var EntityManager
@@ -21,7 +22,8 @@ class TaskRepositoryTest extends WebTestCase{
 
     private $task;
 
-    protected function setUp() {
+    protected function setUp()
+    {
 
         parent::setUp();
 
@@ -40,7 +42,8 @@ class TaskRepositoryTest extends WebTestCase{
         $this->em->flush();
     }
 
-    public function testFindByWeeks() {
+    public function testFindByWeeks()
+    {
         $dt = new \DateTime('next monday');
         $tasks = $this->em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($dt, 1);
         $this->assertEquals(1, count($tasks));
@@ -58,11 +61,12 @@ class TaskRepositoryTest extends WebTestCase{
 
     }
 
-    protected function tearDown() {
+    protected function tearDown()
+    {
         parent::tearDown();
 
         $this->em->remove($this->task);
         $this->em->flush();
     }
 
-} 
+}

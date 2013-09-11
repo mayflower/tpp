@@ -14,7 +14,8 @@ class TaskControllerTest extends WebTestCase
 
     private $em;
 
-    protected function setUp() {
+    protected function setUp()
+    {
         parent::setUp();
 
         static::$kernel = static::createKernel();
@@ -42,8 +43,11 @@ class TaskControllerTest extends WebTestCase
 
         $client->request('GET', '/api/task');
         $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode(),
-            "Unexpected HTTP status code for GET /api/task");
+        $this->assertEquals(
+            200,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for GET /api/task"
+        );
 
         $dt = new \DateTime('this monday');
         $tasks = $this->em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($dt, 5);
@@ -62,8 +66,11 @@ class TaskControllerTest extends WebTestCase
 
         $client->request('POST', '/api/task', array(), array(), array(), $content);
         $response = $client->getResponse();
-        $this->assertEquals(200, $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task");
+        $this->assertEquals(
+            200,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for POST /api/task"
+        );
 
     }
 
@@ -75,8 +82,11 @@ class TaskControllerTest extends WebTestCase
 
         $client->request('POST', '/api/task', array(), array(), array(), $content);
         $response = $client->getResponse();
-        $this->assertEquals(404, $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task");
+        $this->assertEquals(
+            404,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for POST /api/task"
+        );
 
     }
 

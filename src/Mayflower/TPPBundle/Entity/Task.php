@@ -78,6 +78,7 @@ class Task
      * Set title
      *
      * @param string $title
+     * 
      * @return Task
      */
     public function setTitle($title)
@@ -101,6 +102,7 @@ class Task
      * Set color
      *
      * @param string $color
+     *
      * @return Task
      */
     public function setColor($color)
@@ -124,6 +126,7 @@ class Task
      * Set information
      *
      * @param string $information
+     *
      * @return Task
      */
     public function setInformation($information)
@@ -147,6 +150,7 @@ class Task
      * Set week
      *
      * @param \DateTime $week
+     *
      * @return Task
      */
     public function setWeek(\DateTime $week)
@@ -171,6 +175,7 @@ class Task
      * Set resource
      *
      * @param \Mayflower\TPPBundle\Entity\Resource|Resource $resource
+     *
      * @return Task
      */
     public function setResource(Resource $resource = null)
@@ -195,7 +200,8 @@ class Task
      *
      * @return array This object suitable for passing to JsonResponse
      */
-    public function toArray() {
+    public function toArray()
+    {
         return [
             'id' => $this->getId(),
             'title' => $this->getTitle(),

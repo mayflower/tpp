@@ -41,6 +41,7 @@ class Resource
      * Set name
      *
      * @param string $name
+     *
      * @return Resource
      */
     public function setName($name)
@@ -65,7 +66,8 @@ class Resource
      *
      * @return array This object suitable for passing to JsonResponse
      */
-    public function toArray() {
+    public function toArray()
+    {
         return [
             'id' => $this->getId(),
             'name' => $this->getName()
