@@ -227,8 +227,7 @@ module.exports = function (grunt) {
             dist: [
                 'compass:dist',
                 'imagemin',
-                'svgmin',
-//                'htmlmin'
+                'svgmin'
             ]
         },
         karma: {
@@ -290,6 +289,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
+        'htmlmin',
         'concurrent:dist',
         'concat',
         'copy',
