@@ -51,6 +51,13 @@ angular.module(
         $scope.$broadcast('editTask', task);
     };
 
+    $scope.deleteTask = function (task) {
+        task.$delete();
+        $scope.taskList = $scope.taskList.filter(function (t) {
+            return t.id !== task.id;
+        })
+    };
+
     $scope.$on('taskAdded', function (event, task) {
         $scope.taskList.push(task);
     });

@@ -50,6 +50,10 @@ alias mv='mv -iv'
 alias grep='grep --color=auto -in'
 alias v='vim'
 alias ..='cd ..'
+alias cu='composer update'
+alias ci='composer install'
+alias sc='/vagrant/app/console'
+alias pu='phpunit -c /vagrant/app'
 
 export NODENV_ROOT=/usr/local/share/nodenv
 

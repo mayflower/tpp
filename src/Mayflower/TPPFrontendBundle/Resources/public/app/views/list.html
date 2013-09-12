@@ -21,6 +21,8 @@
                     <button class="btn btn-default glyphicon glyphicon-pencil btn-sm"
                             ng-click="editTask(task)" data-toggle="modal"
                             data-target="#editTaskModal"></button>
+                    <button class="btn btn-default glyphicon glyphicon-remove btn-sm"
+                            ng-click="deleteTask(task)"></button>
                 </div>
             </div>
             <button class="btn btn-default btn-xs add-task-button" data-toggle="modal" ng-click="addTask(resource.id, week)">

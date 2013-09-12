@@ -199,6 +199,17 @@ mysql::db { 'mayflower_tpp':
   require  => Class['mysql::server'],
 }
 
+mysql::db { 'mayflower_tpp_tests':
+  grant    => [
+    'ALL'
+  ],
+  user     => 'mayflower',
+  password => 'efZeAJpnFbNs7eHy',
+  host     => 'localhost',
+  charset  => 'utf8',
+  require  => Class['mysql::server'],
+}
+
 class { 'phpmyadmin':
   require => [Class['mysql::server'], Class['mysql::config'], Class['php::fpm']],
 }
@@ -268,12 +279,21 @@ composer::run { 'composer_install':
   ]
 }
 exec { 'db_schema_create':
-  command => '/www/tpp/app/console doctrine:schema:create',
+  command => '/www/tpp/app/console doctrine:schema:update',
   cwd     => '/www/tpp',
   user    => 'vagrant',
   require => [
     Composer::Run['composer_install'],
     Mysql::Db['mayflower_tpp']
+  ]
+}
+exec { 'db_schema_create_test':
+  command => '/www/tpp/app/console doctrine:schema:update -e test',
+  cwd     => '/www/tpp',
+  user    => 'vagrant',
+  require => [
+    Composer::Run['composer_install'],
+    Mysql::Db['mayflower_tpp_tests']
   ]
 }
 exec { 'assets_install':

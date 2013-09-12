@@ -71,7 +71,6 @@ class TaskControllerTest extends WebTestCase
             $response->getStatusCode(),
             "Unexpected HTTP status code for POST /api/task"
         );
-
     }
 
     public function testPostWithNonExistentResource()
@@ -87,7 +86,32 @@ class TaskControllerTest extends WebTestCase
             $response->getStatusCode(),
             "Unexpected HTTP status code for POST /api/task"
         );
+    }
 
+    public function testDelete()
+    {
+        $client = static::createClient();
+
+        $client->request('DELETE', '/api/task/'.$this->task1->getId());
+        $response = $client->getResponse();
+        $this->assertEquals(
+            204,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for DELETE /api/task/{id}"
+        );
+    }
+
+    public function testDeleteWithNonExistentResource()
+    {
+        $client = static::createClient();
+
+        $client->request('DELETE', '/api/task/0');
+        $response = $client->getResponse();
+        $this->assertEquals(
+            404,
+            $response->getStatusCode(),
+            "Unexpected HTTP status code for DELETE /api/task/{id}"
+        );
     }
 
     protected function tearDown()

@@ -7,11 +7,12 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 use Mayflower\TPPBundle\Entity\Task;
+use Symfony\Component\HttpFoundation\Response;
 
 class TaskController extends Controller
 {
     /**
-     * Lists Task entities by week
+     * returns Task entities by week
      *
      */
     public function indexAction(Request $request)
@@ -37,7 +38,7 @@ class TaskController extends Controller
     }
 
     /**
-     * Creates a new Resource entity.
+     * Creates a new Task entity.
      *
      */
     public function createAction(Request $request)
@@ -67,7 +68,7 @@ class TaskController extends Controller
     }
 
     /**
-     * Creates a new Resource entity.
+     * Updates a Task entity.
      *
      */
     public function updateAction($id, Request $request)
@@ -86,4 +87,24 @@ class TaskController extends Controller
         return new JsonResponse($task->toArray());
     }
 
+
+    /**
+     * Deletes a Task entity.
+     *
+     */
+    public function deleteAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository('MayflowerTPPBundle:Task')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Task entity.');
+        }
+
+        $em->remove($entity);
+        $em->flush();
+
+        $response = new Response('', 204);
+        return $response;
+    }
 }
