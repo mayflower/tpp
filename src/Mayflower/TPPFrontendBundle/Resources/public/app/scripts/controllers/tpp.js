@@ -9,14 +9,19 @@ angular.module(
         numWeeks: 7
     };
 
+    $scope.taskList = [];
+
     ($scope.setUp = function (weeks) {
+        // build List of weeks from user inputted date and numWeeks
         $scope.weekList = dateUtil.getWeekList(weeks);
 
-        // fetch tasks from server
-        $scope.taskList = Task.query({
+        // fetch tasks from server (only set list when finished loading to avoid flashing)
+        var taskList = Task.query({
             numWeeks: weeks.numWeeks,
             week: weeks.date.week(),
             year: weeks.date.year()
+        }, function () {
+            $scope.taskList = taskList;
         });
 
     })($scope.weeks);
@@ -24,6 +29,7 @@ angular.module(
     // fetch resources from server
     $scope.resourceList = Resource.query();
 
+    // refetch on changing weeks
     $scope.$watchCollection('weeks', function (newWeeks) {
         $scope.setUp(newWeeks);
     });
@@ -50,18 +56,18 @@ angular.module(
     };
 
     $scope.removeResource = function (resource) {
-        if (confirm("Wirklich löschen?")) {
-            resource.$delete();
-            $scope.resourceList = $scope.resourceList.filter(function (r) {
-                return r.id !== resource.id;
-            });
-        }
+        resource.$delete();
+        $scope.resourceList = $scope.resourceList.filter(function (r) {
+            return r.id !== resource.id;
+        });
     };
 
+    // notify dialog
     $scope.addTask = function (resourceId, week) {
         $scope.$broadcast('addTask', resourceId, week);
     };
 
+    // notify dialog
     $scope.editTask = function (task) {
         $scope.$broadcast('editTask', task);
     };
@@ -99,11 +105,13 @@ angular.module(
         return moment().startOf('week').isSame(week);
     };
 
+    // go one week back
     $scope.back = function () {
         $scope.weeks.date.subtract(1, 'w');
         $scope.setUp($scope.weeks);
     };
 
+    // go one week forward
     $scope.forward = function () {
         $scope.weeks.date.add(1, 'w');
         $scope.setUp($scope.weeks);
