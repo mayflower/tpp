@@ -9,7 +9,7 @@ angular.module(
         numWeeks: 7
     };
 
-        ($scope.setUp = function (weeks) {
+    ($scope.setUp = function (weeks) {
         $scope.weekList = dateUtil.getWeekList(weeks);
 
         // fetch tasks from server
@@ -97,6 +97,16 @@ angular.module(
 
     $scope.isCurrent = function (week) {
         return moment().startOf('week').isSame(week);
+    };
+
+    $scope.back = function () {
+        $scope.weeks.date.subtract(1, 'w');
+        $scope.setUp($scope.weeks);
+    };
+
+    $scope.forward = function () {
+        $scope.weeks.date.add(1, 'w');
+        $scope.setUp($scope.weeks);
     };
 
 }]).controller('taskCtrl', ['$scope', 'Task', function ($scope, Task) {

@@ -3,11 +3,15 @@
 <p class="lead">Project schedule.</p>
 
 <div class="form-group">
-    <label for="new-name" class="control-label">Anzehl Wochen</label>
+    <label for="new-name" class="control-label">Anzahl Wochen</label>
     <input type="number" class="form-control" id="numWeeks" ng-model="weeks.numWeeks"/>
 </div>
+<div class="clearfix">
+    <button class="btn btn-default pull-left glyphicon glyphicon-arrow-left" ng-click="back()"></button>
+    <button class="btn btn-default pull-right glyphicon glyphicon-arrow-right" ng-click="forward()"></button>
+</div>
 
-<table class="table table-hover">
+<table class="table table-hover task-table">
     <tr>
         <th>&nbsp;</th>
         <th ng-click="sortListBy('name')" class="sortable">Name</th>
