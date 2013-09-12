@@ -2,16 +2,20 @@
 
 angular.module(
     'tpp.utils', []
-).factory('weekList', function () {
+).factory('dateUtil', function () {
 
-    var weekList = [];
 
-    var week = moment().startOf('week');
+    return {
+        'getWeekList': function (weeks) {
+            var weekList = [];
+            var week = moment(weeks.week).startOf('week');
 
-    for (var i = 0; i < 7; i++) {
-        weekList.push(moment(week));
-        week.add('w', 1);
+            for (var i = 0; i < weeks.numWeeks; i++) {
+                weekList.push(moment(week));
+                week.add('w', 1);
+            }
+
+            return weekList;
+        }
     }
-
-    return weekList;
 });

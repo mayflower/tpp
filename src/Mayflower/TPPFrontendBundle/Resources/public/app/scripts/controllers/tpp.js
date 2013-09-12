@@ -2,18 +2,31 @@
 
 angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
-).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'weekList', function ($scope, Resource, Task, weekList) {
+).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'dateUtil', function ($scope, Resource, Task, dateUtil) {
 
-    $scope.weekList = weekList;
-
-    // fetch tasks from server
-    $scope.taskList = Task.query({
-        week: 37,
+    $scope.weeks = {
+        date: moment().startOf('week'),
         numWeeks: 7
-    });
+    };
+
+        ($scope.setUp = function (weeks) {
+        $scope.weekList = dateUtil.getWeekList(weeks);
+
+        // fetch tasks from server
+        $scope.taskList = Task.query({
+            numWeeks: weeks.numWeeks,
+            week: weeks.date.week(),
+            year: weeks.date.year()
+        });
+
+    })($scope.weeks);
 
     // fetch resources from server
     $scope.resourceList = Resource.query();
+
+    $scope.$watchCollection('weeks', function (newWeeks) {
+        $scope.setUp(newWeeks);
+    });
 
     // find Tasks from taskList by resource and week
     $scope.getTasks = function (resource, week) {
