@@ -83,6 +83,13 @@ angular.module(
         $scope.taskList.push(task);
     });
 
+    $scope.$on('taskEdited', function (event, task) {
+        $scope.taskList = $scope.taskList.filter(function (t) {
+            return t.id !== task.id;
+        })
+        $scope.taskList.push(task);
+    });
+
     // default setting on what the list should be sorted
     $scope.sortCriteria = 'name';
 
@@ -139,8 +146,7 @@ angular.module(
 
     $scope.$on('editTask', function (event, task) {
         $scope.isEdit = true;
-        $scope.task = task;
-        $scope.backup = angular.copy(task);
+        $scope.task = angular.copy(task);
         $('#task-modal').modal({
             'show': true
         });
@@ -149,6 +155,7 @@ angular.module(
     $scope.submit = function () {
         if ($scope.isEdit) {
             $scope.task.$update();
+            $scope.$emit('taskEdited', $scope.task);
         } else {
             $scope.task.$save();
             $scope.$emit('taskAdded', $scope.task);
