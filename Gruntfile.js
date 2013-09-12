@@ -228,7 +228,7 @@ module.exports = function (grunt) {
                 'compass:dist',
                 'imagemin',
                 'svgmin',
-                'htmlmin'
+//                'htmlmin'
             ]
         },
         karma: {
