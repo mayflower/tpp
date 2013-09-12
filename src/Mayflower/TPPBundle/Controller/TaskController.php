@@ -22,7 +22,7 @@ class TaskController extends Controller
         $now = new \DateTime();
 
         $week = $request->query->get('week', $now->format('W'));
-        $weekNum = $request->query->get('weekNum', 5);
+        $weekNum = $request->query->get('numWeeks', 5);
         $year = $request->query->get('year', $now->format('Y'));
 
         $weekDT = new \DateTime($year.'W'.$week);

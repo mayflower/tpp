@@ -7,13 +7,13 @@
         <th>&nbsp;</th>
         <th ng-click="sortListBy('name')" class="sortable">Name</th>
         <th class="weekNumber" ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
-            {{week.number}}
+            KW {{ week.week() }} (ab {{ week.format('DD.MM') }})
         </th>
     </tr>
 
     <tr class="list" ng-repeat="resource in resourceList | orderBy:sortCriteria | filter:search">
         <td><button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeResource(resource)"></button></td>
-        <td>{{resource.name}}</td>
+        <td>{{ resource.name }}</td>
         <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}" class="tasks">
             <div ng-repeat="task in getTasks(resource, week) | orderBy:'title'" class="task {{ task.color }}">
                 <div class="task-title">{{ task.title }}</div>

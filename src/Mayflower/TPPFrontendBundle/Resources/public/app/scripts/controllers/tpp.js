@@ -4,9 +4,11 @@ angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'weekList', function ($scope, Resource, Task, weekList) {
 
+    $scope.weekList = weekList;
+
     // fetch tasks from server
     $scope.taskList = Task.query({
-        week: 35,
+        week: 37,
         numWeeks: 7
     });
 
@@ -16,7 +18,7 @@ angular.module(
     // find Tasks from taskList by resource and week
     $scope.getTasks = function (resource, week) {
           return $scope.taskList.filter(function (task) {
-              return task.week.diff(week.date) === 0 && task.resourceId === resource.id;
+              return task.week.isSame(week) && task.resourceId === resource.id;
           });
     };
 
@@ -65,9 +67,6 @@ angular.module(
     // default setting on what the list should be sorted
     $scope.sortCriteria = 'name';
 
-    // calculate weeklist from the first member
-    $scope.weekList = weekList;
-
     /**
      * Sort list by the passed criteria.
      * When the criteria was used before pretend a - before the criteria name to reverse sorting.
@@ -84,7 +83,7 @@ angular.module(
     };
 
     $scope.isCurrent = function (week) {
-        return moment().startOf('week').isSame(week.date);
+        return moment().startOf('week').isSame(week);
     };
 
 }]).controller('taskCtrl', ['$scope', 'Task', function ($scope, Task) {
@@ -101,7 +100,7 @@ angular.module(
     $scope.$on('addTask', function (event, resourceId, week) {
         $scope.isEdit = false;
         $scope.task.resourceId = resourceId;
-        $scope.task.week = week.date;
+        $scope.task.week = week;
         $('#task-modal').modal({
             'show': true
         });
