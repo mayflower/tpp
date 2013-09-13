@@ -71,6 +71,14 @@ class TaskControllerTest extends WebTestCase
             $response->getStatusCode(),
             "Unexpected HTTP status code for POST /api/task"
         );
+
+        $id = json_decode($response->getContent(), true)['id'];
+        $project = $this->em->find('MayflowerTPPBundle:Task', $id);
+        $this->assertEquals('test', $project->getTitle());
+        $this->assertEquals($this->resource, $project->getResource());
+
+        $week = new \DateTime("Mon Sep 09 2013 00:00:00");
+        $this->assertEquals($week, $project->getWeek());
     }
 
     public function testPostWithNonExistentResource()

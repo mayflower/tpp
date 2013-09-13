@@ -55,8 +55,12 @@ class ResourceControllerTest extends WebTestCase
         $this->assertEquals(
             200,
             $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task"
+            "Unexpected HTTP status code for POST /api/resource"
         );
+
+        $id = json_decode($response->getContent(), true)['id'];
+        $project = $this->em->find('MayflowerTPPBundle:Resource', $id);
+        $this->assertEquals('Test Resource', $project->getName());
     }
 
     public function testDelete()
@@ -68,8 +72,11 @@ class ResourceControllerTest extends WebTestCase
         $this->assertEquals(
             204,
             $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task"
+            "Unexpected HTTP status code for DELETE /api/resource"
         );
+
+        $resource = $this->em->find('MayflowerTPPBundle:Resource', $this->resource->getId());
+        $this->assertNotNull($resource);
     }
 
     public function testDeleteWithNonExistentResource()
@@ -81,7 +88,7 @@ class ResourceControllerTest extends WebTestCase
         $this->assertEquals(
             404,
             $response->getStatusCode(),
-            "Unexpected HTTP status code for POST /api/task with non-existent resource"
+            "Unexpected HTTP status code for DELETE /api/resource with non-existent resource"
         );
     }
 

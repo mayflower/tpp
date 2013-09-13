@@ -37,3 +37,23 @@ resource_delete:
     pattern:  '/resource/{id}'
     defaults: { _controller: "MayflowerTPPBundle:Resource:delete" }
     requirements: { _method: delete }
+
+project:
+    pattern:  '/project'
+    defaults: { _controller: "MayflowerTPPBundle:Project:index" }
+    requirements: { _method: get }
+
+project_create:
+    pattern:  '/project'
+    defaults: { _controller: "MayflowerTPPBundle:Project:create" }
+    requirements: { _method: post }
+
+project_update:
+    pattern:  '/project/{id}'
+    defaults: { _controller: "MayflowerTPPBundle:Project:update" }
+    requirements: { _method: put }
+
+project_delete:
+    pattern:  '/project/{id}'
+    defaults: { _controller: "MayflowerTPPBundle:Project:delete" }
+    requirements: { _method: delete }
