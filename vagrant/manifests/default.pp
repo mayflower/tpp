@@ -38,6 +38,7 @@ nginx::resource::vhost { 'tpp.dev':
     'index.html',
   ],
   www_root     => '/www/tpp/web/bundles/mayflowertppfrontend/app',
+  try_files   => ['$uri', '$uri/', '/index.html', '=404'],
 }
 
 $path_translated = 'PATH_TRANSLATED $document_root$fastcgi_path_info'

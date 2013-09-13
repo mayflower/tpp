@@ -86,7 +86,7 @@ angular.module(
     $scope.$on('taskEdited', function (event, task) {
         $scope.taskList = $scope.taskList.filter(function (t) {
             return t.id !== task.id;
-        })
+        });
         $scope.taskList.push(task);
     });
 
