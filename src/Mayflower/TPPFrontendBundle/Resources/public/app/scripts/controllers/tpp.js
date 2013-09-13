@@ -2,11 +2,22 @@
 
 angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
-).controller('tppDisplayCtrl', ['$scope', 'Resource', 'Task', 'dateUtil', function ($scope, Resource, Task, dateUtil) {
+).controller(
+        'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'dateUtil',
+            function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
 
     $scope.weeks = {
-        date: moment().startOf('week'),
-        numWeeks: 7
+        date: (function () {
+            var date = moment();
+            if ($routeParams.year) {
+                date.weekYear($routeParams.year);
+            }
+            if ($routeParams.week) {
+                date.week($routeParams.week);
+            }
+            return date.startOf('week');
+        })(),
+        numWeeks: parseInt($routeParams.numWeeks) || 7
     };
 
     $scope.taskList = [];
@@ -19,9 +30,15 @@ angular.module(
         var taskList = Task.query({
             numWeeks: weeks.numWeeks,
             week: weeks.date.week(),
-            year: weeks.date.year()
+            year: weeks.date.weekYear()
         }, function () {
             $scope.taskList = taskList;
+        });
+
+        $location.search({
+            'year': $scope.weeks.date.weekYear(),
+            'week': $scope.weeks.date.week(),
+            'numWeeks': $scope.weeks.numWeeks || 7
         });
 
     })($scope.weeks);

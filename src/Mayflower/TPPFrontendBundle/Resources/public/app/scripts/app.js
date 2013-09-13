@@ -9,7 +9,8 @@ angular.module(
 
     $routeProvider.when('/', {
         templateUrl: '/views/list.html',
-        controller: 'tppDisplayCtrl'
+        controller: 'tppDisplayCtrl',
+        reloadOnSearch: false
     });
     $routeProvider.otherwise({redirectTo: '/'});
 }]);
