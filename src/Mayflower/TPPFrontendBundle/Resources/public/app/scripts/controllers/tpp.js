@@ -46,7 +46,7 @@ angular.module(
     // fetch resources from server
     $scope.resourceList = Resource.query();
 
-    // refetch on changing weeks
+    // re-fetch on changing weeks
     $scope.$watchCollection('weeks', function (newWeeks) {
         $scope.setUp(newWeeks);
     });

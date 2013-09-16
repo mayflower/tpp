@@ -2,7 +2,7 @@
 
 <project name="tpp" default="build">
  <target name="build"
-   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc2,phpunit,phpcb"/>
+   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc2,phpunit,karma,phpcb"/>
 
  <target name="build-parallel"
    depends="prepare,lint,tools-parallel,phpunit,phpcb"/>
@@ -198,6 +198,18 @@
   <exec executable="phpunit" failonerror="true">
     <arg value="-c" />
     <arg value="app" />
+  </exec>
+ </target>
+
+ <target name="karma" description="Run JS unit tests with Karma">
+  <exec executable="npm" failonerror="true">
+   <arg value="install"/>
+  </exec>
+  <exec executable="bower" failonerror="true">
+   <arg value="install" />
+  </exec>
+  <exec executable="grunt" failonerror="true">
+   <arg value="test" />
   </exec>
  </target>
 

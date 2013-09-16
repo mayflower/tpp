@@ -10,6 +10,7 @@ files = [
   'app/bower_components/angular/angular.js',
   'app/bower_components/angular-mocks/angular-mocks.js',
   'app/bower_components/angular-resource/angular-resource.js',
+  'app/bower_components/angular-route/angular-route.js',
   'app/bower_components/momentjs/moment.js',
   'app/bower_components/momentjs/min/lang/de.js',
   'app/scripts/*.js',
@@ -32,7 +33,7 @@ reporters = ['progress', 'coverage'];
 coverageReporter = {
     type : 'html',
     dir : 'coverage/'
-}
+};
 
 // web server port
 port = 8080;
@@ -58,7 +59,7 @@ autoWatch = true;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Firefox'];
+browsers = ['PhantomJS'];
 
 // If browser does not capture in given timeout [ms], kill it
 captureTimeout = 5000;
