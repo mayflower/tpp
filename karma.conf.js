@@ -28,11 +28,24 @@ exclude = [];
 
 // test results reporter to use
 // possible values: dots || progress || growl
-reporters = ['progress', 'coverage'];
+reporters = ['progress', 'coverage', 'junit'];
 
-coverageReporter = {
-    type : 'html',
-    dir : 'coverage/'
+
+if (process.env.USER == 'jenkins') {
+    coverageReporter = {
+        type: 'cobertura',
+        dir: 'build'
+    };
+} else {
+    coverageReporter = {
+        type: 'html',
+        dir: 'build/coverage/'
+    };
+}
+
+junitReporter = {
+    outputFile: 'build/karma-unit.xml',
+    suite: 'unit'
 };
 
 // web server port
@@ -66,4 +79,4 @@ captureTimeout = 5000;
 
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
-singleRun = false;
+singleRun = true;
