@@ -21,6 +21,7 @@ set  :user, "deploy"
 set  :keep_releases, 3
 
 set :composer_options,  "--no-scripts --no-dev --verbose --prefer-dist --optimize-autoloader --working-dir=api"
+set :composer_dump_autoload_options, "--optimize --working-dir=api"
 
 # Be more verbose by uncommenting the following line
 logger.level = Logger::MAX_LEVEL
