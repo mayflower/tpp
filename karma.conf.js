@@ -1,7 +1,7 @@
 // Karma configuration
 
 // base path, that will be used to resolve files and exclude
-basePath = 'src/Mayflower/TPPFrontendBundle/Resources/public/';
+basePath = '';
 
 // list of files / patterns to load in the browser
 files = [

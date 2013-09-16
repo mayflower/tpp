@@ -34,7 +34,7 @@
   <delete file="${basedir}/composer.phar" />
   <delete file="${basedir}/app/config/parameters.yml" />
  -->
-  <delete dir="${basedir}/app/cache" />
+  <delete dir="${basedir}/api/app/cache" />
  </target>
  <target name="prepare" depends="clean" description="Prepare for build">
   <mkdir dir="${basedir}/build/api"/>
@@ -45,8 +45,8 @@
   <antcall target="symfony.prepare" />
  </target>
  <target name="symfony.prepare">
-  <mkdir dir="${basedir}/app/cache" />
-  <mkdir dir="${basedir}/web/uploads" />
+  <mkdir dir="${basedir}/api/app/cache" />
+  <mkdir dir="${basedir}/api/web/uploads" />
   <!-- <copy file="${basedir}/app/config/parameters.yml.dist" tofile="${basedir}/app/config/parameters.yml" /> -->
   <exec executable="bash">
    <arg value="-c" />
@@ -54,33 +54,34 @@
   </exec>
   <exec executable="php">
    <arg value="composer.phar" />
+   <arg value="--working-dir=api" />
    <arg value="install" />
   </exec>
-  <exec executable="app/console">
+  <exec executable="api/app/console">
    <arg value="doctrine:database:drop" />
    <arg value="-n" />
    <arg value="--env=test" />
    <arg value="--force" />
   </exec>
-  <exec executable="app/console">
+  <exec executable="api/app/console">
    <arg value="doctrine:database:create" />
    <arg value="--env=test" />
    <arg value="-n" />
   </exec>
-  <exec executable="app/console">
+  <exec executable="api/app/console">
    <arg value="doctrine:schema:update" />
    <arg value="-n" />
    <arg value="--env=test" />
    <arg value="--complete" />
    <arg value="--force" />
   </exec>
-  <exec executable="app/console">
+  <exec executable="api/app/console">
    <arg value="assetic:dump" />
    <arg value="-n" />
    <arg value="--env=prod" />
    <arg value="--no-debug" />
   </exec>
-  <exec executable="app/console">
+  <exec executable="api/app/console">
    <arg value="assets:install" />
    <arg value="-n" />
    <arg value="--env=test" />
@@ -92,31 +93,31 @@
   <apply executable="php" failonerror="true">
    <arg value="-l" />
 
-   <fileset dir="${basedir}/app">
+   <fileset dir="${basedir}/api/app">
     <include name="**/*.php" />
     <exclude name="**/cache/**" />
     <modified />
    </fileset>
 
-   <fileset dir="${basedir}/src">
+   <fileset dir="${basedir}/api/src">
     <include name="**/*.php" />
     <modified />
    </fileset>
 
-   <fileset dir="${basedir}/web">
+   <fileset dir="${basedir}/api/web">
     <include name="**/*.php" />
     <modified />
    </fileset>
   </apply>
-  <apply executable="app/console" failonerror="true">
+  <apply executable="api/app/console" failonerror="true">
    <arg value="twig:lint" />
    <arg value="--env=test" />
 
-   <fileset dir="${basedir}/app/Resources">
+   <fileset dir="${basedir}/api/app/Resources">
     <include name="**/*.twig" />
    </fileset>
 
-   <fileset dir="${basedir}/src">
+   <fileset dir="${basedir}/api/src">
     <include name="**/*.twig" />
    </fileset>
   </apply>
@@ -126,7 +127,7 @@
   <exec executable="phploc">
    <arg value="--log-csv" />
    <arg value="${basedir}/build/logs/phploc.csv" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
   </exec>
  </target>
 
@@ -135,22 +136,22 @@
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
    <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
    <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
   </exec>
  </target>
 
  <target name="phpmd"
          description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
   <exec executable="phpmd">
-   <arg path="${basedir}/app/Resources,${basedir}/src" />
+   <arg path="${basedir}/api/app/Resources,${basedir}/api/src" />
    <arg value="text" />
-   <arg value="${basedir}/phpmd.xml" />
+   <arg value="${basedir}/api/phpmd.xml" />
   </exec>
  </target>
 
  <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
   <exec executable="phpmd">
-   <arg path="${basedir}/app/Resources,${basedir}/src" />
+   <arg path="${basedir}/api/app/Resources,${basedir}/api/src" />
    <arg value="xml" />
    <arg value="${basedir}/phpmd.xml" />
    <arg value="--reportfile" />
@@ -163,7 +164,7 @@
   <exec executable="phpcs">
    <arg value="--standard=${basedir}/phpcs.xml" />
    <arg value="--extensions=php" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
   </exec>
  </target>
 
@@ -173,7 +174,7 @@
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
    <arg value="--standard=${basedir}/phpcs.xml" />
    <arg value="--extensions=php" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
   </exec>
  </target>
 
@@ -181,7 +182,7 @@
   <exec executable="phpcpd">
    <arg value="--log-pmd" />
    <arg value="${basedir}/build/logs/pmd-cpd.xml" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
   </exec>
  </target>
 
@@ -189,7 +190,7 @@
   <exec executable="phpdoc">
    <arg value="-q" />
    <arg value="-n" />
-   <arg value="--directory=${basedir}/src" />
+   <arg value="--directory=${basedir}/api/src" />
    <arg value="--target=${basedir}/doc" />
   </exec>
  </target>
@@ -197,7 +198,7 @@
  <target name="phpunit" description="Run unit tests with PHPUnit">
   <exec executable="phpunit" failonerror="true">
     <arg value="-c" />
-    <arg value="app" />
+    <arg value="api/app" />
   </exec>
  </target>
 
@@ -218,7 +219,7 @@
    <arg value="--log" />
    <arg path="${basedir}/build/logs" />
    <arg value="--source" />
-   <arg path="${basedir}/src" />
+   <arg path="${basedir}/api/src" />
    <arg value="--output" />
    <arg path="${basedir}/build/code-browser" />
   </exec>

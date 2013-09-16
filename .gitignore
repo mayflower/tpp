@@ -19,3 +19,4 @@ node_modules
 .vagrant
 app/bower_components
 dist
+app/styles/main.cssgit
