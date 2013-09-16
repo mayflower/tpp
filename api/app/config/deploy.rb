@@ -4,7 +4,7 @@ set :deploy_to,   "/www/tpp"
 set :deploy_via,  :remote_cache
 set :app_path,    "app"
 set :web_path,    "web"
-set :cache_path   "api/app/cache"
+set :cache_path,  "api/app/cache"
 
 set :repository,  "git@lcgitlab:loccom/#{application}.git"
 set :scm,         :git
