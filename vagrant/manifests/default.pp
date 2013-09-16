@@ -37,7 +37,7 @@ nginx::resource::vhost { 'tpp.dev':
   index_files  => [
     'index.html',
   ],
-  www_root     => '/www/tpp/web/bundles/mayflowertppfrontend/app',
+  www_root     => '/www/tpp/app',
   try_files   => ['$uri', '$uri/', '/index.html', '=404'],
 }
 
@@ -48,7 +48,7 @@ nginx::resource::location { 'api-rewrite':
   ensure              => 'present',
   vhost               => 'tpp.dev',
   location            => '~ ^/api.+$',
-  www_root            => '/www/tpp/web',
+  www_root            => '/www/tpp/api/web',
   proxy               => undef,
   index_files  => [
     'app_dev.php',
@@ -64,7 +64,7 @@ nginx::resource::location { 'tpp.dev-php':
   vhost               => 'tpp.dev',
   location            => '~ ^/app_dev\.php($|/)',
   proxy               => undef,
-  www_root            => '/www/tpp/web',
+  www_root            => '/www/tpp/api/web',
   index_files  => [
     'app_dev.php',
   ],
@@ -273,15 +273,15 @@ exec { 'install_bower_modules':
   require => Nodejs::Module['bower']
 }
 composer::run { 'composer_install':
-  path    => '/www/tpp',
+  path    => '/www/tpp/api',
   require => [
     Class['composer'],
     Class['php::extension::intl']
   ]
 }
 exec { 'db_schema_create':
-  command => '/www/tpp/app/console doctrine:schema:update',
-  cwd     => '/www/tpp',
+  command => '/www/tpp/api/app/console doctrine:schema:update',
+  cwd     => '/www/tpp/api',
   user    => 'vagrant',
   require => [
     Composer::Run['composer_install'],
@@ -289,8 +289,8 @@ exec { 'db_schema_create':
   ]
 }
 exec { 'db_schema_create_test':
-  command => '/www/tpp/app/console doctrine:schema:update -e test',
-  cwd     => '/www/tpp',
+  command => '/www/tpp/api/app/console doctrine:schema:update -e test',
+  cwd     => '/www/tpp/api',
   user    => 'vagrant',
   require => [
     Composer::Run['composer_install'],
@@ -298,8 +298,8 @@ exec { 'db_schema_create_test':
   ]
 }
 exec { 'assets_install':
-  command => '/www/tpp/app/console assets:install --relative --symlink',
-  cwd     => '/www/tpp',
+  command => '/www/tpp/api/app/console assets:install --relative --symlink',
+  cwd     => '/www/tpp/api',
   user    => 'vagrant',
   require => [
     Exec['db_schema_create']

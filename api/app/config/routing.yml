@@ -1,0 +1,4 @@
+mayflower_tpp:
+    resource: "@MayflowerTPPBundle/Resources/config/routing.yml"
+    prefix:   /api
+

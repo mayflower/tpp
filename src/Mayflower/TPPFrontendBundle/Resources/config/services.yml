@@ -1,7 +1,0 @@
-parameters:
-#    mayflower_tpp_frontend.example.class: Mayflower\TPPFrontendBundle\Example
-
-services:
-#    mayflower_tpp_frontend.example:
-#        class: %mayflower_tpp_frontend.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

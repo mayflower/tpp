@@ -52,8 +52,8 @@ alias v='vim'
 alias ..='cd ..'
 alias cu='composer update'
 alias ci='composer install'
-alias sc='/vagrant/app/console'
-alias pu='phpunit -c /vagrant/app'
+alias sc='/vagrant/api/app/console'
+alias pu='phpunit -c /vagrant/api/app'
 
 export NODENV_ROOT=/usr/local/share/nodenv
 

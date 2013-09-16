@@ -17,8 +17,8 @@ module.exports = function (grunt) {
 
     // configurable paths
     var yeomanConfig = {
-        app: 'src/Mayflower/TPPFrontendBundle/Resources/public/app',
-        dist: 'src/Mayflower/TPPFrontendBundle/Resources/public/dist'
+        app: 'app',
+        dist: 'dist'
     };
 
     try {

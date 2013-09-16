@@ -1,3 +1,3 @@
 {
-    "directory": "src/Mayflower/TPPFrontendBundle/Resources/public/app/bower_components"
+    "directory": "app/bower_components"
 }

@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FrameworkRootSettings" id="Symfony2">
-    <option name="bundleRoots">
-      <list>
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPBundle" />
-        <option value="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle" />
-      </list>
-    </option>
-    <option name="typedPaths">
-      <list>
-        <element elementPath="$PROJECT_DIR$/app" typeId="app_directory" />
-        <element elementPath="$PROJECT_DIR$/src" typeId="src_directory" />
-        <element elementPath="$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources" typeId="all_bundle_resources_directory" />
-        <element elementPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Controller" typeId="controller" />
-        <element elementPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/DependencyInjection" typeId="dependencyInjection" />
-        <element elementPath="$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Tests" typeId="tests" />
-        <element elementPath="$PROJECT_DIR$/vendor" typeId="vendor_directory" />
-        <element elementPath="$PROJECT_DIR$/web" typeId="web_directory" />
-      </list>
-    </option>
-  </component>
+  <component name="FrameworkRootSettings" id="Symfony2" />
 </project>
 
