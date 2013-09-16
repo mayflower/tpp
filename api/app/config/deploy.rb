@@ -2,7 +2,8 @@ set :application, "tpp"
 set :domain,      "lcweb.lc.local"
 set :deploy_to,   "/www/tpp"
 set :deploy_via,  :remote_cache
-set :app_path,    "app"
+set :app_path,    "api/app"
+set :web_path,    "api/web"
 
 set :repository,  "git@lcgitlab:loccom/#{application}.git"
 set :scm,         :git
@@ -25,7 +26,7 @@ set :composer_options,  "--no-scripts --no-dev --verbose --prefer-dist --optimiz
 logger.level = Logger::MAX_LEVEL
 
 set :shared_files, ["api/app/config/parameters.yml"]
-set :shared_children, [app_path + "/logs", web_path + "/uploads", "vendor"]
+set :shared_children, [app_path + "/logs", web_path + "/uploads", "api/vendor"]
 set :use_composer, true
 set :update_vendors, true
 
