@@ -2,8 +2,8 @@ set :application, "tpp"
 set :domain,      "lcweb.lc.local"
 set :deploy_to,   "/www/tpp"
 set :deploy_via,  :remote_cache
-set :app_path,    "api/app"
-set :web_path,    "api/web"
+set :app_path,    "app"
+set :web_path,    "web"
 
 set :repository,  "git@lcgitlab:loccom/#{application}.git"
 set :scm,         :git
@@ -20,14 +20,15 @@ set  :use_sudo, false
 set  :user, "deploy"
 set  :keep_releases, 3
 
-set :composer_options,  "--no-scripts --no-dev --verbose --prefer-dist --optimize-autoloader --working-dir=api"
+set :composer_options,  "--no-dev --verbose --prefer-dist --optimize-autoloader --working-dir=api"
 set :composer_dump_autoload_options, "--optimize --working-dir=api"
+set :symfony_console, "api/app/console"
 
 # Be more verbose by uncommenting the following line
 logger.level = Logger::MAX_LEVEL
 
 set :shared_files, ["api/app/config/parameters.yml"]
-set :shared_children, [app_path + "/logs", web_path + "/uploads", "api/vendor"]
+set :shared_children, ["api/app/logs", "api/app/uploads", "api/vendor"]
 set :use_composer, true
 set :update_vendors, true
 
@@ -40,13 +41,13 @@ set :grunt_tasks, ['build']
 namespace :bower do
   desc "Install bower components"
   task :install do
-    run "cd #{release_path} && bower install --production"
+    run "cd #{release_path} && bower install --production --quiet"
   end
 end
 
 namespace :npm do
   desc "Install npm components"
   task :install do
-    run "cd #{release_path} && npm install"
+    run "cd #{release_path} && npm install --quiet"
   end
 end
