@@ -36,12 +36,12 @@ if (process.env.USER == 'jenkins') {
         type: 'cobertura',
         dir: 'build'
     };
-} else {
-    coverageReporter = {
-        type: 'html',
-        dir: 'build/coverage/'
-    };
 }
+
+coverageReporter = {
+    type: 'html',
+    dir: 'build/coverage/'
+};
 
 junitReporter = {
     outputFile: 'build/karma-unit.xml',
