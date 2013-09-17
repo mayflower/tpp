@@ -14,9 +14,18 @@ a:focus {
     outline: none;
 }
 
-.navbar-brand {
+h2 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 100;
+    font-size: 3em;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 25px;
 }
 

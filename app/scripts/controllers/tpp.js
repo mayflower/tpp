@@ -4,7 +4,7 @@ angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller(
         'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'dateUtil',
-            function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
+function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
 
     $scope.weeks = {
         date: (function () {
@@ -153,6 +153,7 @@ angular.module(
     })();
 
     $scope.$on('addTask', function (event, resourceId, week) {
+        $scope.resetTask();
         $scope.isEdit = false;
         $scope.task.resourceId = resourceId;
         $scope.task.week = week;
@@ -162,6 +163,7 @@ angular.module(
     });
 
     $scope.$on('editTask', function (event, task) {
+        $scope.resetTask();
         $scope.isEdit = true;
         $scope.task = angular.copy(task);
         $('#task-modal').modal({
@@ -177,11 +179,6 @@ angular.module(
             $scope.task.$save();
             $scope.$emit('taskAdded', $scope.task);
         }
-        $scope.resetTask();
-    };
-
-    $scope.cancel = function () {
-        $scope.resetTask();
     };
 
 }]);
