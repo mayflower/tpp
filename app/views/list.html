@@ -9,29 +9,30 @@
     <button class="btn btn-default pull-right glyphicon glyphicon-arrow-right" ng-click="forward()"></button>
 </div>
 
-<table class="table table-hover task-table">
+<table class="table table-hover task-table" ng-class="{overview: weeks.numWeeks >= OVERVIEW_THRESHOLD}">
     <tr>
         <th>&nbsp;</th>
         <th ng-click="sortListBy('name')" class="sortable">Name</th>
         <th class="weekNumber" ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
-            KW {{ week.week() }} (ab {{ week.format('DD.MM') }})
+            <span ng-if="weeks.numWeeks < OVERVIEW_THRESHOLD">KW {{ week.week() }} (ab {{ week.format('DD.MM') }})</span>
+            <span ng-else>{{ week.week() }}</span>
         </th>
     </tr>
 
     <tr class="list" ng-repeat="resource in resourceList | orderBy:sortCriteria">
         <td><button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeResource(resource)"></button></td>
         <td>{{ resource.name }}</td>
-        <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}" class="tasks">
+        <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week), occupied: getTasks(resource, week).length}" class="tasks">
             <div ng-repeat="task in getTasks(resource, week) | orderBy:'title'" class="task {{ task.color }}">
                 <div class="task-title">{{ task.title }}</div>
-                <div>
+                <div class="task-modify-buttons">
                     <button class="btn btn-default glyphicon glyphicon-pencil btn-sm"
                             ng-click="editTask(task)"></button>
                     <button class="btn btn-default glyphicon glyphicon-remove btn-sm"
                             ng-click="deleteTask(task)"></button>
                 </div>
             </div>
-            <button class="btn btn-default btn-xs add-task-button" ng-click="addTask(resource.id, week)">
+            <button class="btn btn-default btn-xs task-add-button" ng-click="addTask(resource.id, week)">
                 +
             </button>
         </td>

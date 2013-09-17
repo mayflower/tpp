@@ -12,7 +12,7 @@
     <tr class="list" ng-repeat="project in projectList">
         <td>
             <button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="deleteProject(project)"></button>
-            <button class="btn btn-default btn-sm glyphicon glyphicon-edit" ng-click="editProject(project)"></button>
+            <button class="btn btn-default btn-sm glyphicon glyphicon-pencil" ng-click="editProject(project)"></button>
         </td>
         <td>{{ project.name }}</td>
         <td>{{ project.begin.format('DD.MM.YYYY') }}</td>

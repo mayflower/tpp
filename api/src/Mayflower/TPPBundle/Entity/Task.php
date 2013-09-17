@@ -58,7 +58,7 @@ class Task
     /**
      * @var Resource
      *
-     * @ORM\ManyToOne(targetEntity="Resource", cascade={"all"})
+     * @ORM\ManyToOne(targetEntity="Resource")
      * @ORM\JoinColumn(name="resource_id", referencedColumnName="id")
      */
     private $resource;

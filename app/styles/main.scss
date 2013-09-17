@@ -50,12 +50,31 @@ h2 {
     background-color: #ffffcc;
 }
 
+
 .table tbody > tr > td {
     vertical-align: middle;
 }
 
 .task-table {
     margin-top: 1em;
+}
+
+.overview {
+    .task-add-button, .task-modify-buttons {
+        display: none;
+    }
+
+    .task {
+        display: none;
+    }
+
+    .occupied {
+        background-color: #8be1ff;
+    }
+}
+
+.overview.table-hover > tbody > tr:hover > td.occupied {
+    background-color: #8be1ff;
 }
 
 .task {

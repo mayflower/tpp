@@ -6,6 +6,8 @@ angular.module(
         'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'dateUtil',
 function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
 
+    $scope.OVERVIEW_THRESHOLD = 10;
+
     $scope.weeks = {
         date: (function () {
             var date = moment();
