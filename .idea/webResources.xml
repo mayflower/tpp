@@ -7,6 +7,7 @@
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/src/Mayflower/TPPFrontendBundle/Resources" />
             <path value="file://$PROJECT_DIR$/src/Mayflower/TPPBundle/Resources" />
+            <path value="file://$PROJECT_DIR$/app" />
           </resourceRoots>
         </entryData>
       </entry>

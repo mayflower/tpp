@@ -1,6 +1,4 @@
-<h1>Team Project Planner</h1>
-
-<p class="lead">Project schedule.</p>
+<p class="lead">Project schedule</p>
 
 <div class="form-group">
     <label for="numWeeks" class="control-label">Anzahl Wochen</label>
@@ -20,7 +18,7 @@
         </th>
     </tr>
 
-    <tr class="list" ng-repeat="resource in resourceList | orderBy:sortCriteria | filter:search">
+    <tr class="list" ng-repeat="resource in resourceList | orderBy:sortCriteria">
         <td><button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeResource(resource)"></button></td>
         <td>{{ resource.name }}</td>
         <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}" class="tasks">

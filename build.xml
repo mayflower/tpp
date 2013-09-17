@@ -86,7 +86,7 @@
    <arg value="-n" />
    <arg value="--env=test" />
    <arg value="--no-debug" />
-   <arg value="web" />
+   <arg value="api/web" />
   </exec>
  </target>
  <target name="lint" description="Perform syntax check of sourcecode files">

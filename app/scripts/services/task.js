@@ -16,7 +16,7 @@ angular.module(
              var task = response.resource;
              task.week = moment(task.week.date);
          }
-     }
+     };
 
 
     return $resource(

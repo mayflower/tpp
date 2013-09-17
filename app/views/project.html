@@ -1,0 +1,28 @@
+
+<p class="lead">Project list</p>
+
+<table class="table table-hover">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Project</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Color</th>
+    </tr>
+
+    <tr class="list" ng-repeat="project in projectList">
+        <td>
+            <button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="removeProject(project)"></button>
+            <button class="btn btn-default btn-sm glyphicon glyphicon-edit" ng-click="editProject(project)"></button>
+        </td>
+        <td>{{ project.name }}</td>
+        <td>{{ project.begin.format('DD.MM.YYYY') }}</td>
+        <td>{{ project.end.format('DD.MM.YYYY') }}</td>
+        <td ng-style="{'background-color': project.color}">&nbsp;</td>
+    </tr>
+</table>
+
+<button class="btn btn-default">
+    <span class="glyphicon glyphicon-plus"></span>
+    Add Project
+</button>

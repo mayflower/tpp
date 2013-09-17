@@ -28,7 +28,24 @@
         <script src="/bower_components/json3/lib/json3.min.js"></script>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Team Project Planner</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li active-link="active"><a href="/">Planner</a></li>
+                    <li active-link="active"><a href="/projects">Projects</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+
         <div class="container">
             <div ng-view></div>
         </div>
@@ -51,9 +68,12 @@
         <!-- build:js scripts/scripts.js -->
         <script src="/scripts/app.js"></script>
         <script src="/scripts/controllers/tpp.js"></script>
+        <script src="/scripts/controllers/projects.js"></script>
         <script src="/scripts/services/resource.js"></script>
+        <script src="/scripts/services/project.js"></script>
         <script src="/scripts/services/task.js"></script>
         <script src="/scripts/services/util.js"></script>
+        <script src="/scripts/directives/active-link.js"></script>
         <!-- endbuild -->
 
         <!-- build:remove -->
