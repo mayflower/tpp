@@ -3,8 +3,8 @@
 angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller(
-        'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'Project', 'dateUtil',
-function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
+        'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'dateUtil',
+function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
 
     $scope.OVERVIEW_THRESHOLD = 10;
 
@@ -47,9 +47,6 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
 
     // fetch resources from server
     $scope.resourceList = Resource.query();
-
-    // fetch resources from server
-    $scope.projectList = Project.query();
 
     // re-fetch on changing weeks
     $scope.$watchCollection('weeks', function (newWeeks) {
@@ -151,7 +148,10 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
     $scope.isEdit = false;
 
     ($scope.resetTask = function () {
-        $scope.task = new Task();
+        $scope.task = new Task({
+            title: '',
+            color: 'yellow'
+        });
     })();
 
     $scope.$on('addTask', function (event, resourceId, week) {
