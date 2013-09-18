@@ -24,16 +24,9 @@ class Project
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255)
      */
     private $name;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="resourcesPerWeek", type="integer")
-     */
-    private $resourcesPerWeek;
 
     /**
      * @var string
@@ -115,7 +108,7 @@ class Project
     }
 
     /**
-     * Set begin
+     * Set week
      *
      * @param \DateTime $begin
      *
@@ -130,7 +123,7 @@ class Project
     }
 
     /**
-     * Get begin
+     * Get week
      *
      * @return \DateTime
      */
@@ -140,7 +133,7 @@ class Project
     }
 
     /**
-     * Set end
+     * Set week
      *
      * @param \DateTime $end
      *
@@ -155,39 +148,13 @@ class Project
     }
 
     /**
-     * Get end
+     * Get week
      *
      * @return \DateTime
      */
     public function getEnd()
     {
         return $this->end;
-    }
-
-
-    /**
-     * Get resourcesPerWeek
-     *
-     * @return integer
-     */
-    public function getResourcesPerWeek()
-    {
-        return $this->resourcesPerWeek;
-    }
-
-
-    /**
-     * Set resourcesPerWeek
-     *
-     * @param integer $resourcesPerWeek
-     *
-     * @return Project
-     */
-    public function setResourcesPerWeek($resourcesPerWeek)
-    {
-        $this->resourcesPerWeek = $resourcesPerWeek;
-
-        return $this;
     }
 
     /**
@@ -202,9 +169,7 @@ class Project
             'name' => $this->getName(),
             'begin' => $this->getBegin(),
             'end' => $this->getEnd(),
-            'color' => $this->getColor(),
-            'resourcesPerWeek' => $this->getResourcesPerWeek()
+            'color' => $this->getColor()
         ];
     }
-
 }

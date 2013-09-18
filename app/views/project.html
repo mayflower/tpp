@@ -4,7 +4,6 @@
     <tr>
         <th>&nbsp;</th>
         <th>Project</th>
-        <th>Planned Resources per Week</th>
         <th>Start</th>
         <th>End</th>
         <th>Color</th>
@@ -16,7 +15,6 @@
             <button class="btn btn-default btn-sm glyphicon glyphicon-pencil" ng-click="editProject(project)"></button>
         </td>
         <td>{{ project.name }}</td>
-        <td>{{ project.resourcesPerWeek }}</td>
         <td>{{ project.begin.format('DD.MM.YYYY') }}</td>
         <td>{{ project.end.format('DD.MM.YYYY') }}</td>
         <td ng-style="{'background-color': project.color}">&nbsp;</td>
@@ -51,14 +49,6 @@
 
                         <div class="col-lg-9">
                             <input class="form-control" id="project-color" ng-model="project.color" colorpicker>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="project-resourcesPerWeek" class="col-lg-3 control-label">Planned Resources per Week</label>
-
-                        <div class="col-lg-9">
-                            <input class="form-control" id="project-resourcesPerWeek" ng-model="project.resourcesPerWeek">
                         </div>
                     </div>
 

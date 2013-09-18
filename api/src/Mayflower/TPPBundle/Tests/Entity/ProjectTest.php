@@ -48,20 +48,6 @@ class ProjectTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test color getting/setting
-     *
-     * @return null
-     */
-    public function testSetGetResourcesPerWeek()
-    {
-        $project = new Project();
-
-        $this->assertEquals(null, $project->getResourcesPerWeek());
-        $project->setResourcesPerWeek(3);
-        $this->assertEquals(3, $project->getResourcesPerWeek());
-    }
-
-    /**
      * Test week getting/setting
      *
      * @return null
@@ -111,6 +97,5 @@ class ProjectTest extends \PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('name', $project->toArray());
         $this->assertArrayHasKey('begin', $project->toArray());
         $this->assertArrayHasKey('end', $project->toArray());
-        $this->assertArrayHasKey('resourcesPerWeek', $project->toArray());
     }
 }
