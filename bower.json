@@ -11,7 +11,9 @@
     "angular-cookies": "1.2.0-rc.2",
     "angular-sanitize": "1.2.0-rc.2",
     "momentjs": "~2.1.0",
-    "angular-route": "1.2.0-rc.2"
+    "angular-route": "1.2.0-rc.2",
+    "angular-bootstrap-colorpicker": "~1.0.0",
+    "bootstrap-colorpicker": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.0-rc.2",

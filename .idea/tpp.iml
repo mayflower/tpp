@@ -13,8 +13,10 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/doctrine-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/doctrine-migrations-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/migrations" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/orm" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/incenteev/composer-parameter-handler" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/jdorn/sql-formatter" />
@@ -64,6 +66,7 @@
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/annotations" />
           <root url="file://$MODULE_DIR$/api/vendor/composer" />
           <root url="file://$MODULE_DIR$/api/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/api/vendor/doctrine/doctrine-migrations-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/api/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
@@ -79,6 +82,7 @@
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/cache" />
           <root url="file://$MODULE_DIR$/api/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/api/vendor/symfony/icu" />
+          <root url="file://$MODULE_DIR$/api/vendor/doctrine/migrations" />
           <root url="file://$MODULE_DIR$/api/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/inflector" />
@@ -95,6 +99,7 @@
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/annotations" />
           <root url="file://$MODULE_DIR$/api/vendor/composer" />
           <root url="file://$MODULE_DIR$/api/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/api/vendor/doctrine/doctrine-migrations-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/api/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
@@ -110,6 +115,7 @@
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/cache" />
           <root url="file://$MODULE_DIR$/api/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/api/vendor/symfony/icu" />
+          <root url="file://$MODULE_DIR$/api/vendor/doctrine/migrations" />
           <root url="file://$MODULE_DIR$/api/vendor/symfony/assetic-bundle" />
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/api/vendor/doctrine/inflector" />

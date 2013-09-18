@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module(
-    'tpp.controllers.projects', ['tpp.project', 'datepicker']
+    'tpp.controllers.projects', ['tpp.project', 'datepicker', 'colorpicker.module']
 ).controller(
     'projectsCtrl', ['$scope', 'Project',
 function ($scope, Project) {
@@ -74,7 +74,6 @@ function ($scope, Project) {
         $scope.project.begin = moment.utc($scope.project.beginDisplay, $scope.DATE_FORMAT);
         $scope.project.end = moment.utc($scope.project.endDisplay, $scope.DATE_FORMAT);
 
-        console.log($scope.project.begin);
         if ($scope.isEdit) {
             $scope.project.$update();
             $scope.$emit('projectEdited', $scope.project);

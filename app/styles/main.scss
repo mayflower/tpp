@@ -50,9 +50,12 @@ h2 {
     background-color: #ffffcc;
 }
 
-
 .table tbody > tr > td {
     vertical-align: middle;
+}
+
+.colorpicker {
+    z-index: 1050;
 }
 
 .task-table {
