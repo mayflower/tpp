@@ -61,7 +61,7 @@ class ProjectTest extends \PHPUnit_Framework_TestCase
         $now = new \DateTime();
         $project->setBegin($now);
 
-        $week = new \DateTime('monday this week');
+        $week = new \DateTime('midnight');
         $this->assertEquals($week, $project->getBegin());
     }
 
@@ -79,7 +79,7 @@ class ProjectTest extends \PHPUnit_Framework_TestCase
         $now = new \DateTime();
         $project->setEnd($now);
 
-        $week = new \DateTime('monday this week');
+        $week = new \DateTime('midnight');
         $this->assertEquals($week, $project->getEnd());
     }
 

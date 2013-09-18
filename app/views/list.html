@@ -15,7 +15,7 @@
         <th ng-click="sortListBy('name')" class="sortable">Name</th>
         <th class="weekNumber" ng-repeat="week in weekList" ng-class="{current: isCurrent(week)}">
             <span ng-if="weeks.numWeeks < OVERVIEW_THRESHOLD">KW {{ week.week() }} (ab {{ week.format('DD.MM') }})</span>
-            <span ng-else>{{ week.week() }}</span>
+            <span ng-if="weeks.numWeeks >= OVERVIEW_THRESHOLD">{{ week.week() }}</span>
         </th>
     </tr>
 

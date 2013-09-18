@@ -63,6 +63,14 @@ class Task
      */
     private $resource;
 
+    /**
+     * @var Resource
+     *
+     * @ORM\ManyToOne(targetEntity="Project")
+     * @ORM\JoinColumn(name="project_id", referencedColumnName="id")
+     */
+    private $project;
+
 
     /**
      * Get id
@@ -193,6 +201,30 @@ class Task
     public function getResource()
     {
         return $this->resource;
+    }
+
+    /**
+     * Set project
+     *
+     * @param \Mayflower\TPPBundle\Entity\Project|Project $project
+     *
+     * @return Task
+     */
+    public function setProject(Project $project = null)
+    {
+        $this->resource = $project;
+
+        return $this;
+    }
+
+    /**
+     * Get project
+     *
+     * @return Project
+     */
+    public function getProject()
+    {
+        return $this->project;
     }
 
     /**

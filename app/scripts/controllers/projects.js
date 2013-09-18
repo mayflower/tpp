@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module(
-    'tpp.controllers.projects', ['tpp.project']
+    'tpp.controllers.projects', ['tpp.project', 'datepicker']
 ).controller(
     'projectsCtrl', ['$scope', 'Project',
 function ($scope, Project) {
@@ -36,8 +36,9 @@ function ($scope, Project) {
         $scope.projectList.push(project);
     });
 
-
 }]).controller('projectCtrl', ['$scope', 'Project', function ($scope, Project) {
+
+    $scope.DATE_FORMAT = 'DD.MM.YYYY';
 
     $scope.isEdit = false;
 
@@ -45,8 +46,8 @@ function ($scope, Project) {
         $scope.project = new Project({
             name: '',
             color: '#CCC',
-            begin: '',
-            end: ''
+            beginDisplay: moment().format($scope.DATE_FORMAT),
+            endDisplay: moment().format($scope.DATE_FORMAT)
         });
     })();
 
@@ -62,12 +63,18 @@ function ($scope, Project) {
         $scope.resetProject();
         $scope.isEdit = true;
         $scope.project = angular.copy(project);
+        $scope.project.beginDisplay = $scope.project.begin.format($scope.DATE_FORMAT);
+        $scope.project.endDisplay = $scope.project.end.format($scope.DATE_FORMAT);
         $('#project-modal').modal({
             'show': true
         });
     });
 
     $scope.submit = function () {
+        $scope.project.begin = moment.utc($scope.project.beginDisplay, $scope.DATE_FORMAT);
+        $scope.project.end = moment.utc($scope.project.endDisplay, $scope.DATE_FORMAT);
+
+        console.log($scope.project.begin);
         if ($scope.isEdit) {
             $scope.project.$update();
             $scope.$emit('projectEdited', $scope.project);

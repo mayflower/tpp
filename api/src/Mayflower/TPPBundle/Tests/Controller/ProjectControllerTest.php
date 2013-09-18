@@ -50,7 +50,7 @@ class ProjectControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $content = '{"name":"Test Project","color":"#123456","begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 16 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"name":"Test Project","color":"#123456","begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 17 2013 01:00:00 GMT+0100 (BST)"}';
 
         $client->request('POST', '/api/project', array(), array(), array(), $content);
         $response = $client->getResponse();
@@ -69,7 +69,7 @@ class ProjectControllerTest extends WebTestCase
         $begin_date = new \DateTime("Mon Sep 09 2013 00:00:00");
         $this->assertEquals($begin_date, $project->getBegin());
 
-        $end_date = new \DateTime("Mon Sep 16 2013 00:00:00");
+        $end_date = new \DateTime("Mon Sep 17 2013 00:00:00");
         $this->assertEquals($end_date, $project->getEnd());
     }
 

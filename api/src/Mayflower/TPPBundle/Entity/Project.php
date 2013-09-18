@@ -117,7 +117,7 @@ class Project
     public function setBegin(\DateTime $begin)
     {
         $this->begin = $begin;
-        $this->begin->modify('monday this week');
+        $this->begin->modify('midnight');
 
         return $this;
     }
@@ -142,7 +142,7 @@ class Project
     public function setEnd(\DateTime $end)
     {
         $this->end = $end;
-        $this->end->modify('monday this week');
+        $this->end->modify('midnight');
 
         return $this;
     }
