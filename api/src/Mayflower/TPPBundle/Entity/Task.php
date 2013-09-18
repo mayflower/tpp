@@ -212,7 +212,7 @@ class Task
      */
     public function setProject(Project $project = null)
     {
-        $this->resource = $project;
+        $this->project = $project;
 
         return $this;
     }
@@ -236,13 +236,17 @@ class Task
     {
         return [
             'id' => $this->getId(),
-            'title' => $this->getTitle(),
+//            'title' => $this->getTitle(),
             'resourceId' => $this->getResource() != null ?
                 $this->getResource()->getId() :
                 null,
             'week' => $this->getWeek(),
-            'information' => $this->getInformation(),
-            'color' => $this->getColor()
+            'project' => $this->getProject() != null ?
+                $this->getProject()->toArray() :
+                null,
+
+//            'information' => $this->getInformation(),
+//            'color' => $this->getColor()
         ];
     }
 }
