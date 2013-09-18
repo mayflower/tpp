@@ -47,7 +47,8 @@ function ($scope, Project) {
             name: '',
             color: '#CCC',
             beginDisplay: moment().format($scope.DATE_FORMAT),
-            endDisplay: moment().format($scope.DATE_FORMAT)
+            endDisplay: moment().format($scope.DATE_FORMAT),
+            resourcesPerWeek: 0
         });
     })();
 

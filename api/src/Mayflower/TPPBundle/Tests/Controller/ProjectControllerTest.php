@@ -25,6 +25,7 @@ class ProjectControllerTest extends WebTestCase
         $this->project->setColor("#234567");
         $this->project->setBegin(new \DateTime());
         $this->project->setEnd(new \DateTime());
+        $this->project->setResourcesPerWeek(3);
 
         $this->em->persist($this->project);
         $this->em->flush();
@@ -50,7 +51,7 @@ class ProjectControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $content = '{"name":"Test Project","color":"#123456","begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 17 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"name":"Test Project","resourcesPerWeek":4,"color":"#123456","begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 17 2013 01:00:00 GMT+0100 (BST)"}';
 
         $client->request('POST', '/api/project', array(), array(), array(), $content);
         $response = $client->getResponse();
@@ -65,6 +66,7 @@ class ProjectControllerTest extends WebTestCase
         $project = $this->em->find('MayflowerTPPBundle:Project', $id);
         $this->assertEquals('Test Project', $project->getName());
         $this->assertEquals('#123456', $project->getColor());
+        $this->assertEquals(4, $project->getResourcesPerWeek());
 
         $begin_date = new \DateTime("Mon Sep 09 2013 00:00:00");
         $this->assertEquals($begin_date, $project->getBegin());
