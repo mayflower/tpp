@@ -33,7 +33,7 @@ set :shared_children, ["api/app/logs", "api/app/uploads", "api/vendor"]
 set :use_composer, true
 set :update_vendors, true
 
-before "symfony:cache:warmup", "symfony:doctrine:migrations:migrate"
+# before "symfony:cache:warmup", "symfony:doctrine:migrations:migrate"
 before 'deploy:finalize_update', 'grunt'
 before 'grunt', 'bower:install'
 before 'bower:install', 'npm:install'
