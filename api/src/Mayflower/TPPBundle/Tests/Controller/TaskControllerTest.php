@@ -9,9 +9,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class TaskControllerTest extends WebTestCase
 {
-    private $task1;
-    private $resource;
-
     private $em;
 
     protected function setUp()
@@ -23,18 +20,6 @@ class TaskControllerTest extends WebTestCase
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
-
-        $this->task1 = new Task();
-        $this->task1->setTitle('TaskControllerTest task');
-        $dt = new \DateTime('next monday');
-        $this->task1->setWeek($dt);
-
-        $this->resource = new Resource();
-        $this->resource->setName("TaskControllerTest resource");
-
-        $this->em->persist($this->task1);
-        $this->em->persist($this->resource);
-        $this->em->flush();
     }
 
     public function testDefaultIndex()
@@ -62,7 +47,7 @@ class TaskControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $content = '{"title":"test","color":"green","resourceId":'.$this->resource->getId().',"week":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"title":"test","color":"green","resourceId":7,"week":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)"}';
 
         $client->request('POST', '/api/task', array(), array(), array(), $content);
         $response = $client->getResponse();
@@ -75,7 +60,7 @@ class TaskControllerTest extends WebTestCase
         $id = json_decode($response->getContent(), true)['id'];
         $project = $this->em->find('MayflowerTPPBundle:Task', $id);
         $this->assertEquals('test', $project->getTitle());
-        $this->assertEquals($this->resource, $project->getResource());
+        $this->assertEquals(7, $project->getResource()->getId());
 
         $week = new \DateTime("Mon Sep 09 2013 00:00:00");
         $this->assertEquals($week, $project->getWeek());
@@ -100,20 +85,24 @@ class TaskControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/task/'.$this->task1->getId());
+        $client->request('DELETE', '/api/task/1');
         $response = $client->getResponse();
         $this->assertEquals(
             204,
             $response->getStatusCode(),
             "Unexpected HTTP status code for DELETE /api/task/{id}"
         );
+
+        $task = $this->em->find('MayflowerTPPBundle:Task', 1);
+        $this->assertNull($task);
+
     }
 
     public function testDeleteWithNonExistentResource()
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/task/0');
+        $client->request('DELETE', '/api/task/10000');
         $response = $client->getResponse();
         $this->assertEquals(
             404,
@@ -121,17 +110,4 @@ class TaskControllerTest extends WebTestCase
             "Unexpected HTTP status code for DELETE /api/task/{id}"
         );
     }
-
-    protected function tearDown()
-    {
-        parent::tearDown();
-
-        $tasks = $this->em->getRepository('MayflowerTPPBundle:Task')->findAll();
-        foreach ($tasks as $task) {
-            $this->em->remove($task);
-        }
-        $this->em->remove($this->resource);
-        $this->em->flush();
-    }
-
 }

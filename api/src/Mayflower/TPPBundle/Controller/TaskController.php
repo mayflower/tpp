@@ -48,13 +48,8 @@ class TaskController extends Controller
         $task = new Task();
 
         $data = json_decode($request->getContent(), true);
-        $project = $em->find('MayflowerTPPBundle:Project', $data['project']['id']);
-        if (!$project) {
-            throw $this->createNotFoundException('Unable to find Project.');
-        }
-        $task->setProject($project);
-        $task->setTitle(''); //$data['title']);
-        $task->setColor(''); //$data['color']);
+        $task->setTitle($data['title']);
+        $task->setColor($data['color']);
 
         $week = new \DateTime($data['week']);
         $task->setWeek($week);
@@ -83,14 +78,8 @@ class TaskController extends Controller
         $task = $em->find('MayflowerTPPBundle:Task', $id);
 
         $data = json_decode($request->getContent(), true);
-        $project = $em->find('MayflowerTPPBundle:Project', $data['project']['id']);
-        if (!$project) {
-            throw $this->createNotFoundException('Unable to find Project.');
-        }
-        $task->setProject($project);
-//
-        $task->setTitle(''); //$data['title']);
-        $task->setColor(''); //$data['color']);
+        $task->setTitle($data['title']);
+        $task->setColor($data['color']);
 
         $em->persist($task);
         $em->flush();

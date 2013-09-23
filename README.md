@@ -10,8 +10,8 @@ Install Vagrant (vagrantup.com)
 
 
 add following to local /etc/hosts:
-    
-    192.168.56.101 tpp.dev phpmyadmin xhprof
+
+    192.168.56.101 tpp.dev tpp.pma
 
 access tpp on:
 http://tpp.dev

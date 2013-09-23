@@ -19,15 +19,6 @@ class ProjectControllerTest extends WebTestCase
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
-
-        $this->project = new Project();
-        $this->project->setName("ProjectControllerTest project");
-        $this->project->setColor("#234567");
-        $this->project->setBegin(new \DateTime());
-        $this->project->setEnd(new \DateTime());
-
-        $this->em->persist($this->project);
-        $this->em->flush();
     }
 
     public function testDefaultIndex()
@@ -35,22 +26,23 @@ class ProjectControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/api/project');
-        $project = $client->getResponse();
+        $response = $client->getResponse();
         $this->assertEquals(
             200,
-            $project->getStatusCode(),
+            $response->getStatusCode(),
             "Unexpected HTTP status code for GET /api/project"
         );
 
-        $project_arr = [$this->project->toArray()];
-        $this->assertEquals(json_encode($project_arr), $project->getContent());
+        $projects = json_decode($response->getContent(), true);
+        $this->assertCount(1, $projects);
+        $this->assertEquals('TPP', $projects[0]['name']);
     }
 
     public function testPost()
     {
         $client = static::createClient();
 
-        $content = '{"name":"Test Project","color":"#123456","begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 17 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"name":"Test Project","color":"#123456","resourcesPerWeek":2,"begin":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)","end":"Mon Sep 17 2013 01:00:00 GMT+0100 (BST)"}';
 
         $client->request('POST', '/api/project', array(), array(), array(), $content);
         $response = $client->getResponse();
@@ -65,6 +57,7 @@ class ProjectControllerTest extends WebTestCase
         $project = $this->em->find('MayflowerTPPBundle:Project', $id);
         $this->assertEquals('Test Project', $project->getName());
         $this->assertEquals('#123456', $project->getColor());
+        $this->assertEquals(2, $project->getResourcesPerWeek());
 
         $begin_date = new \DateTime("Mon Sep 09 2013 00:00:00");
         $this->assertEquals($begin_date, $project->getBegin());
@@ -77,7 +70,7 @@ class ProjectControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/project/' . $this->project->getId());
+        $client->request('DELETE', '/api/project/1');
         $response = $client->getResponse();
         $this->assertEquals(
             204,
@@ -85,32 +78,21 @@ class ProjectControllerTest extends WebTestCase
             "Unexpected HTTP status code for DELETE /api/project"
         );
 
-        $project = $this->em->find('MayflowerTPPBundle:Project', $this->project->getId());
-        $this->assertNotNull($project);
+        $project = $this->em->find('MayflowerTPPBundle:Project', 1);
+        $this->assertNull($project);
     }
 
     public function testDeleteWithNonExistentResource()
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/project/' . ($this->project->getId() - 1));
+        $client->request('DELETE', '/api/project/10000');
         $response = $client->getResponse();
         $this->assertEquals(
             404,
             $response->getStatusCode(),
             "Unexpected HTTP status code for POST /api/project with non-existent project"
         );
-    }
-
-    protected function tearDown()
-    {
-        parent::tearDown();
-
-        $projects = $this->em->getRepository('MayflowerTPPBundle:Project')->findAll();
-        foreach ($projects as $project) {
-            $this->em->remove($project);
-        }
-        $this->em->flush();
     }
 
 }

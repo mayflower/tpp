@@ -36,6 +36,13 @@ class Project
     private $color;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="resourcesPerWeek", type="integer")
+     */
+    private $resourcesPerWeek;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="begin", type="date")
@@ -105,6 +112,30 @@ class Project
     public function getColor()
     {
         return $this->color;
+    }
+
+    /**
+     * Set resources per week
+     *
+     * @param integer $resourcesPerWeek
+     *
+     * @return Task
+     */
+    public function setResourcesPerWeek($resourcesPerWeek)
+    {
+        $this->resourcesPerWeek = $resourcesPerWeek;
+
+        return $this;
+    }
+
+    /**
+     * Get resourcesPerWeek
+     *
+     * @return integer
+     */
+    public function getResourcesPerWeek()
+    {
+        return $this->resourcesPerWeek;
     }
 
     /**

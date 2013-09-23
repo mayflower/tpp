@@ -57,37 +57,6 @@
    <arg value="--working-dir=api" />
    <arg value="install" />
   </exec>
-  <exec executable="api/app/console">
-   <arg value="doctrine:database:drop" />
-   <arg value="-n" />
-   <arg value="--env=test" />
-   <arg value="--force" />
-  </exec>
-  <exec executable="api/app/console">
-   <arg value="doctrine:database:create" />
-   <arg value="--env=test" />
-   <arg value="-n" />
-  </exec>
-  <exec executable="api/app/console">
-   <arg value="doctrine:schema:update" />
-   <arg value="-n" />
-   <arg value="--env=test" />
-   <arg value="--complete" />
-   <arg value="--force" />
-  </exec>
-  <exec executable="api/app/console">
-   <arg value="assetic:dump" />
-   <arg value="-n" />
-   <arg value="--env=prod" />
-   <arg value="--no-debug" />
-  </exec>
-  <exec executable="api/app/console">
-   <arg value="assets:install" />
-   <arg value="-n" />
-   <arg value="--env=test" />
-   <arg value="--no-debug" />
-   <arg value="api/web" />
-  </exec>
  </target>
  <target name="lint" description="Perform syntax check of sourcecode files">
   <apply executable="php" failonerror="true">
@@ -196,9 +165,8 @@
  </target>
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
-  <exec executable="phpunit" failonerror="true">
-    <arg value="-c" />
-    <arg value="api/app" />
+  <exec executable="api/app/console" failonerror="true">
+    <arg value="tpp:test" />
   </exec>
  </target>
 
