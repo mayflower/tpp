@@ -3,8 +3,8 @@
 angular.module(
         'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.utils']
 ).controller(
-        'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'dateUtil',
-function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
+        'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'Project', 'dateUtil',
+function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
 
     $scope.OVERVIEW_THRESHOLD = 10;
 
@@ -47,6 +47,9 @@ function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
 
     // fetch resources from server
     $scope.resourceList = Resource.query();
+
+    // fetch projects from server
+    $scope.projectList = Project.query();
 
     // re-fetch on changing weeks
     $scope.$watchCollection('weeks', function (newWeeks) {
@@ -143,14 +146,13 @@ function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
         $scope.setUp($scope.weeks);
     };
 
-}]).controller('taskCtrl', ['$scope', 'Task', function ($scope, Task) {
+}]).controller('taskCtrl', ['$scope', 'Task', 'Project', function ($scope, Task, Project) {
 
     $scope.isEdit = false;
 
     ($scope.resetTask = function () {
         $scope.task = new Task({
-            title: '',
-            color: 'yellow'
+//            project: new Project()
         });
     })();
 
@@ -167,7 +169,9 @@ function ($scope, $routeParams, $location, Resource, Task, dateUtil) {
     $scope.$on('editTask', function (event, task) {
         $scope.resetTask();
         $scope.isEdit = true;
-        $scope.task = angular.copy(task);
+        $scope.task.resourceId = task.resourceId;
+        $scope.task.week = task.week;
+        $scope.task.id = task.id;
         $('#task-modal').modal({
             'show': true
         });

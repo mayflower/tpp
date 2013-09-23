@@ -7,7 +7,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ProjectControllerTest extends WebTestCase
 {
-    private $project;
     private $em;
 
     protected function setUp()
@@ -34,7 +33,7 @@ class ProjectControllerTest extends WebTestCase
         );
 
         $projects = json_decode($response->getContent(), true);
-        $this->assertCount(1, $projects);
+        $this->assertCount(4, $projects);
         $this->assertEquals('TPP', $projects[0]['name']);
     }
 

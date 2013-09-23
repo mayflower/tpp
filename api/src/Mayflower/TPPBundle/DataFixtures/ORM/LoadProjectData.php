@@ -32,6 +32,30 @@ class LoadProjectData extends AbstractFixture implements OrderedFixtureInterface
         $project->setEnd(new \DateTime('11.10.2013'));
         $project->setResourcesPerWeek(1);
         $manager->persist($project);
+
+        $project = new Project();
+        $project->setName('Admin');
+        $project->setColor('#aaaaaa');
+        $project->setBegin(new \DateTime('14.08.2013'));
+        $project->setEnd(new \DateTime('11.10.2013'));
+        $project->setResourcesPerWeek(1);
+        $manager->persist($project);
+
+        $project = new Project();
+        $project->setName('Puppet');
+        $project->setColor('#ff8844');
+        $project->setBegin(new \DateTime('14.08.2013'));
+        $project->setEnd(new \DateTime('11.10.2013'));
+        $project->setResourcesPerWeek(1);
+        $manager->persist($project);
+
+        $project = new Project();
+        $project->setName('Jenkins');
+        $project->setColor('#654321');
+        $project->setBegin(new \DateTime('14.08.2013'));
+        $project->setEnd(new \DateTime('11.10.2013'));
+        $project->setResourcesPerWeek(1);
+        $manager->persist($project);
         $manager->flush();
 
         $this->setReference('project-tpp', $project);

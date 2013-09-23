@@ -47,7 +47,7 @@ class TaskControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $content = '{"title":"test","color":"green","resourceId":7,"week":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"project":{"id":2,"name":"TPP","begin":"2013-08-13T22:00:00.000Z","end":"2013-10-10T22:00:00.000Z","color":"#123456"},"resourceId":7,"week":"2013-09-08T22:00:00.000Z"}';
 
         $client->request('POST', '/api/task', array(), array(), array(), $content);
         $response = $client->getResponse();
@@ -59,7 +59,7 @@ class TaskControllerTest extends WebTestCase
 
         $id = json_decode($response->getContent(), true)['id'];
         $project = $this->em->find('MayflowerTPPBundle:Task', $id);
-        $this->assertEquals('test', $project->getTitle());
+//        $this->assertEquals('test', $project->getTitle());
         $this->assertEquals(7, $project->getResource()->getId());
 
         $week = new \DateTime("Mon Sep 09 2013 00:00:00");
@@ -70,7 +70,7 @@ class TaskControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $content = '{"title":"test","color":"green","resourceId":-1,"week":"Mon Sep 09 2013 01:00:00 GMT+0100 (BST)"}';
+        $content = '{"project":{"id":1,"name":"TPP","begin":"2013-08-13T22:00:00.000Z","end":"2013-10-10T22:00:00.000Z","color":"#123456"},"resourceId":10000,"week":"2013-09-08T22:00:00.000Z"}';
 
         $client->request('POST', '/api/task', array(), array(), array(), $content);
         $response = $client->getResponse();

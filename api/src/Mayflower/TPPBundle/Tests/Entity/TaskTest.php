@@ -8,20 +8,6 @@ use Mayflower\TPPBundle\Entity\Task;
 class TaskTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Test constants
-     *
-     * @return null
-     */
-    public function testConstants()
-    {
-        $this->assertEquals('yellow', Task::YELLOW);
-        $this->assertEquals('blue', Task::BLUE);
-        $this->assertEquals('green', Task::GREEN);
-        $this->assertEquals('purple', Task::PURPLE);
-        $this->assertEquals('red', Task::RED);
-    }
-
-    /**
      * Test if ID after constructor is null
      *
      * @return null
@@ -45,20 +31,6 @@ class TaskTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals("", $task->getTitle());
         $task->setTitle("Awesome Task");
         $this->assertEquals("Awesome Task", $task->getTitle());
-    }
-
-    /**
-     * Test color getting/setting
-     *
-     * @return null
-     */
-    public function testSetGetColor()
-    {
-        $task = new Task();
-
-        $this->assertEquals(Task::YELLOW, $task->getColor());
-        $task->setColor(Task::BLUE);
-        $this->assertEquals(Task::BLUE, $task->getColor());
     }
 
     /**
@@ -119,10 +91,9 @@ class TaskTest extends \PHPUnit_Framework_TestCase
 
         $this->assertArrayHasKey('id', $task->toArray());
         $this->assertArrayHasKey('resourceId', $task->toArray());
-        $this->assertArrayHasKey('color', $task->toArray());
         $this->assertArrayHasKey('title', $task->toArray());
+        $this->assertArrayHasKey('project', $task->toArray());
         $this->assertArrayHasKey('information', $task->toArray());
         $this->assertArrayHasKey('week', $task->toArray());
     }
 }
- 
