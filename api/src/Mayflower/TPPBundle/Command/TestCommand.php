@@ -32,6 +32,8 @@ class TestCommand extends ContainerAwareCommand
         $appPath = $kernel->getRootDir();
 
         $console = $appPath . DIRECTORY_SEPARATOR . 'console';
+        $phpUnit = $appPath . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR .
+            'phpunit' . DIRECTORY_SEPARATOR . 'phpunit' . DIRECTORY_SEPARATOR . 'phpunit.php' ;
 
         if (false === is_file($console)) {
             $output->writeln('Error: The app/console is not existent.');
@@ -47,12 +49,12 @@ class TestCommand extends ContainerAwareCommand
                 'command' => 'php ' . $console . ' doctrine:schema:create --env=test',
                 'write' => false
             ),
-            /*'fixtures:load' => array(
+            'fixtures:load' => array(
                 'command' => 'php ' . $console . ' doctrine:fixtures:load --env=test -n',
                 'write' => false
-            ),*/
+            ),
             'phpunit' => array(
-                'command' => 'phpunit -c ' . $appPath,
+                'command' => $phpUnit . ' -c ' . $appPath,
                 'write' => true
             )
         );

@@ -8,7 +8,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ResourceControllerTest extends WebTestCase
 {
-    private $resource;
     private $em;
 
     protected function setUp()
@@ -20,12 +19,6 @@ class ResourceControllerTest extends WebTestCase
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
-
-        $this->resource = new Resource();
-        $this->resource->setName("ResourceControllerTest resource");
-
-        $this->em->persist($this->resource);
-        $this->em->flush();
     }
 
     public function testDefaultIndex()
@@ -40,8 +33,9 @@ class ResourceControllerTest extends WebTestCase
             "Unexpected HTTP status code for GET /api/resource"
         );
 
-        $resource_arr = [$this->resource->toArray()];
-        $this->assertEquals(json_encode($resource_arr), $response->getContent());
+        $resources = json_decode($response->getContent(), true);
+        $this->assertCount(1, $resources);
+        $this->assertEquals(['id' => 1, 'name' => 'Robin'], $resources[0]);
     }
 
     public function testPost()
@@ -67,7 +61,7 @@ class ResourceControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/resource/'.$this->resource->getId());
+        $client->request('DELETE', '/api/resource/1');
         $response = $client->getResponse();
         $this->assertEquals(
             204,
@@ -75,7 +69,7 @@ class ResourceControllerTest extends WebTestCase
             "Unexpected HTTP status code for DELETE /api/resource"
         );
 
-        $resource = $this->em->find('MayflowerTPPBundle:Resource', $this->resource->getId());
+        $resource = $this->em->find('MayflowerTPPBundle:Resource', 1);
         $this->assertNotNull($resource);
     }
 
@@ -83,7 +77,7 @@ class ResourceControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/resource/'.($this->resource->getId()-1));
+        $client->request('DELETE', '/api/resource/10000');
         $response = $client->getResponse();
         $this->assertEquals(
             404,

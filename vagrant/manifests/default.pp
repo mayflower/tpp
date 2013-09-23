@@ -158,7 +158,7 @@ class { 'phpmyadmin':
 
 nginx::resource::vhost { 'phpmyadmin':
   ensure      => present,
-  server_name => ['phpmyadmin'],
+  server_name => ['tpp.pma'],
   listen_port => 80,
   index_files => ['index.php'],
   www_root    => '/usr/share/phpmyadmin',

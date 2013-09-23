@@ -19,16 +19,6 @@ class ProjectControllerTest extends WebTestCase
         $this->em = static::$kernel->getContainer()
             ->get('doctrine')
             ->getManager();
-
-        $this->project = new Project();
-        $this->project->setName("ProjectControllerTest project");
-        $this->project->setColor("#234567");
-        $this->project->setBegin(new \DateTime());
-        $this->project->setEnd(new \DateTime());
-        $this->project->setResourcesPerWeek(3);
-
-        $this->em->persist($this->project);
-        $this->em->flush();
     }
 
     public function testDefaultIndex()
@@ -36,15 +26,16 @@ class ProjectControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/api/project');
-        $project = $client->getResponse();
+        $response = $client->getResponse();
         $this->assertEquals(
             200,
-            $project->getStatusCode(),
+            $response->getStatusCode(),
             "Unexpected HTTP status code for GET /api/project"
         );
 
-        $project_arr = [$this->project->toArray()];
-        $this->assertEquals(json_encode($project_arr), $project->getContent());
+        $projects = json_decode($response->getContent(), true);
+        $this->assertCount(1, $projects);
+        $this->assertEquals('TPP', $projects[0]['name']);
     }
 
     public function testPost()
@@ -79,7 +70,7 @@ class ProjectControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/project/' . $this->project->getId());
+        $client->request('DELETE', '/api/project/1');
         $response = $client->getResponse();
         $this->assertEquals(
             204,
@@ -87,7 +78,7 @@ class ProjectControllerTest extends WebTestCase
             "Unexpected HTTP status code for DELETE /api/project"
         );
 
-        $project = $this->em->find('MayflowerTPPBundle:Project', $this->project->getId());
+        $project = $this->em->find('MayflowerTPPBundle:Project', 1);
         $this->assertNotNull($project);
     }
 
@@ -95,7 +86,7 @@ class ProjectControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('DELETE', '/api/project/' . ($this->project->getId() - 1));
+        $client->request('DELETE', '/api/project/10000');
         $response = $client->getResponse();
         $this->assertEquals(
             404,
