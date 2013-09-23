@@ -13,8 +13,6 @@ and title != 'software-properties-common'
 
 Package["libaugeas-ruby"] -> Augeas <| |>
 
-class { 'puphpet::dotfiles': }
-
 package { [
     'build-essential',
     'vim',
@@ -27,7 +25,6 @@ package { [
 }
 
 class { 'nginx': }
-
 
 nginx::resource::vhost { 'tpp.dev':
   ensure       => present,
@@ -83,7 +80,6 @@ nginx::resource::location { 'tpp.dev-php':
   notify              => Class['nginx::service'],
 }
 
-
 include php
 include php::apt
 
@@ -102,6 +98,20 @@ class {
     ensure => present;
   'php::extension::intl':
     ensure => present;
+  'php::extension::xdebug':
+    ensure => present,
+    inifile  => '/etc/php5/mods-available/xdebug.ini',
+    settings => {
+      set => {
+        '.anon/xdebug.default_enable' => 1,
+        '.anon/xdebug.remote_autostart' => 0,
+        '.anon/xdebug.remote_connect_back' => 1,
+        '.anon/xdebug.remote_enable' => 1,
+        '.anon/xdebug.remote_handler' => "dbgp",
+        '.anon/xdebug.remote_port' => 9000
+      }
+    };
+  'php::composer': ;
   'php::fpm':
     ensure   => installed,
     settings => {
@@ -114,75 +124,6 @@ class {
 php::fpm::conf {'www':
   listen => '/var/run/php5-fpm.sock',
   user => 'vagrant';
-}
-php::config {'xdebug_conf':
-  inifile  => '/etc/php5/fpm/conf.d/20-xdebug.ini',
-  settings => {
-    set => {
-      '.anon/xdebug.default_enable' => 1,
-      '.anon/xdebug.remote_autostart' => 0,
-      '.anon/xdebug.remote_connect_back' => 1,
-      '.anon/xdebug.remote_enable' => 1,
-      '.anon/xdebug.remote_handler' => "dbgp",
-      '.anon/xdebug.remote_port' => 9000
-    }
-  };
-}
-
-$xhprofPath = '/var/www/xhprof'
-
-php::extension { 'xhprof':
-  package  => 'xhprof',
-  ensure   => '0.9.3',
-  provider => 'pecl';
-}
-
-if !defined(Package['git-core']) {
-  package { 'git-core' : }
-}
-
-vcsrepo { $xhprofPath:
-  ensure   => present,
-  provider => git,
-  source   => 'https://github.com/facebook/xhprof.git',
-  require  => Package['git-core']
-}
-
-file { "${xhprofPath}/xhprof_html":
-  ensure  => 'directory',
-  owner   => 'vagrant',
-  group   => 'vagrant',
-  mode    => '0775',
-  require => Vcsrepo[$xhprofPath]
-}
-
-composer::run { 'xhprof-composer-run':
-  path    => $xhprofPath,
-  require => [
-    Class['composer'],
-    File["${xhprofPath}/xhprof_html"]
-  ]
-}
-
-nginx::resource::vhost { 'xhprof':
-  ensure      => present,
-  server_name => ['xhprof'],
-  listen_port => 80,
-  index_files => ['index.php'],
-  www_root    => "${xhprofPath}/xhprof_html",
-  try_files   => ['$uri', '$uri/', '/index.php?$args'],
-  require     => [
-    Php::Extension['xhprof'],
-    File["${xhprofPath}/xhprof_html"]
-  ]
-}
-
-class { 'xdebug':
-  service => 'nginx',
-}
-
-class { 'composer':
-  require => Package['php5-fpm', 'curl'],
 }
 
 class { 'mysql::server':
@@ -272,10 +213,12 @@ exec { 'install_bower_modules':
   environment => 'NODENV_ROOT=/usr/local/share/nodenv',
   require => Nodejs::Module['bower']
 }
-composer::run { 'composer_install':
-  path    => '/www/tpp/api',
+exec { 'composer_install':
+  command => '/usr/local/bin/composer install',
+  environment => 'COMPOSER_HOME=/usr/local/bin',
+  cwd     => '/www/tpp/api',
   require => [
-    Class['composer'],
+    Class['php::composer'],
     Class['php::extension::intl']
   ]
 }
@@ -284,7 +227,7 @@ exec { 'db_schema_create':
   cwd     => '/www/tpp/api',
   user    => 'vagrant',
   require => [
-    Composer::Run['composer_install'],
+    Exec['composer_install'],
     Mysql::Db['mayflower_tpp']
   ]
 }
@@ -293,7 +236,7 @@ exec { 'db_schema_create_test':
   cwd     => '/www/tpp/api',
   user    => 'vagrant',
   require => [
-    Composer::Run['composer_install'],
+    Exec['composer_install'],
     Mysql::Db['mayflower_tpp_tests']
   ]
 }
