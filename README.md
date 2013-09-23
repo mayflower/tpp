@@ -1,7 +1,7 @@
 TPP - The Team Project Planner
 ===
 
-Install Vagrant (vagrantup.com)
+Install Vagrant (vagrantup.com), nfs and vagrant-cachier
 
     vagrant up
     vagrant ssh
@@ -17,8 +17,8 @@ access tpp on:
 http://tpp.dev
 
 phpmyadmin on (user root, pw tppdev):
-http://phpmyadmin
+http://tpp.pma
 
+mysql module fucks up atm, due to puppetlabs-mysql bug, should work, just ignore error message
 
-Livereload and remote debugging broken
-Composer sometimes fails, try reloading vagrant or executing by hand
+Puppet TODO: set puppet module versions to working versions
