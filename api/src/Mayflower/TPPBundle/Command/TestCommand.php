@@ -54,7 +54,7 @@ class TestCommand extends ContainerAwareCommand
                 'write' => false
             ),
             'phpunit' => array(
-                'command' => $phpUnit . ' -c ' . $appPath,
+                'command' => 'php ' . $phpUnit . ' -c ' . $appPath,
                 'write' => true
             )
         );
