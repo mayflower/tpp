@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module(
-    'tpp', ['tpp.controllers', 'tpp.controllers.projects', 'ngRoute', 'activeLink']
+    'tpp', ['tpp.controllers', 'tpp.controllers.master', 'tpp.controllers.projects', 'ngRoute', 'activeLink']
 ).config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
 
     $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

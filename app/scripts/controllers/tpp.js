@@ -120,6 +120,24 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
         $scope.taskList.push(task);
     });
 
+    $scope.$on('keyPressed', function (event, keyPressedEvent) {
+        var LEFT_ARROW = 37,
+            UP_ARROW = 38,
+            RIGHT_ARROW = 39,
+            DOWN_ARROW = 40;
+        if (LEFT_ARROW === keyPressedEvent.keyCode) {
+            $scope.back();
+        } else if (RIGHT_ARROW === keyPressedEvent.keyCode) {
+            $scope.forward();
+        } else if (UP_ARROW === keyPressedEvent.keyCode) {
+            $scope.weeks.numWeeks += 1;
+            keyPressedEvent.preventDefault();
+        } else if (DOWN_ARROW === keyPressedEvent.keyCode) {
+            $scope.weeks.numWeeks -= 1;
+            keyPressedEvent.preventDefault();
+        }
+    });
+
     // default setting on what the list should be sorted
     $scope.sortCriteria = 'name';
 
