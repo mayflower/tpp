@@ -91,6 +91,14 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
 
     // notify dialog
     $scope.editTask = function (task) {
+
+        // fix selected option in dialog
+        for (var i = 0; i < $scope.projectList.length; i++) {
+            if (task.project.id === $scope.projectList[i].id) {
+                task.project = $scope.projectList[i];
+            }
+        }
+
         $scope.$broadcast('editTask', task);
     };
 
@@ -151,9 +159,7 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
     $scope.isEdit = false;
 
     ($scope.resetTask = function () {
-        $scope.task = new Task({
-//            project: new Project()
-        });
+        $scope.task = new Task();
     })();
 
     $scope.$on('addTask', function (event, resourceId, week) {
@@ -172,6 +178,7 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
         $scope.task.resourceId = task.resourceId;
         $scope.task.week = task.week;
         $scope.task.id = task.id;
+        $scope.task.project = task.project;
         $('#task-modal').modal({
             'show': true
         });
