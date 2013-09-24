@@ -1,20 +1,22 @@
 'use strict';
 
 describe('the tppDisplayCtrl', function () {
-    var scope, controller, location, routeParams = {}, ResourceRes;
+    var scope, controller, location, routeParams = {}, ResourceRes, ProjectRes;
     beforeEach(module('tpp.controllers'));
 
-    beforeEach(inject(function ($rootScope, $controller, $location, Resource) {
+    beforeEach(inject(function ($rootScope, $controller, $location, Resource, Project) {
 
         scope = $rootScope.$new();
         location = $location;
         ResourceRes = Resource;
+        ProjectRes = Project;
 
         controller = $controller(
             'tppDisplayCtrl',
             {
                 $scope: scope,
-                $routeParams: routeParams
+                $routeParams: routeParams,
+                Project: Project
             }
         );
     }));

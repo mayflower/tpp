@@ -126,6 +126,8 @@ php::fpm::conf {'www':
   user => 'vagrant';
 }
 
+class {'phantomjs': }
+
 class { 'mysql::server':
   config_hash   => { 'root_password' => 'tppdev' }
 }
