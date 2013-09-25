@@ -26,15 +26,19 @@
         </td>
         <td>{{ resource.name }}</td>
         <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week), occupied: getTasks(resource, week).length}" class="tasks">
-            <div ng-repeat="task in getTasks(resource, week) | orderBy:'title'" class="task" ng-style="{'background-color': task.project.color}">
-                <div class="task-title">{{ task.project.name }}</div>
-                <div class="task-modify-buttons">
-                    <button class="btn btn-default glyphicon glyphicon-pencil btn-sm"
-                            ng-click="editTask(task)"></button>
-                    <button class="btn btn-default glyphicon glyphicon-remove btn-sm"
-                            ng-click="deleteTask(task)"></button>
+            <div droppable id="drop">
+                <div ng-repeat="task in getTasks(resource, week) | orderBy:'title'" class="task" id="/etc/passwd"
+                     ng-style="{'background-color': task.project.color}" draggable>
+                    <div class="task-title">{{ task.project.name }}</div>
+                    <div class="task-modify-buttons">
+                        <button class="btn btn-default glyphicon glyphicon-pencil btn-sm"
+                                ng-click="editTask(task)"></button>
+                        <button class="btn btn-default glyphicon glyphicon-remove btn-sm"
+                                ng-click="deleteTask(task)"></button>
+                    </div>
                 </div>
             </div>
+
             <button class="btn btn-default btn-xs task-add-button" ng-click="addTask(resource.id, week)">
                 +
             </button>

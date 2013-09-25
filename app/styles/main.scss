@@ -89,22 +89,11 @@ h2 {
     border-bottom-right-radius: 60px 5px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.40);
 }
-.task.yellow {
-    @include background(linear-gradient(-45deg, rgba(255, 255, 136, 1) 77%, rgba(255, 255, 214, 1) 100%));
-}
-.task.red {
-    border: 1px solid #BBB;
-    @include background(linear-gradient(-45deg, rgba(255, 165, 165, 1) 77%, rgba(255, 214, 214, 1) 100%));
-}
-.task.blue {
-    border: 1px solid #CCC;
-    @include background(linear-gradient(-45deg, rgba(190, 190, 255, 1) 77%, rgba(230, 230, 255, 1) 100%));
-}
-.task.green {
-    @include background(linear-gradient(-45deg, rgba(136, 255, 136, 1) 77%, rgba(214, 255, 214, 1) 100%));
-}
-.task.purple {
-    border: 1px solid #CCC;
-    @include background(linear-gradient(-45deg, rgba(235, 185, 255, 1) 77%, rgba(255, 235, 255, 1) 100%));
+
+[droppable] {
+    min-height: 50px;
 }
 
+[draggable] {
+    cursor: move;
+}

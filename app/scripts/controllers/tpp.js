@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module(
-        'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.project', 'tpp.utils']
+        'tpp.controllers', ['tpp.task', 'tpp.resource', 'tpp.project', 'tpp.utils', 'dragDrop']
 ).controller(
         'tppDisplayCtrl', ['$scope', '$routeParams', '$location', 'Resource', 'Task', 'Project', 'dateUtil',
 function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
@@ -119,6 +119,10 @@ function ($scope, $routeParams, $location, Resource, Task, Project, dateUtil) {
         });
         $scope.taskList.push(task);
     });
+
+    $scope.drop = function (item, week, resource) {
+        console.log(item, week, resource)
+    };
 
     $scope.$on('keyPressed', function (event, keyPressedEvent) {
         var LEFT_ARROW = 37,
