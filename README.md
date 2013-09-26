@@ -19,6 +19,3 @@ http://tpp.dev
 phpmyadmin on (user root, pw tppdev):
 http://tpp.pma
 
-mysql module fucks up atm, due to puppetlabs-mysql bug, should work, just ignore error message
-
-Puppet TODO: set puppet module versions to working versions
