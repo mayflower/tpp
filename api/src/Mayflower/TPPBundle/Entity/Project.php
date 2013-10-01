@@ -38,7 +38,7 @@ class Project
     /**
      * @var integer
      *
-     * @ORM\Column(name="resourcesPerWeek", type="integer")
+     * @ORM\Column(name="resourcesPerWeek", type="integer", nullable=true)
      */
     private $resourcesPerWeek;
 
