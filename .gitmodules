@@ -1,6 +1,3 @@
-[submodule "nodejs"]
-      path = vagrant/modules/nodejs
-      url = https://github.com/globin/puppet-nodejs
 [submodule "repository"]
       path = vagrant/modules/repository
       url = https://github.com/boxen/puppet-repository
@@ -25,3 +22,6 @@
 [submodule "vagrant/modules/phantomjs"]
 	path = vagrant/modules/phantomjs
 	url = https://github.com/brhelwig/puppet-phantomjs
+[submodule "vagrant/modules/nodejs"]
+	path = vagrant/modules/nodejs
+	url = https://github.com/puppetlabs/puppetlabs-nodejs.git

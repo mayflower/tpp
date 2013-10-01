@@ -123,33 +123,30 @@ mysql::db { 'mayflower_tpp':
   require  => Class['mysql::server'],
 }
 
-include nodejs::v0_10
 
-nodejs::module { "bower":
-  node_version => 'v0.10'
+include nodejs
+
+package { 'bower':
+  ensure => present,
+  provider => 'npm',
+require => Class['nodejs']
 }
-nodejs::module { "grunt-cli":
-  node_version => 'v0.10'
-}
-exec { 'node_version':
-  command => '/usr/local/share/nodenv/bin/nodenv global v0.10',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  cwd     => '/www/tpp',
-  require => Class['nodejs::v0_10']
+package { 'grunt-cli':
+  ensure => present,
+  provider => 'npm',
+require => Class['nodejs']
 }
 exec { 'install_node_modules':
-  command => '/usr/local/share/nodenv/bin/nodenv exec npm install',
+  command => 'npm install',
   cwd     => '/www/tpp',
-  user    => 'www-data',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  require => Exec['node_version']
+  user    => 'vagrant',
+  require => Class['nodejs']
 }
 exec { 'install_bower_modules':
-  command => '/usr/local/share/nodenv/bin/nodenv exec bower install',
+  command => 'bower install',
   cwd     => '/www/tpp',
-  user    => 'www-data',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  require => Nodejs::Module['bower']
+  user    => 'vagrant',
+  require => Package['bower']
 }
 exec { 'composer_install':
   command => '/usr/local/bin/composer install',
