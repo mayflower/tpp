@@ -149,19 +149,20 @@ package { 'grunt-cli':
 exec { 'install_node_modules':
   command => 'npm install',
   cwd     => '/www/tpp',
-  user    => 'vagrant',
+  user    => 'www-data',
   require => Class['nodejs']
 }
 exec { 'install_bower_modules':
   command => 'bower install',
   cwd     => '/www/tpp',
-  user    => 'vagrant',
+  user    => 'www-data',
   require => Package['bower']
 }
 exec { 'composer_install':
   command => '/usr/local/bin/composer install',
   environment => 'COMPOSER_HOME=/usr/local/bin',
   cwd     => '/www/tpp/api',
+  user    => 'www-data',
   require => [
   Class['php::composer'],
   Class['php::extension::intl']
