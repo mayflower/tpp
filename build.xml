@@ -2,10 +2,10 @@
 
 <project name="tpp" default="build">
  <target name="build"
-   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,karma,phpcb"/>
+   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,karma,plato,phpcb"/>
 
  <target name="build-parallel"
-   depends="prepare,lint,tools-parallel,phpunit,phpcb"/>
+   depends="prepare,lint,tools-parallel,phpunit,plato,phpcb"/>
 
  <target name="tools-parallel" description="Run tools in parallel">
   <parallel threadCount="2">
@@ -172,7 +172,17 @@
   </exec>
  </target>
 
- <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
+ <target name="plato" description="Run Plato">
+  <exec executable="plato" failonerror="true">
+   <arg value="-t TPP" />
+   <arg value="-r" />
+   <arg value="-d" />
+   <arg value="${basedir}/build/plato" />
+   <arg value="${basedir}/app/scripts" />
+  </exec>
+ </target>
+
+<target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
   <exec executable="${basedir}/api/bin/phpcb">
    <arg value="--log" />
    <arg path="${basedir}/build/logs" />
