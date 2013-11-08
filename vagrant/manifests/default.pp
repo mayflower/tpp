@@ -1,10 +1,11 @@
-group { 'puppet': ensure => present }
 Exec { path => [ '/bin/', '/sbin/', '/usr/bin/', '/usr/sbin/' ] }
 File { owner => 0, group => 0, mode => 0644 }
 
 class {'apt':
   always_apt_update => true,
 }
+
+apt::ppa {'ppa:ondrej/php5': }
 
 Class['::apt::update'] -> Package <|
     title != 'python-software-properties'
@@ -18,10 +19,10 @@ package { [
     'vim',
     'curl',
     'git-core',
+    'ruby1.9.1',
     'libaugeas-ruby',
   ]:
   ensure  => 'installed',
-  before  => Class['php::augeas']
 }
 
 class { 'nginx': }
@@ -81,25 +82,32 @@ nginx::resource::location { 'tpp.dev-php':
 }
 
 include php
-include php::apt
+#include php::apt
 
 class {
   'php::cli':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::dev':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::pear':
     ensure => present;
   'php::extension::mysql':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::extension::curl':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::extension::mcrypt':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::extension::intl':
-    ensure => present;
+    ensure => present,
+    provider => apt;
   'php::extension::xdebug':
     ensure => present,
+    provider => apt,
     inifile  => '/etc/php5/mods-available/xdebug.ini',
     settings => {
       set => {
@@ -251,5 +259,6 @@ exec { 'assets_install':
   ]
 }
 exec { 'compass_install':
-  command => 'gem install compass'
+  command => 'gem install compass',
+  require => Package['ruby1.9.1']
 }
