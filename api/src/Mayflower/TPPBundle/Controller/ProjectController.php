@@ -42,7 +42,9 @@ class ProjectController extends Controller
         $data = json_decode($request->getContent(), true);
         $project->setName($data['name']);
         $project->setColor($data['color']);
-        $project->setResourcesPerWeek($data['resourcesPerWeek']);
+        if (array_key_exists('recourcesPerWeek', $data)) {
+            $project->setResourcesPerWeek($data['resourcesPerWeek']);
+        }
 
         $begin = new \DateTime($data['begin']);
         $project->setBegin($begin);

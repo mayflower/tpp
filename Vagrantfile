@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
     v.customize ["setextradata", :id, "--VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
-  config.vm.synced_folder "./", "/www/tpp/", id: "vagrant-root", :nfs => true
+  config.vm.synced_folder "./", "/www/tpp/", id: "vagrant-root", :nfs => false
 
   config.vm.provision :shell, :inline =>
     "if [[ ! -f /apt-get-run ]]; then sudo apt-get update && sudo touch /apt-get-run; fi"

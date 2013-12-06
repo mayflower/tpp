@@ -72,12 +72,10 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar:///usr/share/php/phpDocumentor/tests/data/test.phar" />
-          <root url="phar:///usr/share/php/data/phpDocumentor/vendor/phpdocumentor/fileset/tests/data/test.phar" />
+          <root url="phar://$MODULE_DIR$/api/vendor/pdepend/pdepend/src/site/rst/static_reflection/releases/staticReflection-0.1.1.phar" />
         </CLASSES>
         <SOURCES>
-          <root url="phar:///usr/share/php/phpDocumentor/tests/data/test.phar" />
-          <root url="phar:///usr/share/php/data/phpDocumentor/vendor/phpdocumentor/fileset/tests/data/test.phar" />
+          <root url="phar://$MODULE_DIR$/api/vendor/pdepend/pdepend/src/site/rst/static_reflection/releases/staticReflection-0.1.1.phar" />
         </SOURCES>
       </library>
     </orderEntry>

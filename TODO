@@ -1,0 +1,19 @@
+Projekt
+File upload fuer Vertraege, Angebot
+Projekte haben Phasen
+Projektstatus: active, inactive, pending
+per Default auf pending mit Grau
+
+Projektlaufzeit gegen Zeitbuchung im Board validieren. Notification anzeigen, wenn Laufzeit > Projektzeit
+
+Boards
+Es gibt die Moeglichkeit je Team mehrere Board zu verwalten. Kann auch fuer Szenarien verwendet werden. Eine Resource kann mit mehreren Boards verknuepft werden
+
+Resourcen muessen per drag and drop sortierbar sein
+
+Authentifizierung
+
+Autorisierung
+
+Usability
+Projektfarbe per Default setzen

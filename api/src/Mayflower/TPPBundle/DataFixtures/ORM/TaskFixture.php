@@ -15,7 +15,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Mayflower\TPPBundle\Entity\Resource;
 use Mayflower\TPPBundle\Entity\Task;
 
-class LoadTaskData extends AbstractFixture implements OrderedFixtureInterface
+class TaskFixture extends AbstractFixture implements OrderedFixtureInterface
 {
 
     /**

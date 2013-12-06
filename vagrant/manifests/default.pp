@@ -122,6 +122,7 @@ class {
   'php::composer': ;
   'php::fpm':
     ensure   => installed,
+    inifile  => '/etc/php5/fpm/php.ini',
     settings => {
       set => {
         'Date/date.timezone' => 'Europe/Berlin',

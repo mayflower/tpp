@@ -14,7 +14,7 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Mayflower\TPPBundle\Entity\Resource;
 
-class LoadResourceData extends AbstractFixture implements OrderedFixtureInterface
+class ResourceFixture extends AbstractFixture implements OrderedFixtureInterface
 {
 
     function load(ObjectManager $manager)
