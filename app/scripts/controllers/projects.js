@@ -22,7 +22,7 @@ function ($scope, Project) {
         project.$delete();
         $scope.projectList = $scope.projectList.filter(function (t) {
             return t.id !== project.id;
-        })
+        });
     };
 
     $scope.$on('projectAdded', function (event, project) {

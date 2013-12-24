@@ -87,7 +87,12 @@ include php
 class {
   'php::cli':
     ensure => present,
-    provider => apt;
+    provider => apt,
+    settings => {
+      set => {
+        'Date/date.timezone' => 'Europe/Berlin',
+      }
+    };
   'php::dev':
     ensure => present,
     provider => apt;

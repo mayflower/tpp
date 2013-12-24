@@ -4,20 +4,20 @@ angular.module(
     'tpp.task', ['ngResource']
 ).factory('Task', function ($resource) {
 
-     var arrayInterceptor = {
-         response: function (response) {
-             angular.forEach(response.resource, function (task) {
-                 task.week = moment(task.week.date);
-             });
-         }
-     };
-     var singleInterceptor = {
-         response: function (response) {
-             var task = response.resource;
-             task.week = moment(task.week.date);
-         }
-     };
+    var arrayInterceptor = {
+        response: function (response) {
+            angular.forEach(response.resource, function (task) {
+                task.week = moment(task.week.date);
+            });
+        }
+    };
 
+    var singleInterceptor = {
+        response: function (response) {
+            var task = response.resource;
+            task.week = moment(task.week.date);
+        }
+    };
 
     return $resource(
         '/api/task/:taskId',
