@@ -25,7 +25,7 @@ class TaskController extends Controller
         $weekNum = $request->query->get('numWeeks', 5);
         $year = $request->query->get('year', $now->format('Y'));
 
-        $weekDT = new \DateTime($year.'W'.$week);
+        $weekDT = new \DateTime($year . 'W' . str_pad($week, 2, '0', STR_PAD_LEFT));
 
         $tasks = $em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($weekDT, $weekNum);
 

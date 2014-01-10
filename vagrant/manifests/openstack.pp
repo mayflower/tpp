@@ -29,7 +29,7 @@ class { 'nginx': }
 
 nginx::resource::vhost { 'tpp.novalocal':
 ensure       => present,
-server_name  => ['172.18.54.8'],
+server_name  => ['172.18.54.8', 'tpp.muc.mayflower.de', 'tpp.dmz.muc.mayflower.de'],
 listen_port  => 80,
 index_files  => ['index.html',],
 www_root     => '/www/tpp/dist',
