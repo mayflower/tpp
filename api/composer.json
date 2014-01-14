@@ -27,10 +27,7 @@
         "squizlabs/php_codesniffer": "1.*",
         "phploc/phploc": "*",
         "sebastian/phpcpd": "*",
-        "pear/console_commandline": "dev-trunk",
-        "pear/pear_exception": "dev-master",
-        "pear/log": "dev-master",
-        "mayflower/php-codebrowser": "1.0.*"
+        "mayflower/php-codebrowser": "~1.1.0"
     },
     "scripts": {
         "post-install-cmd": [
