@@ -11,10 +11,12 @@ describe('the tppDisplayCtrl', function () {
         ResourceRes = Resource;
         ProjectRes = Project;
 
+        var windowMock = { confirm: function(msg) { return true } }
         controller = $controller(
             'tppDisplayCtrl',
             {
                 $scope: scope,
+                $window: windowMock,
                 $routeParams: routeParams,
                 Project: Project
             }
@@ -34,6 +36,7 @@ describe('the tppDisplayCtrl', function () {
 
         it('should default to this week', function () {
             expect(scope.weeks.date.week()).toEqual(thisWeek.week());
+            expect(scope.isCurrent(scope.weeks.date)).toBeTruthy();
         });
 
         it('should set location search params', function () {
@@ -66,7 +69,7 @@ describe('the tppDisplayCtrl', function () {
             });
         });
 
-        describe('modified date', function () {
+        describe('modify date', function () {
             beforeEach(inject(function ($rootScope, $controller) {
                 routeParams = {
                     'week': 35,
@@ -87,6 +90,16 @@ describe('the tppDisplayCtrl', function () {
             it('should show 5 weeks', function () {
                 expect(scope.weeks.date.week()).toEqual(35);
                 expect(scope.weeks.date.weekYear()).toEqual(2013);
+            });
+
+            it('should be able to go to previous week', function () {
+                scope.back();
+                expect(scope.weeks.date.week()).toEqual(34);
+            });
+
+            it('should be able to go to next week', function () {
+                scope.forward();
+                expect(scope.weeks.date.week()).toEqual(36);
             });
         });
     });

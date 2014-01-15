@@ -19,7 +19,6 @@ angular.module(
         }
     };
 
-
     return $resource(
         '/api/project/:projectId',
         {

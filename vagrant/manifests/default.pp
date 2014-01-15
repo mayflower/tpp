@@ -25,7 +25,9 @@ package { [
   ensure  => 'installed',
 }
 
-class { 'nginx': }
+class { 'nginx':
+  # sendfile => 'off'    TODO wait for pull request on nginx module to be merged
+}
 
 nginx::resource::vhost { 'tpp.dev':
   ensure       => present,

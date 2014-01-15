@@ -9,6 +9,7 @@ module.exports = function(config) {
             'app/bower_components/angular-route/angular-route.js',
             'app/bower_components/momentjs/moment.js',
             'app/bower_components/momentjs/min/lang/de.js',
+            'app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js',
             'app/scripts/*.js',
             'app/scripts/**/*.js',
             'test/mock/**/*.js',
@@ -29,10 +30,11 @@ module.exports = function(config) {
         port: 8080,
         runnerPort: 9100,
         colors: true,
-        logLevel: LOG_INFO,
+        logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: ['PhantomJS'],
-        captureTimeout: 5000
+        captureTimeout: 5000,
+        reportSlowerThan: 500
     });
 };
 
