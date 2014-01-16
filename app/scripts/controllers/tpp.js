@@ -20,7 +20,7 @@ angular.module(
             }
             return date.startOf('week');
         })(),
-        numWeeks: parseInt($routeParams.numWeeks) || 7
+        numWeeks: parseInt($routeParams.numWeeks) || parseInt(localStorage.getItem('tppDisplayCtrl.numWeeks')) || 7
     };
 
     $scope.taskList = [];
@@ -37,6 +37,8 @@ angular.module(
         }, function () {
             $scope.taskList = taskList;
         });
+
+        localStorage.setItem('tppDisplayCtrl.numWeeks', $scope.weeks.numWeeks);
 
         $location.search({
             'year': $scope.weeks.date.weekYear(),
