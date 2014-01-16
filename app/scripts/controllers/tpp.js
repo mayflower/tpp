@@ -115,6 +115,7 @@ angular.module(
         for (var i = 0; i < $scope.projectList.length; i++) {
             if (task.project.id === $scope.projectList[i].id) {
                 task.project = $scope.projectList[i];
+                break;
             }
         }
         var modalInstance = $modal.open({

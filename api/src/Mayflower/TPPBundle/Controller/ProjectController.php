@@ -15,16 +15,15 @@ class ProjectController extends Controller
      * returns Project entities by week
      *
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
 
         $projects = $em->getRepository('MayflowerTPPBundle:Project')->findAll();
 
-        $project_arr = [];
-        foreach ($projects as $project) {
-            $project_arr[] = $project->toArray();
-        }
+        $project_arr = array_map(function (Project $project) {
+            return $project->toArray();
+        }, $projects);
 
         return new JsonResponse($project_arr);
     }

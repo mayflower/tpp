@@ -29,10 +29,9 @@ class TaskController extends Controller
 
         $tasks = $em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($weekDT, $weekNum);
 
-        $task_arr = [];
-        foreach ($tasks as $task) {
-            $task_arr[] = $task->toArray();
-        }
+        $task_arr = array_map(function (Task $task) {
+            return $task->toArray();
+        }, $tasks);
 
         return new JsonResponse($task_arr);
     }

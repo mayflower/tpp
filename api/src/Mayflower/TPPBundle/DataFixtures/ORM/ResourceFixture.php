@@ -19,15 +19,15 @@ class ResourceFixture extends AbstractFixture implements OrderedFixtureInterface
 
     function load(ObjectManager $manager)
     {
-        $resources = [];
         $names = ['Johannes', 'Marco', 'Markus', 'Micha', 'Robin', 'Rupi', 'Sebastian', 'Simon'];
 
-        foreach ($names as $name) {
+        $resources = array_map(function ($name) use ($manager) {
             $resource = new Resource();
             $resource->setName($name);
             $manager->persist($resource);
-            $resources[] = $resource;
-        }
+            return $resource;
+        }, $names);
+
         $manager->flush();
 
         foreach ($resources as $resource) {

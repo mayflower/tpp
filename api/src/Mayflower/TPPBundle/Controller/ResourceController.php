@@ -27,10 +27,9 @@ class ResourceController extends Controller
 
         $resources = $em->getRepository('MayflowerTPPBundle:Resource')->findAll();
 
-        $resource_arr = [];
-        foreach ($resources as $resource) {
-            $resource_arr[] = $resource->toArray();
-        }
+        $resource_arr = array_map(function (Resource $resource) {
+            return $resource->toArray();
+        }, $resources);
 
         return new JsonResponse($resource_arr);
     }

@@ -6,8 +6,10 @@ angular.module(
 
     var arrayInterceptor = {
         response: function (response) {
-            angular.forEach(response.resource, function (task) {
+            response.resource = response.resource.map(function (task) {
                 task.week = moment(task.week.date);
+
+                return task;
             });
         }
     };
