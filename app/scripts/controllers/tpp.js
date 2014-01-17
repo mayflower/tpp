@@ -6,8 +6,31 @@ angular.module(
     'tppDisplayCtrl', ['$window', '$scope', '$routeParams', '$location', '$modal', 'Resource', 'Task', 'Project', 'dateUtil',
     function ($window, $scope, $routeParams, $location, $modal, Resource, Task, Project, dateUtil)
 {
-
     $scope.OVERVIEW_THRESHOLD = 10;
+    $scope.tasks = {};
+    var taskList = [];
+
+    /**
+     * This function builds an object of tasks which are organized by resource ids and weeks:
+     * {
+     *   resourceId1: {
+     *     week1: [task1, task2]
+     *   }
+     * }
+     *
+     * This allows the loop in template views/list.html to access the correct task fast
+     *
+     * @param taskList Array of tasks
+     * @returns Object
+     */
+    function buildTasks(taskList) {
+        return taskList.reduce(function (filtered, task) {
+            filtered[task.resourceId] = filtered[task.resourceId] || {};
+            filtered[task.resourceId][task.week] = (filtered[task.resourceId][task.week] || []).concat(task);
+
+            return filtered;
+        }, {});
+    }
 
     $scope.weeks = {
         date: (function () {
@@ -23,19 +46,18 @@ angular.module(
         numWeeks: parseInt($routeParams.numWeeks) || parseInt(localStorage.getItem('tppDisplayCtrl.numWeeks')) || 7
     };
 
-    $scope.taskList = [];
 
     ($scope.setUp = function (weeks) {
         // build List of weeks from user inputted date and numWeeks
         $scope.weekList = dateUtil.getWeekList(weeks);
 
         // fetch tasks from server (only set list when finished loading to avoid flashing)
-        var taskList = Task.query({
+        taskList = Task.query({
             numWeeks: weeks.numWeeks,
             week: weeks.date.week(),
             year: weeks.date.weekYear()
         }, function () {
-            $scope.taskList = taskList;
+            $scope.tasks = buildTasks(taskList);
         });
 
         localStorage.setItem('tppDisplayCtrl.numWeeks', $scope.weeks.numWeeks);
@@ -58,13 +80,6 @@ angular.module(
     $scope.$watchCollection('weeks', function (newWeeks) {
         $scope.setUp(newWeeks);
     });
-
-    // find Tasks from taskList by resource and week
-    $scope.getTasks = function (resource, week) {
-        return $scope.taskList.filter(function (task) {
-            return task.week.isSame(week) && task.resourceId === resource.id;
-        });
-    };
 
     $scope.addResource = function (addedResource) {
 
@@ -108,7 +123,8 @@ angular.module(
 
         modalInstance.result.then(function (task) {
             task.$save();
-            $scope.taskList.push(task);
+            taskList.push(task);
+            $scope.tasks = buildTasks(taskList);
         });
     };
 
@@ -135,18 +151,20 @@ angular.module(
 
         modalInstance.result.then(function (task) {
             task.$update();
-            $scope.taskList = $scope.taskList.filter(function (t) {
+            taskList = taskList.filter(function (t) {
                 return t.id !== task.id;
             });
-            $scope.taskList.push(task);
+            taskList.push(task);
+            $scope.tasks = buildTasks(taskList);
         });
     };
 
     $scope.deleteTask = function (task) {
         task.$delete();
-        $scope.taskList = $scope.taskList.filter(function (t) {
+        taskList = taskList.filter(function (t) {
             return t.id !== task.id;
         });
+        $scope.tasks = buildTasks(taskList);
     };
 
     $scope.$on('keyPressed', function (event, keyPressedEvent) {

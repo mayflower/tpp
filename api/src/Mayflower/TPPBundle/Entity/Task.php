@@ -146,7 +146,7 @@ class Task
     /**
      * Set resource
      *
-     * @param \Mayflower\TPPBundle\Entity\Resource|Resource $resource
+     * @param \Mayflower\TPPBundle\Entity\Resource $resource
      *
      * @return Task
      */
@@ -160,7 +160,7 @@ class Task
     /**
      * Get resource
      *
-     * @return Resource
+     * @return \Mayflower\TPPBundle\Entity\Resource
      */
     public function getResource()
     {
