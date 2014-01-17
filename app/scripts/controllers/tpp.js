@@ -149,10 +149,6 @@ angular.module(
         });
     };
 
-    $scope.$on('taskAdded', function (event, task) {
-        $scope.taskList.push(task);
-    });
-
     $scope.$on('keyPressed', function (event, keyPressedEvent) {
         var LEFT_ARROW = 37,
             UP_ARROW = 38,
