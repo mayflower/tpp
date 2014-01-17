@@ -13,7 +13,6 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Mayflower\TPPBundle\Entity\Project;
-use Mayflower\TPPBundle\Entity\Resource;
 
 class ProjectFixture extends AbstractFixture implements OrderedFixtureInterface
 {

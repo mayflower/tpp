@@ -71,7 +71,7 @@ class Project
      *
      * @param string $name
      *
-     * @return Task
+     * @return Project
      */
     public function setName($name)
     {
@@ -95,7 +95,7 @@ class Project
      *
      * @param string $color
      *
-     * @return Task
+     * @return Project
      */
     public function setColor($color)
     {
@@ -119,7 +119,7 @@ class Project
      *
      * @param integer $resourcesPerWeek
      *
-     * @return Task
+     * @return Project
      */
     public function setResourcesPerWeek($resourcesPerWeek)
     {
@@ -143,7 +143,7 @@ class Project
      *
      * @param \DateTime $begin
      *
-     * @return Task
+     * @return Project
      */
     public function setBegin(\DateTime $begin)
     {
@@ -168,7 +168,7 @@ class Project
      *
      * @param \DateTime $end
      *
-     * @return Task
+     * @return Project
      */
     public function setEnd(\DateTime $end)
     {

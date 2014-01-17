@@ -3,7 +3,6 @@
 namespace Mayflower\TPPBundle\Tests\Controller;
 
 use Mayflower\TPPBundle\Entity\Resource;
-use Mayflower\TPPBundle\Entity\Task;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ResourceControllerTest extends WebTestCase
