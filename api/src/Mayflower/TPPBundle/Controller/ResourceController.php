@@ -5,9 +5,7 @@ namespace Mayflower\TPPBundle\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use Mayflower\TPPBundle\Entity\Resource;
-use Mayflower\TPPBundle\Form\ResourceType;
 use Symfony\Component\HttpFoundation\Response;
 
 /**

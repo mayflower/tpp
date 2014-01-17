@@ -2,8 +2,6 @@
 
 namespace Mayflower\TPPBundle\Tests\Controller;
 
-use Doctrine\ORM\EntityManager;
-use Mayflower\TPPBundle\Entity\Resource;
 use Mayflower\TPPBundle\Entity\Task;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
