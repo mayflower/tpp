@@ -25,7 +25,7 @@
             </button>
         </td>
         <td>{{ resource.name }}</td>
-        <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week), occupied: getTasks(resource, week).length}" class="tasks">
+        <td ng-repeat="week in weekList" ng-class="{current: isCurrent(week), occupied: tasks[resource.id][week].length}" class="tasks">
             <div ng-repeat="task in tasks[resource.id][week]" class="task" ng-style="{'background-color': task.project.color}">
                 <div class="task-title">{{ task.project.name }}</div>
                 <div class="task-modify-buttons">
