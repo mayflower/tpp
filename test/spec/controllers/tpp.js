@@ -144,27 +144,6 @@ describe('tppDisplayCtrl', function () {
     });
 
     describe('tasks', function () {
-        it('should get the correct tasks for given resource and week', function () {
-            var weekCorrect = moment(),
-                weekWrong = moment().add(5, 'w'),
-                resourceCorrect = new ResourceRes({'id': 1}),
-                resourceWrong = new ResourceRes({'id': 2}),
-                taskCorrect1 = new TaskRes({'week': weekCorrect, 'resourceId': resourceCorrect.id, 'title': 'correct1'}),
-                taskCorrect2 = new TaskRes({'week': weekCorrect, 'resourceId': resourceCorrect.id, 'title': 'correct2'});
-            scope.taskList = [
-                taskCorrect1,
-                taskCorrect2,
-                new TaskRes({'week': weekCorrect, 'resourceId': resourceWrong.id, 'title': 'wrong1'}),
-                new TaskRes({'week': weekWrong, 'resourceId': resourceCorrect.id, 'title': 'wrong2'}),
-                new TaskRes({'week': weekWrong, 'resourceId': resourceWrong.id, 'title': 'wrong3'}),
-            ];
-
-            expect(scope.getTasks(resourceCorrect, weekCorrect)).toEqual([
-                taskCorrect1,
-                taskCorrect2,
-            ]);
-        });
-
         it('should open the modal when adding tasks', function () {
             var modalOpenSpy = spyOn(modal, 'open').andCallThrough(), week = moment();
 
@@ -183,15 +162,11 @@ describe('tppDisplayCtrl', function () {
 
         it('should delete tasks on server and client', function () {
             var taskToDelete = new TaskRes({'id': 1}),
-                taskNotToDelete = new TaskRes({'id': 2}),
                 taskDeleteSpy = spyOn(taskToDelete, '$delete');
 
-            scope.taskList = [taskToDelete, taskNotToDelete];
             scope.deleteTask(taskToDelete);
 
             expect(taskDeleteSpy).toHaveBeenCalled();
-            expect(scope.taskList).toNotContain(taskToDelete);
-            expect(scope.taskList).toContain(taskNotToDelete);
         });
     });
 });
