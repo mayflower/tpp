@@ -36,10 +36,11 @@ class TaskControllerTest extends WebTestCase
 
         $dt = new \DateTime('this monday');
         $tasks = $this->em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($dt, 5);
-        $task_arr = [];
-        foreach ($tasks as $task) {
-            $task_arr[] = $task->toArray();
-        }
+
+        $task_arr = array_map(function(Task $task) {
+            return $task->toArray();
+        }, $tasks);
+
         $this->assertEquals(json_encode($task_arr), $response->getContent());
     }
 
@@ -59,7 +60,6 @@ class TaskControllerTest extends WebTestCase
 
         $id = json_decode($response->getContent(), true)['id'];
         $project = $this->em->find('MayflowerTPPBundle:Task', $id);
-//        $this->assertEquals('test', $project->getTitle());
         $this->assertEquals(7, $project->getResource()->getId());
 
         $week = new \DateTime("Mon Sep 09 2013 00:00:00");

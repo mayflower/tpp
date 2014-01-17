@@ -4,6 +4,7 @@ parameters:
     database_host: 127.0.0.1
     database_port: null
     database_name: mayflower_tpp
+    database_test_name: mayflower_tpp_tests
     database_user: mayflower
     database_password: efZeAJpnFbNs7eHy
     mailer_transport: smtp

@@ -5,20 +5,21 @@ angular.module(
 ).factory('Project', function ($resource) {
     var arrayInterceptor = {
         response: function (response) {
-            angular.forEach(response.resource, function (task) {
-                task.begin = moment(task.begin.date);
-                task.end = moment(task.end.date);
+            response.resource = response.resource.map(function (project) {
+                project.begin = moment(project.begin.date);
+                project.end = moment(project.end.date);
+
+                return project;
             });
         }
     };
     var singleInterceptor = {
         response: function (response) {
-            var task = response.resource;
-            task.begin = moment(task.begin.date);
-            task.end = moment(task.end.date);
+            var project = response.resource;
+            project.begin = moment(project.begin.date);
+            project.end = moment(project.end.date);
         }
     };
-
 
     return $resource(
         '/api/project/:projectId',

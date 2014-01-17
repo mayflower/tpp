@@ -15,16 +15,15 @@ class ProjectController extends Controller
      * returns Project entities by week
      *
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
 
         $projects = $em->getRepository('MayflowerTPPBundle:Project')->findAll();
 
-        $project_arr = [];
-        foreach ($projects as $project) {
-            $project_arr[] = $project->toArray();
-        }
+        $project_arr = array_map(function (Project $project) {
+            return $project->toArray();
+        }, $projects);
 
         return new JsonResponse($project_arr);
     }
@@ -42,7 +41,9 @@ class ProjectController extends Controller
         $data = json_decode($request->getContent(), true);
         $project->setName($data['name']);
         $project->setColor($data['color']);
-        $project->setResourcesPerWeek($data['resourcesPerWeek']);
+        if (array_key_exists('recourcesPerWeek', $data)) {
+            $project->setResourcesPerWeek($data['resourcesPerWeek']);
+        }
 
         $begin = new \DateTime($data['begin']);
         $project->setBegin($begin);

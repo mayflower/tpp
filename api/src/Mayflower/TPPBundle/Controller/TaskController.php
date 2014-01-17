@@ -13,7 +13,6 @@ class TaskController extends Controller
 {
     /**
      * returns Task entities by week
-     *
      */
     public function indexAction(Request $request)
     {
@@ -22,24 +21,22 @@ class TaskController extends Controller
         $now = new \DateTime();
 
         $week = $request->query->get('week', $now->format('W'));
-        $weekNum = $request->query->get('numWeeks', 5);
+        $numWeeks = $request->query->get('numWeeks', 5);
         $year = $request->query->get('year', $now->format('Y'));
 
         $weekDT = new \DateTime($year . 'W' . str_pad($week, 2, '0', STR_PAD_LEFT));
 
-        $tasks = $em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($weekDT, $weekNum);
+        $tasks = $em->getRepository('MayflowerTPPBundle:Task')->findByWeeks($weekDT, $numWeeks);
 
-        $task_arr = [];
-        foreach ($tasks as $task) {
-            $task_arr[] = $task->toArray();
-        }
+        $task_arr = array_map(function (Task $task) {
+            return $task->toArray();
+        }, $tasks);
 
         return new JsonResponse($task_arr);
     }
 
     /**
      * Creates a new Task entity.
-     *
      */
     public function createAction(Request $request)
     {
@@ -73,12 +70,12 @@ class TaskController extends Controller
 
     /**
      * Updates a Task entity.
-     *
      */
     public function updateAction($id, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
+        /** @var Task $task */
         $task = $em->find('MayflowerTPPBundle:Task', $id);
 
         $data = json_decode($request->getContent(), true);
@@ -98,7 +95,6 @@ class TaskController extends Controller
 
     /**
      * Deletes a Task entity.
-     *
      */
     public function deleteAction($id)
     {

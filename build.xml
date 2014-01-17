@@ -2,10 +2,10 @@
 
 <project name="tpp" default="build">
  <target name="build"
-   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc2,phpunit,karma,phpcb"/>
+   depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpunit,karma,plato,phpcb"/>
 
  <target name="build-parallel"
-   depends="prepare,lint,tools-parallel,phpunit,phpcb"/>
+   depends="prepare,lint,tools-parallel,phpunit,plato,phpcb"/>
 
  <target name="tools-parallel" description="Run tools in parallel">
   <parallel threadCount="2">
@@ -16,7 +16,6 @@
    <antcall target="phpcpd"/>
    <antcall target="phpcs-ci"/>
    <antcall target="phploc"/>
-   <antcall target="phpdoc2"/>
   </parallel>
  </target>
 
@@ -93,7 +92,7 @@
  </target>
 
  <target name="phploc" description="Measure project size using PHPLOC">
-  <exec executable="phploc">
+  <exec executable="${basedir}/api/bin/phploc">
    <arg value="--log-csv" />
    <arg value="${basedir}/build/logs/phploc.csv" />
    <arg path="${basedir}/api/src" />
@@ -101,7 +100,7 @@
  </target>
 
  <target name="pdepend" description="Calculate software metrics using PHP_Depend">
-  <exec executable="pdepend">
+  <exec executable="${basedir}/api/bin/pdepend">
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
    <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
    <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
@@ -111,7 +110,7 @@
 
  <target name="phpmd"
          description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="phpmd">
+  <exec executable="${basedir}/api/bin/phpmd">
    <arg path="${basedir}/api/app/Resources,${basedir}/api/src" />
    <arg value="text" />
    <arg value="${basedir}/api/phpmd.xml" />
@@ -119,7 +118,7 @@
  </target>
 
  <target name="phpmd-ci" description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
-  <exec executable="phpmd">
+  <exec executable="${basedir}/api/bin/phpmd">
    <arg path="${basedir}/api/app/Resources,${basedir}/api/src" />
    <arg value="xml" />
    <arg value="${basedir}/phpmd.xml" />
@@ -130,7 +129,7 @@
 
  <target name="phpcs"
          description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-  <exec executable="phpcs">
+  <exec executable="${basedir}/api/bin/phpcs">
    <arg value="--standard=${basedir}/phpcs.xml" />
    <arg value="--extensions=php" />
    <arg path="${basedir}/api/src" />
@@ -138,7 +137,7 @@
  </target>
 
  <target name="phpcs-ci" description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
-  <exec executable="phpcs" output="/dev/null">
+  <exec executable="${basedir}/api/bin/phpcs" output="/dev/null">
    <arg value="--report=checkstyle" />
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
    <arg value="--standard=${basedir}/phpcs.xml" />
@@ -148,19 +147,10 @@
  </target>
 
  <target name="phpcpd" description="Find duplicate code using PHPCPD">
-  <exec executable="phpcpd">
+  <exec executable="${basedir}/api/bin/phpcpd">
    <arg value="--log-pmd" />
    <arg value="${basedir}/build/logs/pmd-cpd.xml" />
    <arg path="${basedir}/api/src" />
-  </exec>
- </target>
-
- <target name="phpdoc2" description="Generate API documentation using phpDox">
-  <exec executable="phpdoc">
-   <arg value="-q" />
-   <arg value="-n" />
-   <arg value="--directory=${basedir}/api/src" />
-   <arg value="--target=${basedir}/doc" />
   </exec>
  </target>
 
@@ -182,8 +172,18 @@
   </exec>
  </target>
 
- <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
-  <exec executable="phpcb">
+ <target name="plato" description="Run Plato">
+  <exec executable="plato" failonerror="true">
+   <arg value="-t TPP" />
+   <arg value="-r" />
+   <arg value="-d" />
+   <arg value="${basedir}/build/plato" />
+   <arg value="${basedir}/app/scripts" />
+  </exec>
+ </target>
+
+<target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
+  <exec executable="${basedir}/api/bin/phpcb">
    <arg value="--log" />
    <arg path="${basedir}/build/logs" />
    <arg value="--source" />

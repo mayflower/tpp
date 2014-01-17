@@ -14,8 +14,7 @@
 node_modules
 .tmp
 .sass-cache
-.idea/workspace.xml
-.idea/tasks.xml
+.idea
 .vagrant
 app/bower_components
 dist

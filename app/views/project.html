@@ -3,13 +3,13 @@
 <table class="table table-hover">
     <tr>
         <th>&nbsp;</th>
-        <th>Project</th>
-        <th>Start</th>
-        <th>End</th>
+        <th ng-click="sortListBy('name')" class="sortable">Project</th>
+        <th ng-click="sortListBy('begin')" class="sortable">Start</th>
+        <th ng-click="sortListBy('end')" class="sortable">End</th>
         <th>Color</th>
     </tr>
 
-    <tr class="list" ng-repeat="project in projectList">
+    <tr class="list" ng-repeat="project in projectList | orderBy:sortCriteria">
         <td>
             <button class="btn btn-default btn-sm glyphicon glyphicon-remove" ng-click="deleteProject(project)"></button>
             <button class="btn btn-default btn-sm glyphicon glyphicon-pencil" ng-click="editProject(project)"></button>
@@ -25,57 +25,3 @@
     <span class="glyphicon glyphicon-plus"></span>
     Add Project
 </button>
-
-<div ng-controller="projectCtrl" class="modal fade" id="project-modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form class="form-horizontal" role="form">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" ng-show="!isEdit">Add project</h4>
-                    <h4 class="modal-title" ng-show="isEdit">Edit project</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="project-title" class="col-lg-3 control-label">Name</label>
-
-                        <div class="col-lg-9">
-                            <input class="form-control" id="project-title" ng-model="project.name">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="project-color" class="col-lg-3 control-label">Color</label>
-
-                        <div class="col-lg-9">
-                            <input class="form-control" id="project-color" ng-model="project.color" colorpicker>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="project-begin" class="col-lg-3 control-label">Begin</label>
-
-                        <div class="col-lg-9">
-                            <input class="form-control" id="project-begin" ng-model="project.beginDisplay" datepicker>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="project-end" class="col-lg-3 control-label">End</label>
-
-                        <div class="col-lg-9">
-                            <input class="form-control" id="project-end" ng-model="project.endDisplay" datepicker>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                    </button>
-                    <button type="submit" id="task-submit" ng-click="submit()" class="btn btn-primary"
-                            data-dismiss="modal">Save changes
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>

@@ -15,7 +15,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Mayflower\TPPBundle\Entity\Project;
 use Mayflower\TPPBundle\Entity\Resource;
 
-class LoadProjectData extends AbstractFixture implements OrderedFixtureInterface
+class ProjectFixture extends AbstractFixture implements OrderedFixtureInterface
 {
 
     /**

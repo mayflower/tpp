@@ -16,9 +16,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Mayflower\TPPBundle\MayflowerTPPBundle(),
-            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Mayflower\TPPBundle\MayflowerTPPBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
@@ -35,23 +34,23 @@ class AppKernel extends Kernel
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
     }
 
-//    // speed up vagrant
-//    public function getCacheDir()
-//    {
-//        if (in_array($this->environment, array('dev', 'test'))) {
-//            return '/dev/shm/tpp/cache/' .  $this->environment;
-//        }
-//
-//        return parent::getCacheDir();
-//    }
-//
-//    // speed up vagrant
-//    public function getLogDir()
-//    {
-//        if (in_array($this->environment, array('dev', 'test'))) {
-//            return '/dev/shm/tpp/logs';
-//        }
-//
-//        return parent::getLogDir();
-//    }
+    // speed up vagrant
+    public function getCacheDir()
+    {
+        if (in_array($this->environment, array('dev', 'test'))) {
+            return '/dev/shm/tpp/cache/' .  $this->environment;
+        }
+
+        return parent::getCacheDir();
+    }
+
+    // speed up vagrant
+    public function getLogDir()
+    {
+        if (in_array($this->environment, array('dev', 'test'))) {
+            return '/dev/shm/tpp/logs';
+        }
+
+        return parent::getLogDir();
+    }
 }

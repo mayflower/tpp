@@ -1,0 +1,20 @@
+<form class="form-horizontal" role="form">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" ng-show="!isEdit">Add task</h4>
+        <h4 class="modal-title" ng-show="isEdit">Edit task</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="task-project" class="col-lg-3 control-label">Project</label>
+            <div class="col-lg-9">
+                <select ng-model="task.project" class="form-control" id="task-project" ng-options="p.name for p in projectList">
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="cancel()">Close</button>
+        <button type="submit" id="task-submit" ng-click="ok()" class="btn btn-primary">Save changes</button>
+    </div>
+</form>
