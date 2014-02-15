@@ -16,6 +16,7 @@ node_modules
 .sass-cache
 .idea
 .vagrant
+vagrant/modules/
 app/bower_components
 dist
 app/styles/main.css

@@ -26,7 +26,7 @@ package { [
 }
 
 class { 'nginx':
-  # sendfile => 'off'    TODO wait for pull request on nginx module to be merged
+#  sendfile => 'off'   # TODO not possible yet
 }
 
 nginx::resource::vhost { 'tpp.dev':
@@ -84,7 +84,6 @@ nginx::resource::location { 'tpp.dev-php':
 }
 
 include php
-#include php::apt
 
 class {
   'php::cli':
@@ -145,7 +144,7 @@ php::fpm::conf {'www':
 class {'phantomjs': }
 
 class { 'mysql::server':
-  config_hash   => { 'root_password' => 'tppdev' }
+  root_password => 'tppdev'
 }
 
 mysql::db { 'mayflower_tpp':
@@ -171,7 +170,7 @@ mysql::db { 'mayflower_tpp_tests':
 }
 
 class { 'phpmyadmin':
-  require => [Class['mysql::server'], Class['mysql::config'], Class['php::fpm']],
+  require => [Class['mysql::server'], Class['php::fpm']],
 }
 
 nginx::resource::vhost { 'phpmyadmin':
@@ -201,35 +200,30 @@ nginx::resource::location { "phpmyadmin-php":
     'include'                 => 'fastcgi_params'
   },
   notify              => Class['nginx::service'],
-  require             => Nginx::Resource::Vhost['phpmyadmin'],
 }
 
-include nodejs::v0_10
-nodejs::module { "bower":
-  node_version => 'v0.10'
-}
-nodejs::module { "grunt-cli":
-  node_version => 'v0.10'
-}
-exec { 'node_version':
-  command => '/usr/local/share/nodenv/bin/nodenv global v0.10',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  cwd     => '/www/tpp',
-  require => Class['nodejs::v0_10']
-}
+class { 'nodejs':
+  manage_repo => true
+} ->
+package { "bower":
+  ensure => present,
+  provider => 'npm'
+} ->
+package { "grunt-cli":
+  ensure => present,
+  provider => 'npm'
+} ->
 exec { 'install_node_modules':
-  command => '/usr/local/share/nodenv/bin/nodenv exec npm install',
+  command => 'npm install',
   cwd     => '/www/tpp',
   user    => 'vagrant',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  require => Exec['node_version']
-}
+  require => Class['nodejs']
+} ->
 exec { 'install_bower_modules':
-  command => '/usr/local/share/nodenv/bin/nodenv exec bower install',
+  command => 'bower install',
   cwd     => '/www/tpp',
   user    => 'vagrant',
-  environment => 'NODENV_ROOT=/usr/local/share/nodenv',
-  require => Nodejs::Module['bower']
+  require => Package['bower']
 }
 exec { 'composer_install':
   command => '/usr/local/bin/composer install',

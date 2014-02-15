@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
-    v.customize ["modifyvm", :id, "--name", "tpp-dev-box"]
+    v.customize ["modifyvm", :id, "--name", "tpp-dev-box2"]
     v.customize ["setextradata", :id, "--VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     "if [[ ! -f /apt-get-run ]]; then sudo apt-get update && sudo touch /apt-get-run; fi"
   config.vm.provision :shell, :inline => 'echo -e "mysql_root_password=tppdev
   controluser_password=awesome" > /etc/phpmyadmin.facts;'
-  config.vm.provision :shell, :path => "vagrant/update-puppet.sh"
+  config.vm.provision :shell, :path => "vagrant/init-puppet.sh"
 
   config.vm.provision :puppet do |puppet|
     puppet.facter = {
