@@ -1,0 +1,39 @@
+---
+nginx::nginx_vhosts:
+  tpp.dev:
+    www_root: /www/tpp/app
+    try_files: ['$uri', '$uri/', '/index.html']
+  tpp.pma:
+    www_root: /usr/share/phpmyadmin
+    try_files: ['$uri', '$uri/', '/index.php?$args']
+
+nginx::nginx_locations:
+  sf2_rewrite:
+    location: '~ ^/api.+$'
+    vhost: tpp.dev
+    www_root: /www/tpp/api/web
+    rewrite_rules:
+      - '^(.*)$ /app_dev.php/$1 last'
+  sf2:
+    location: '~ ^/app_dev\.php(/|$)'
+    vhost: tpp.dev
+    www_root: /www/tpp/api/web
+    fastcgi: unix:/var/run/php5-fpm.sock
+    fastcgi_split_path: '^(.+\.php)(/.+)$'
+  pma:
+    location: '~ \.php$'
+    vhost: tpp.pma
+    www_root: /usr/share/phpmyadmin
+    fastcgi: unix:/var/run/php5-fpm.sock
+    fastcgi_split_path: '^(.+\.php)(/.+)$'
+    try_files: ['$uri', '$uri/', '/index.php?$args']
+
+nginx::params::nx_sendfile: off
+
+component::mysql::root_password: tppdev
+component::mysql::db_user: mayflower
+component::mysql::db_password: tppdev
+component::mysql::db_name: mayflower_tpp
+
+component::frontend::path: /www/tpp
+component::symfony::path: /www/tpp/api

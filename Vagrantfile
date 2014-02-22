@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
-    v.customize ["modifyvm", :id, "--name", "tpp-dev-box2"]
+    v.customize ["modifyvm", :id, "--name", "tpp-dev-box"]
     v.customize ["setextradata", :id, "--VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
   end
 
@@ -30,8 +30,8 @@ Vagrant.configure("2") do |config|
     }
 
     puppet.manifests_path = "vagrant/manifests"
-    puppet.module_path = "vagrant/modules"
-    puppet.options = ["--verbose"]
+    puppet.module_path = ["vagrant/modules", "vagrant/site"]
+    puppet.hiera_config_path = "vagrant/hiera.yaml"
   end
 
   config.ssh.username = "vagrant"
