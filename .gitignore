@@ -15,7 +15,6 @@ node_modules
 .tmp
 .sass-cache
 .idea
-.vagrant
 vagrant/modules/
 app/bower_components
 dist
