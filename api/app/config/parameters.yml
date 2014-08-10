@@ -3,10 +3,10 @@ parameters:
     database_driver: pdo_mysql
     database_host: 127.0.0.1
     database_port: null
-    database_name: mayflower_tpp
+    database_name: tpp
     database_test_name: test_mayflower_tpp
-    database_user: mayflower
-    database_password: tppdev
+    database_user: dev
+    database_password: dev
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
